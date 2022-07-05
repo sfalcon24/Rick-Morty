@@ -1,4 +1,4 @@
-export const colors = Object.freeze({
+export const colors: Record<string, string> = Object.freeze({
   white: '#FFFFFF',
   black: '#000000',
   red: '#ff0000',
