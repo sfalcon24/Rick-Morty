@@ -62,3 +62,8 @@ buck-out/
 
 # eslint
 .eslintcache
+
+# .env
+.env
+.env.prod
+.env.stg
