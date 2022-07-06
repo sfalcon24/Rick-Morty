@@ -6,6 +6,7 @@ import {StatusBar} from 'components';
 import AppNavigator from 'navigator';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {navigationRef} from 'services';
 import theme from 'theme';
 import useConnect from './connect';
 
@@ -33,7 +34,7 @@ export const Root: FC = () => {
     <ThemeProvider theme={theme}>
       <SafeAreaProvider>
         <GestureHandlerRootView style={styles.gestureHandler}>
-          <NavigationContainer>
+          <NavigationContainer ref={navigationRef}>
             <StatusBar />
             <AppNavigator />
           </NavigationContainer>
