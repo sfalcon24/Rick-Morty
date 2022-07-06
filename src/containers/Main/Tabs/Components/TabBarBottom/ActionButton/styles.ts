@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {Icons} from 'components';
 import {RectButton} from 'react-native-gesture-handler';
 
 export const Content = styled(RectButton).attrs(() => ({
@@ -19,3 +20,7 @@ export const Container = styled.View`
   overflow: visible;
   transform: translateY(-40px);
 `;
+
+export const Icon = styled(Icons).attrs({
+  name: 'plus',
+})``;
