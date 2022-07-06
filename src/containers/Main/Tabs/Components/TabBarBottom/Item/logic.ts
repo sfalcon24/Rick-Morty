@@ -1,4 +1,6 @@
 import {useCallback} from 'react';
+import i18n from 'i18n';
+import type {DictionaryKey} from 'i18n/types';
 import type {LogicParams} from './types';
 
 const useLogic = ({jumpTo, routeName}: LogicParams) => {
@@ -6,8 +8,7 @@ const useLogic = ({jumpTo, routeName}: LogicParams) => {
     jumpTo(routeName);
   }, [jumpTo, routeName]);
 
-  // TODO: add title
-  const title = routeName;
+  const title = i18n.t(`tabs.${routeName}` as DictionaryKey);
 
   return {title, onPress};
 };
