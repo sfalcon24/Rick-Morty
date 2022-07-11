@@ -22,10 +22,14 @@
     "sb:off": "exec ./scripts/storybook-enabler.sh off",
     "sb:getstories": "sb-rn-get-stories",
     "sb:watcher": "sb-rn-watcher",
-    "detox:build:ios:simulator:debug": "yarn detox build -c ios.debug",
-    "detox:build:ios:simulator:release": "yarn detox build -c ios.release",
+    "detox:build:ios:simulator:debug": "yarn detox build -c ios.simulator.debug",
+    "detox:build:ios:simulator:release": "yarn detox build -c ios.simulator.release",
     "detox:test:ios:simulator:debug": "yarn detox test -c ios.simulator.debug",
-    "detox:test:ios:simulator:release": "yarn detox test -c ios.simulator.release"
+    "detox:test:ios:simulator:release": "yarn detox test -c ios.simulator.release",
+    "detox:build:android:simulator:debug": "yarn detox build -c android.simulator.debug",
+    "detox:build:android:simulator:release": "yarn detox build -c android.simulator.release",
+    "detox:test:android:simulator:debug": "yarn detox test -c android.simulator.debug",
+    "detox:test:android:simulator:release": "yarn detox test -c android.simulator.release"
   },
   "dependencies": {
     "@hookform/resolvers": "2.9.4",

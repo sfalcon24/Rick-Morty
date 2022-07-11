@@ -15,37 +15,47 @@
       "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/rnapp.app",
       "build": "xcodebuild -workspace ios/rnapp.xcworkspace -scheme rnapp -sdk iphonesimulator -derivedDataPath ios/build"
     },
-    "android": {
+    "android.debug": {
       "type": "android.apk",
-      "binaryPath": "SPECIFY_PATH_TO_YOUR_APP_BINARY"
+      "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+      "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd .."
+    },
+    "android.release": {
+      "type": "android.apk",
+      "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+      "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd .."
     }
   },
   "devices": {
-    "simulator": {
+    "simulator.ios": {
       "type": "ios.simulator",
       "device": {
         "type": "iPhone 13"
       }
     },
-    "emulator": {
+    "simulator.android": {
       "type": "android.emulator",
       "device": {
-        "avdName": "Pixel_3a_API_30_x86"
+        "avdName": "Pixel_4a_API_30"
       }
     }
   },
   "configurations": {
     "ios.simulator.debug": {
-      "device": "simulator",
+      "device": "simulator.ios",
       "app": "ios.debug"
     },
     "ios.simulator.release": {
-      "device": "simulator",
+      "device": "simulator.ios",
       "app": "ios.release"
     },
-    "android": {
-      "device": "emulator",
-      "app": "android"
+    "android.simulator.debug": {
+      "device": "simulator.android",
+      "app": "android.debug"
+    },
+    "android.simulator.release": {
+      "device": "simulator.android",
+      "app": "android.release"
     }
   }
 }
