@@ -10,7 +10,7 @@ const TabBarBottomItem: FC<Props> = ({jumpTo, isFocused, routeName}) => {
 
   return (
     <Container>
-      <Content onPress={onPress}>
+      <Content testID={`tab_button_${routeName}`} onPress={onPress}>
         <Icon icon={routeName} focused={isFocused} />
         <Label focused={isFocused}>{title}</Label>
       </Content>
