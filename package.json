@@ -79,23 +79,12 @@
     "react-dom": "17.0.2",
     "react-is": "17.0.2",
     "react-native-dotenv": "3.3.1",
-    "react-native-flipper": "0.153.0",
+    "react-native-flipper": "^0.153.0",
     "react-native-mmkv-flipper-plugin": "1.0.0",
     "react-test-renderer": "17.0.2",
     "typescript": "4.7.4"
   },
   "resolutions": {
     "@types/react": "17.0.47"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   }
 }
