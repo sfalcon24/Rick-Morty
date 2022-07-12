@@ -6,6 +6,7 @@ export type Props = {
   loading?: boolean;
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;
+  testID?: string;
   title?: string;
   variant?: ButtonVariant;
 };
