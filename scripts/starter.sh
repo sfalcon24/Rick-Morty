@@ -36,9 +36,6 @@ cd ios && pod install && cd ..
 
 sed -i '' "s/React Native Template/$PROJECT_NAME_LC/g" README.md
 
-echo "Changing app.json name to $PROJECT_NAME_LC..."
-sed -i '' "s/${INIT_NAME}/$PROJECT_NAME_LC/g" app.json
-
 echo "Changing package.json name to $PROJECT_NAME_LC..."
 sed -i '' "s/${INIT_NAME}/$PROJECT_NAME_LC/g" package.json
 
@@ -57,7 +54,7 @@ sed '6d' package.json | tee package.json
 git checkout --orphan latest_branch
 git add -A
 git rm -f starter.sh
-git commit -am "chore: Initial commit"
+git commit -am "chore: initial commit"
 git branch -D master
 git branch -m master
 
