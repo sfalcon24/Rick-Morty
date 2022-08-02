@@ -67,3 +67,6 @@ buck-out/
 .env
 .env.prod
 .env.stg
+
+# ios xcode env
+ios/.xcode.env.local
