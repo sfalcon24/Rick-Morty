@@ -15,8 +15,9 @@ module.exports = {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
-
         'react/react-in-jsx-scope': 'off',
+        'eslint-comments/no-unlimited-disable': 'off',
+        'eslint-comments/no-unused-disable': 'off',
         '@typescript-eslint/consistent-type-imports': 'warn',
         '@typescript-eslint/prefer-ts-expect-error': 'warn',
         'arrow-body-style': ['error'],
