@@ -1,6 +1,7 @@
 import type {FC} from 'react';
 import {Platform, StyleSheet, UIManager} from 'react-native';
 import {ThemeProvider} from 'styled-components/native';
+import {ApolloProvider} from '@apollo/client';
 import {NavigationContainer} from '@react-navigation/native';
 import {StatusBar} from 'components';
 import AppNavigator from 'navigator';
@@ -24,22 +25,24 @@ const styles = StyleSheet.create({
 });
 
 export const Root: FC = () => {
-  const {ready} = useConnect();
+  const {ready, apolloClient} = useConnect();
 
-  if (!ready) {
+  if (!ready || !apolloClient) {
     return null;
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-        <GestureHandlerRootView style={styles.gestureHandler}>
-          <NavigationContainer ref={navigationRef}>
-            <StatusBar />
-            <AppNavigator />
-          </NavigationContainer>
-        </GestureHandlerRootView>
-      </SafeAreaProvider>
+      <ApolloProvider client={apolloClient}>
+        <SafeAreaProvider>
+          <GestureHandlerRootView style={styles.gestureHandler}>
+            <NavigationContainer ref={navigationRef}>
+              <StatusBar />
+              <AppNavigator />
+            </NavigationContainer>
+          </GestureHandlerRootView>
+        </SafeAreaProvider>
+      </ApolloProvider>
     </ThemeProvider>
   );
 };

@@ -1,0 +1,4 @@
+fragment MeData on UserType {
+  id
+  email
+}
