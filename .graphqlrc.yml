@@ -15,6 +15,7 @@ extensions:
         DateTime: string
         Decimal: string
         UUID: string
+        JSONString: string
       addDocBlocks: false
       maybeValue: T | undefined | null
       strictScalars: true
@@ -33,11 +34,23 @@ extensions:
           - typed-document-node
       src/apollo/generated/helpers/index.ts:
         plugins:
-        - add: *notModify
-        - add: *eslint
-        - typescript-apollo-client-helpers
+          - add: *notModify
+          - add: *eslint
+          - typescript-apollo-client-helpers
       src/apollo/generated/nodes/index.ts:
         plugins:
-        - add: *notModify
-        - add: *eslint
-        - typescript-document-nodes
+          - add: *notModify
+          - add: *eslint
+          - typescript-document-nodes
+      src/apollo/generated/fragmentMatcher.ts:
+        plugins:
+          - add: *notModify
+          - add: *eslint
+          - fragment-matcher
+      src/apollo/generated/hooks.ts:
+        plugins:
+          - add: *notModify
+          - add: *eslint
+          - typescript
+          - typescript-operations
+          - typescript-react-apollo
