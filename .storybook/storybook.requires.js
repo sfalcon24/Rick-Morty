@@ -31,11 +31,10 @@ try {
 
 const getStories = () => {
   return [
-    require("../src/components/Button/Button.stories.tsx"),
-    require("../src/components/Icons/Icons.stories.tsx"),
-    require("../src/containers/Auth/Blank/Blank.stories.tsx"),
-    require("../src/containers/Main/Blank/Blank.stories.tsx"),
-    require("../src/containers/Main/Tabs/Screens/Blank/Blank.stories.tsx"),
+    require("../src/components/Button/index.stories.tsx"),
+    require("../src/containers/Auth/Blank/index.stories.tsx"),
+    require("../src/containers/Main/Blank/index.stories.tsx"),
+    require("../src/containers/Main/Tabs/Screens/Blank/index.stories.tsx"),
   ];
 };
 

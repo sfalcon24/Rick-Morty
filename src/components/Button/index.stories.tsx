@@ -1,4 +1,4 @@
-import {Alert} from 'react-native';
+import {action} from '@storybook/addon-actions';
 import Button from '.';
 
 export default {
@@ -6,32 +6,28 @@ export default {
   component: Button,
 };
 
-const showAlert = () => {
-  Alert.alert('Button pressed');
-};
-
 export const Primary = () => (
-  <Button variant="primary" title="Primary" onPress={showAlert} />
+  <Button variant="primary" title="Primary" onPress={action('onPress')} />
 );
 
 export const PrimaryLoading = () => (
   <Button
     variant="primary"
     title="Primary loading"
-    onPress={showAlert}
+    onPress={action('onPress')}
     loading
   />
 );
 
 export const Secondary = () => (
-  <Button variant="secondary" title="Secondary" onPress={showAlert} />
+  <Button variant="secondary" title="Secondary" onPress={action('onPress')} />
 );
 
 export const SecondaryLoading = () => (
   <Button
     variant="secondary"
     title="Secondary loading"
-    onPress={showAlert}
+    onPress={action('onPress')}
     loading
   />
 );
