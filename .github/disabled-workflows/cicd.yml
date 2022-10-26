@@ -121,6 +121,19 @@ jobs:
           ENV_ANDROID_STORE_PASSWORD: ${{ secrets.ANDROID_STORE_PASSWORD }}
           ENV_ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
 
+      - name: 'Prepare: write signing config to gradle.properties'
+        run: |
+            echo "\n" >> android/gradle.properties
+            echo "STORE_FILE=prod.keystore" >> android/gradle.properties
+            echo "STORE_PASSWORD=$ANDROID_STORE_PASSWORD" >> android/gradle.properties
+            echo "KEY_ALIAS=$ANDROID_KEY_ALIAS" >> android/gradle.properties
+            echo "KEY_PASSWORD=$ANDROID_KEY_PASSWORD" >> android/gradle.properties
+        shell: bash
+        env:
+          ANDROID_STORE_PASSWORD: ${{secrets.ANDROID_STORE_PASSWORD}}
+          ANDROID_KEY_ALIAS: ${{secrets.ANDROID_KEY_ALIAS}}
+          ANDROID_KEY_PASSWORD: ${{secrets.ANDROID_KEY_PASSWORD}}
+
       - name: 'Prepare: setup node'
         uses: actions/setup-node@v2
         with:
