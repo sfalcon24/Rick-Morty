@@ -9,7 +9,7 @@ module.exports = {
   ],
   plugins: [
     'react-native-reanimated/plugin',
-    ['module:react-native-dotenv'],
+    //['module:react-native-dotenv'], // TODO This is incompatible with storyshots, use react-native-config instead which does not require a babel plugin
     [
       'module-resolver',
       {
