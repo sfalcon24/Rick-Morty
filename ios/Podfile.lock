@@ -322,20 +322,20 @@ PODS:
   - React-jsinspector (0.70.5)
   - React-logger (0.70.5):
     - glog
-  - react-native-config (1.4.6):
-    - react-native-config/App (= 1.4.6)
-  - react-native-config/App (1.4.6):
+  - react-native-config (1.5.0):
+    - react-native-config/App (= 1.5.0)
+  - react-native-config/App (1.5.0):
     - React-Core
   - react-native-flipper (0.153.0):
     - React-Core
-  - react-native-mmkv (2.4.3):
+  - react-native-mmkv (2.5.1):
     - MMKV (>= 1.2.13)
     - React-Core
-  - react-native-safe-area-context (4.3.1):
+  - react-native-safe-area-context (4.5.0):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
-    - React
+    - React-Core
     - ReactCommon/turbomodule/core
   - react-native-slider (4.2.4):
     - React-Core
@@ -409,9 +409,9 @@ PODS:
     - React-Core
   - RNDateTimePicker (6.2.0):
     - React-Core
-  - RNGestureHandler (2.5.0):
+  - RNGestureHandler (2.9.0):
     - React-Core
-  - RNReanimated (2.9.1):
+  - RNReanimated (2.14.4):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -438,10 +438,10 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.14.1):
+  - RNScreens (3.19.0):
     - React-Core
     - React-RCTImage
-  - RNSVG (12.3.0):
+  - RNSVG (13.8.0):
     - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
@@ -701,10 +701,10 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 31564fa6912459921568e8b0e49024285a4d584b
   React-jsinspector: badd81696361249893a80477983e697aab3c1a34
   React-logger: fdda34dd285bdb0232e059b19d9606fa0ec3bb9c
-  react-native-config: 7cd105e71d903104e8919261480858940a6b9c0e
+  react-native-config: 5330c8258265c1e5fdb8c009d2cabd6badd96727
   react-native-flipper: 88dd2735e76e6fb79f8714124bf9315f1e05a7e6
-  react-native-mmkv: 1265a348a4711097ba29c8bcefd5971f48220f2b
-  react-native-safe-area-context: 6c12e3859b6f27b25de4fee8201cfb858432d8de
+  react-native-mmkv: 69b9c003f10afdd01addf7c6ee784ce42ee2eff3
+  react-native-safe-area-context: 39c2d8be3328df5d437ac1700f4f3a4f75716acc
   react-native-slider: cecabb58ecffad671d2ad3ccc58c7f4d2d029e95
   React-perflogger: e68d3795cf5d247a0379735cbac7309adf2fb931
   React-RCTActionSheet: 05452c3b281edb27850253db13ecd4c5a65bc247
@@ -720,10 +720,10 @@ SPEC CHECKSUMS:
   ReactCommon: c9246996e73bf75a2c6c3ff15f1e16707cdc2da9
   RNCAsyncStorage: d81ee5c3db1060afd49ea7045ad460eff82d2b7d
   RNDateTimePicker: 30e6733efc179d1e49d6008ea5fce42cdc9aeeca
-  RNGestureHandler: bad495418bcbd3ab47017a38d93d290ebd406f50
-  RNReanimated: 24508aef58348323f891abd6616debf39173f1b9
-  RNScreens: aa9a97835afbbdc18a4757870b2b59b7d9fae16a
-  RNSVG: 302bfc9905bd8122f08966dc2ce2d07b7b52b9f8
+  RNGestureHandler: 071d7a9ad81e8b83fe7663b303d132406a7d8f39
+  RNReanimated: 6668b0587bebd4b15dd849b99e5a9c70fc12ed95
+  RNScreens: ea4cd3a853063cda19a4e3c28d2e52180c80f4eb
+  RNSVG: c1e76b81c76cdcd34b4e1188852892dc280eb902
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: eca980a5771bf114c41a754098cd85e6e0d90ed7
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
