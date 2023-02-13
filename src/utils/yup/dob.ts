@@ -3,5 +3,5 @@ import type {DictionaryKey} from 'i18n/types';
 import {date} from 'yup';
 
 export const validateDob = date().required(
-  i18n.t('yup.required.dob' as DictionaryKey),
+  i18n.t('yup.required.dob' as DictionaryKey).toString(),
 );

@@ -3,5 +3,5 @@ import type {DictionaryKey} from 'i18n/types';
 import {string} from 'yup';
 
 export const validateLastName = string().required(
-  i18n.t('yup.required.lastName' as DictionaryKey),
+  i18n.t('yup.required.lastName' as DictionaryKey).toString(),
 );

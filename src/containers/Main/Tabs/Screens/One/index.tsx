@@ -1,16 +1,16 @@
-import type {FC} from 'react';
 import useConnect from './connect';
 import {Button, Container, Text} from './styles';
+import type {Props} from './types';
 
-export const BlankAuth: FC = () => {
+export const OneTab: Props = () => {
   const {handleFakeLogin} = useConnect();
   return (
     <Container>
-      <Text>Auth screen</Text>
+      <Text>Tab screen</Text>
       <Button
-        testID="login_button"
-        title="Fake login"
         onPress={handleFakeLogin}
+        testID="logout_button"
+        title="Fake logout"
       />
     </Container>
   );
