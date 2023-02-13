@@ -2,15 +2,10 @@ module.exports = {
   root: true,
   extends: '@react-native-community',
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import', 'detox'],
+  plugins: ['@typescript-eslint', 'import'],
   overrides: [
     {
-      files: ['*.ts', '*.tsx', '*.e2e.tsx'],
-      env: {
-        'detox/detox': true,
-        jest: true,
-        'jest/globals': true,
-      },
+      files: ['*.ts', '*.tsx'],
       rules: {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',

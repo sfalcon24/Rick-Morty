@@ -2,6 +2,7 @@ import {useMemo} from 'react';
 import {yupResolver} from '@hookform/resolvers/yup';
 import type {
   DeepPartial,
+  FieldValues,
   Path,
   SubmitErrorHandler,
   SubmitHandler,
@@ -10,7 +11,7 @@ import {useForm} from 'react-hook-form';
 import type {ObjectSchema} from 'yup';
 import type {CustomError} from '../error';
 
-type LogicParams<T> = {
+type LogicParams<T extends FieldValues> = {
   defaultValues: DeepPartial<T>;
   onSubmit?: SubmitHandler<T>;
   onError?: SubmitErrorHandler<T>;
@@ -20,7 +21,7 @@ type LogicParams<T> = {
   handleServerError?: boolean;
 };
 
-export const useCustomForm = <T>({
+export const useCustomForm = <T extends FieldValues>({
   defaultValues,
   onSubmit,
   onError,

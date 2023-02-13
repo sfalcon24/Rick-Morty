@@ -8,11 +8,11 @@ import {
   //   transparentModal,
   rootStackScreenOptions,
 } from './constants';
-import type {Props} from './types';
+import type {RootParamsList} from './types';
 
-const {Navigator, Group, Screen} = createNativeStackNavigator();
+const {Navigator, Group, Screen} = createNativeStackNavigator<RootParamsList>();
 
-const AppNavigator: FC<Props> = () => {
+const AppNavigator: FC = () => {
   const {logged} = useConnect();
 
   return (

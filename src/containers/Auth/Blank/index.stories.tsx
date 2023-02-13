@@ -7,4 +7,4 @@ export default {
   args: {} as Props,
 };
 
-export const ScreenAuthBase = (props: Props) => <BlankAuth {...props} />;
+export const ScreenAuthBase = (props: any) => <BlankAuth {...props} />;

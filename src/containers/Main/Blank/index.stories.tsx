@@ -7,4 +7,4 @@ export default {
   args: {} as Props,
 };
 
-export const ScreenMainBase = (props: Props) => <BlankMain {...props} />;
+export const ScreenMainBase = (props: any) => <BlankMain {...props} />;
