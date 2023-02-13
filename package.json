@@ -22,15 +22,7 @@
     "sb:on": "exec ./scripts/storybook-enabler.sh on",
     "sb:off": "exec ./scripts/storybook-enabler.sh off",
     "sb:getstories": "sb-rn-get-stories",
-    "sb:watcher": "sb-rn-watcher",
-    "detox:build:ios:simulator:debug": "yarn detox build -c ios.simulator.debug",
-    "detox:build:ios:simulator:release": "yarn detox build -c ios.simulator.release",
-    "detox:test:ios:simulator:debug": "yarn detox test -c ios.simulator.debug",
-    "detox:test:ios:simulator:release": "yarn detox test -c ios.simulator.release",
-    "detox:build:android:simulator:debug": "yarn detox build -c android.simulator.debug",
-    "detox:build:android:simulator:release": "yarn detox build -c android.simulator.release",
-    "detox:test:android:simulator:debug": "yarn detox test -c android.simulator.debug",
-    "detox:test:android:simulator:release": "yarn detox test -c android.simulator.release"
+    "sb:watcher": "sb-rn-watcher"
   },
   "dependencies": {
     "@apollo/client": "3.7.7",
@@ -95,15 +87,12 @@
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.7",
     "babel-jest": "29.0.3",
     "babel-plugin-module-resolver": "4.1.0",
-    "detox": "19.7.1",
     "enzyme": "3.11.0",
     "enzyme-to-json": "3.6.2",
     "eslint": "7.32.0",
-    "eslint-plugin-detox": "1.0.0",
     "eslint-plugin-import": "2.26.0",
     "husky": "8.0.1",
     "jest": "29.0.3",
-    "jest-circus": "27.5.1",
     "lint-staged": "13.0.3",
     "metro-react-native-babel-preset": "0.72.3",
     "patch-package": "6.4.7",
@@ -118,8 +107,5 @@
   },
   "resolutions": {
     "@types/react": "17.0.47"
-  },
-  "detox": {
-    "extends": "./e2e/detox.config"
   }
 }
