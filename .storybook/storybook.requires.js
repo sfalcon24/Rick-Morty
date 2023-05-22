@@ -34,7 +34,10 @@ const getStories = () => {
     require("../src/components/Button/index.stories.tsx"),
     require("../src/containers/Auth/Blank/index.stories.tsx"),
     require("../src/containers/Main/Blank/index.stories.tsx"),
-    require("../src/containers/Main/Tabs/Screens/Blank/index.stories.tsx"),
+    require("../src/containers/Main/Tabs/Screens/One/index.stories.tsx"),
+    require("../src/containers/Main/Tabs/Screens/Three/index.stories.tsx"),
+    require("../src/containers/Main/Tabs/Screens/Two/index.stories.tsx"),
+    require("../src/containers/Main/Tabs/Screens/Zero/index.stories.tsx"),
   ];
 };
 
