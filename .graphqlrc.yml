@@ -1,8 +1,6 @@
 overwrite: true
-schema:
-  - https://api-dev.longevityone.co/graphql/
-  - ./directives.gql
-documents: 'src/apollo/**/*.gql'
+schema: 'https://api-dev.longevityone.co/graphql/'
+documents: 'src/**/*.gql'
 extensions:
   codegen:
     overwrite: true
@@ -23,7 +21,7 @@ extensions:
       dedupeOperationSuffix: true
       dedupeFragments: true
     generates:
-      src/apollo/generated/schema/index.ts:
+      src/common/data/apollo/generated/schema/index.ts:
         plugins:
           - add: &notModify
               content: '/* THIS IS A GENERATED FILE - DO NOT MODIFY */'
@@ -32,22 +30,22 @@ extensions:
           - typescript
           - typescript-operations
           - typed-document-node
-      src/apollo/generated/helpers/index.ts:
+      src/common/data/apollo/generated/helpers/index.ts:
         plugins:
           - add: *notModify
           - add: *eslint
           - typescript-apollo-client-helpers
-      src/apollo/generated/nodes/index.ts:
+      src/common/data/apollo/generated/nodes/index.ts:
         plugins:
           - add: *notModify
           - add: *eslint
           - typescript-document-nodes
-      src/apollo/generated/fragmentMatcher.ts:
+      src/common/data/apollo/generated/fragmentMatcher.ts:
         plugins:
           - add: *notModify
           - add: *eslint
           - fragment-matcher
-      src/apollo/generated/hooks.ts:
+      src/common/data/apollo/generated/hooks.ts:
         plugins:
           - add: *notModify
           - add: *eslint

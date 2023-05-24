@@ -31,10 +31,10 @@ try {
 
 const getStories = () => {
   return [
-    require("../src/components/Button/index.stories.tsx"),
-    require("../src/containers/Auth/Blank/index.stories.tsx"),
-    require("../src/containers/Main/Blank/index.stories.tsx"),
-    require("../src/containers/Main/Tabs/Screens/One/index.stories.tsx"),
+    require("../src/common/ui/components/Button/index.stories"),
+    require("../src/views/Auth/Blank/index.stories"),
+    require("../src/views/Blank/index.stories"),
+    require("../src/views/One/index.stories"),
     require("../src/containers/Main/Tabs/Screens/Three/index.stories.tsx"),
     require("../src/containers/Main/Tabs/Screens/Two/index.stories.tsx"),
     require("../src/containers/Main/Tabs/Screens/Zero/index.stories.tsx"),
