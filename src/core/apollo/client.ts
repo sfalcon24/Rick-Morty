@@ -2,9 +2,8 @@ import {ApolloClient, HttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
 import {onError} from '@apollo/client/link/error';
 import {config} from 'core/config';
+import {getRequestHeaders} from 'features/auth/getRequestHeaders/data/getRequestHeaders';
 import {buildCache} from './cache';
-import {contextSetter} from './context';
-import {errorHandler} from './error';
 import {setupFlipper} from './flipper';
 
 const buildApolloClient = () => {
@@ -14,10 +13,12 @@ const buildApolloClient = () => {
     uri: config.graphqlEndpoint,
   });
 
-  const authLink = setContext(contextSetter);
+  const authLink = setContext(async () => ({
+    headers: getRequestHeaders(),
+  }));
 
-  const errorsLink = onError(({graphQLErrors}) => {
-    errorHandler(cache, graphQLErrors);
+  const errorsLink = onError(() => {
+    // TODO Handle any errors
   });
 
   const link = authLink.concat(errorsLink).concat(httpLink);

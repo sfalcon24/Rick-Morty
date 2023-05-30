@@ -10,6 +10,8 @@ import AppNavigator from 'core/navigation';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import useConnect from './connect';
+import 'react-native-gesture-handler';
+import 'core/i18n';
 
 if (
   Platform.OS === 'android' &&

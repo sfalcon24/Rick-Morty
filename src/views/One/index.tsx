@@ -1,9 +1,10 @@
-import useConnect from './connect';
 import {Button, Container, Text} from './styles';
 import type {Props} from './types';
+import useViewModel from './viewmodel';
 
 export const OneTab: Props = () => {
-  const {handleFakeLogin} = useConnect();
+  const {handleFakeLogin} = useViewModel();
+
   return (
     <Container>
       <Text>Tab screen</Text>

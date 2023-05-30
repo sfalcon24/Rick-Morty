@@ -2,6 +2,7 @@ import type {FC} from 'react';
 import type {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import type {CompositeScreenProps} from '@react-navigation/native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+import type {RootTabParamList} from './Tabs/types';
 
 declare global {
   namespace ReactNavigation {
@@ -13,13 +14,6 @@ export type RootParamsList = {
   BlankMain: undefined;
   BlankAuth: undefined;
   Tabs: undefined;
-};
-
-export type RootTabParamList = {
-  Zero: undefined;
-  One: undefined;
-  Two: undefined;
-  Three: undefined;
 };
 
 export type ScreensParamsList = RootParamsList & RootTabParamList;
@@ -38,5 +32,3 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> =
     BottomTabScreenProps<RootTabParamList, Screen>,
     NativeStackScreenProps<RootParamsList>
   >;
-
-export type Props = {};
