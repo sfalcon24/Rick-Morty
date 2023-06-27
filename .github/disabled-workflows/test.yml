@@ -1,0 +1,31 @@
+name: Run tests
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [16.15.0]
+
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Using Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Using yarn
+        run: npm install --global yarn
+
+      - name: Installing dependencies
+        run: yarn install
+
+      - name: Compile project
+        run: yarn tsc
+
+      - name: Run all tests
+        run: yarn test

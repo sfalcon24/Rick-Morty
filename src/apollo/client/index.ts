@@ -2,7 +2,7 @@ import {useCallback, useState} from 'react';
 import type {ApolloLink, NormalizedCacheObject} from '@apollo/client';
 import {ApolloClient, HttpLink} from '@apollo/client';
 import {setContext} from '@apollo/client/link/context';
-import {onError} from 'apollo-link-error';
+import {onError} from '@apollo/client/link/error';
 import setupCache from 'apollo/cache';
 import {config} from 'config';
 import {enableFlipperApolloDevtools} from 'react-native-flipper-apollo-devtools';
