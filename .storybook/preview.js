@@ -1,5 +1,5 @@
 import {ThemeProvider} from 'styled-components/native';
-import theme from 'theme';
+import theme from 'common/ui/theme';
 
 export const decorators = [
   Story => (

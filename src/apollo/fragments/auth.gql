@@ -1,3 +1,0 @@
-fragment TokenData on LoginMobile {
-  token
-}

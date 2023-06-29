@@ -1,0 +1,6 @@
+
+mutation Login($input: LoginInput!) {
+  loginMobile(input: $input) {
+    token
+  }
+}
