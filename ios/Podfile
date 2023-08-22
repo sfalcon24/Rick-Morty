@@ -22,7 +22,7 @@ end
 
 production = ENV["PRODUCTION"] == "1"
 
-target 'rnapp' do
+abstract_target 'common' do
   use_expo_modules!
   post_integrate do |installer|
     begin
@@ -35,6 +35,19 @@ target 'rnapp' do
 
   # Flags change depending on the env values.
   flags = get_default_flags()
+
+  target 'rnapp-dev' do
+    # Pods for Dev
+  end
+
+  target 'rnapp-staging' do
+    inherit! :complete
+    # Pods for Staging
+  end
+
+  target 'rnapp-production' do
+    # Pods for Production
+  end
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -51,11 +64,6 @@ target 'rnapp' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
-  target 'rnappTests' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   post_install do |installer|
     react_native_post_install(
