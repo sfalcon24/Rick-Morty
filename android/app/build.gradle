@@ -1,6 +1,5 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -98,6 +97,7 @@ android {
         applicationId "com.rnapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        flavorDimensions "default"
         versionCode 1
         versionName "0.0.1"
     }
@@ -108,6 +108,17 @@ android {
             enable enableSeparateBuildPerCPUArchitecture
             universalApk false  // If true, also generate a universal APK
             include (*reactNativeArchitectures())
+        }
+    }
+    productFlavors {
+        development {
+            applicationIdSuffix ".dev"
+        }
+        staging {
+            applicationIdSuffix ".staging"
+        }
+        production {
+            applicationIdSuffix ".app"
         }
     }
     signingConfigs {
