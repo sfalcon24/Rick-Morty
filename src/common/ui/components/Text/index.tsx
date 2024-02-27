@@ -1,11 +1,12 @@
 import type {FC} from 'react';
 import {memo, forwardRef} from 'react';
-import {Text as NativeText} from 'react-native';
+import type {Text as NativeText} from 'react-native';
+import {Text as BaseText} from './styles';
 import type {Props} from './types';
 
 const Text: FC<Props> = forwardRef<NativeText, Props>(
-  ({family = undefined, style, ...rest}, ref) => (
-    <NativeText
+  ({family = undefined, style, variant, ...rest}, ref) => (
+    <BaseText
       testID="text"
       style={[
         {
@@ -13,6 +14,7 @@ const Text: FC<Props> = forwardRef<NativeText, Props>(
         },
         style,
       ]}
+      variant={variant}
       ref={ref}
       {...rest}
     />
