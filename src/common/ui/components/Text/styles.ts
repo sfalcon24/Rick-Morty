@@ -102,6 +102,8 @@ const variantStyles: Record<Variant, ReturnType<typeof css>> = {
     line-height: 18px;
     letter-spacing: -0.08px;
     font-weight: 600;
+    text-align: center;
+    margin-top: -20px;
     color: ${({theme}) => theme.colors.indigo};
   `,
   'tagline11-tag': css`

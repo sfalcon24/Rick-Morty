@@ -7,27 +7,34 @@ export default {
 };
 
 export const Primary = () => (
-  <Button variant="primary" title="Primary" onPress={action('onPress')} />
-);
-
-export const PrimaryLoading = () => (
   <Button
-    variant="primary"
-    title="Primary loading"
+    variant="large-dark"
+    title="GET THE INSTRUCTIONS"
     onPress={action('onPress')}
-    loading
   />
 );
+
+// export const PrimaryLoading = () => (
+//   <Button
+//     variant="primary"
+//     title="Primary loading"
+//     onPress={action('onPress')}
+//     loading
+//   />
+// );
 
 export const Secondary = () => (
-  <Button variant="secondary" title="Secondary" onPress={action('onPress')} />
+  <Button variant="large" title="START PROTOTYPE" onPress={action('onPress')} />
 );
 
-export const SecondaryLoading = () => (
-  <Button
-    variant="secondary"
-    title="Secondary loading"
-    onPress={action('onPress')}
-    loading
-  />
+export const Small = () => (
+  <Button variant="small" title="APPLY" onPress={action('onPress')} />
 );
+// export const SecondaryLoading = () => (
+//   <Button
+//     variant="secondary"
+//     title="Secondary loading"
+//     onPress={action('onPress')}
+//     loading
+//   />
+// );

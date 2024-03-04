@@ -1,0 +1,28 @@
+🩺 The doctor is checking the health of your Storybook..
+╭ Incompatible packages found ───────────────────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                            │
+│   The following packages are incompatible with Storybook 7.6.17 as they depend on different major versions of Storybook    │
+│   packages:                                                                                                                │
+│   - @storybook/addon-actions@6.5.3 (7.6.17 available!)                                                                     │
+│   Repo: https://github.com/storybookjs/storybook/tree/main/addons/actions                                                  │
+│   - @storybook/addon-ondevice-actions@6.5.3                                                                                │
+│   Repo: https://storybook.js.org/                                                                                          │
+│   - @storybook/addon-ondevice-controls@6.5.3                                                                               │
+│   - @storybook/addon-ondevice-notes@6.5.3                                                                                  │
+│   - @storybook/core-common@6.5.3 (7.6.17 available!)                                                                       │
+│   Repo: https://github.com/storybookjs/storybook/tree/main/lib/core                                                        │
+│   - @storybook/react-native@6.5.3                                                                                          │
+│   Repo: https://storybook.js.org/                                                                                          │
+│                                                                                                                            │
+│                                                                                                                            │
+│   Please consider updating your packages or contacting the maintainers for compatibility details.                          │
+│   For more on Storybook 8 compatibility, see the linked GitHub issue:                                                      │
+│   https://github.com/storybookjs/storybook/issues/26031                                                                    │
+│                                                                                                                            │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+You can always recheck the health of your project by running:
+npx storybook@latest doctor
+
+Full logs are available in /Users/sfalcon/Documents/Sergio/Proyectos/react-native-starter-v2/doctor-storybook.log
+
