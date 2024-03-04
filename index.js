@@ -1,5 +1,5 @@
 import {AppRegistry} from 'react-native';
+import {Root} from './src/core/App';
 import {name as appName} from './app.json';
 
-const StorybookUIRoot = require('./.storybook').default;
-AppRegistry.registerComponent(appName, () => StorybookUIRoot);
+AppRegistry.registerComponent(appName, () => Root);
