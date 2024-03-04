@@ -14,8 +14,8 @@ export type Variant =
   | 'body17-regular'
   | 'body15-semibold'
   | 'large-title'
-  | 'caption13-regular'
-  | 'caption11-regular'
+  | 'caption13'
+  | 'caption11'
   | 'tagline15-tag'
   | 'tagline13-tag'
   | 'tagline11-tag';
