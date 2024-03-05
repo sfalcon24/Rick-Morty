@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Card story 1`] = `
+<View
+  style={
+    [
+      {
+        "borderColor": "#E5E5EA",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 219,
+        "marginLeft": 9,
+        "marginTop": 9,
+        "width": 163,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderTopLeftRadius": 8,
+          "borderTopRightRadius": 8,
+          "borderWidth": 2,
+          "height": 140,
+          "width": 163,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+        },
+        {
+          "fontFamily": undefined,
+        },
+        [
+          {
+            "color": "#8E8E93",
+            "fontSize": 11,
+            "fontWeight": "400",
+            "letterSpacing": 0.07,
+            "lineHeight": 13,
+            "marginLeft": 10,
+            "marginTop": 10,
+          },
+        ],
+      ]
+    }
+  >
+    Status
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+        },
+        {
+          "fontFamily": undefined,
+        },
+        [
+          {
+            "fontSize": 17,
+            "fontWeight": "600",
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
+            "marginLeft": 10,
+            "marginTop": 3,
+          },
+        ],
+      ]
+    }
+  >
+    Pepperoni Pizza
+  </Text>
+</View>
+`;

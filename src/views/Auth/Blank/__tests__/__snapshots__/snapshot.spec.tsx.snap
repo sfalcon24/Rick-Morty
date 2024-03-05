@@ -28,15 +28,26 @@ exports[`renders ScreenAuthBase story 1`] = `
     style={
       [
         {
-          "backgroundColor": "#0000FF",
+          "backgroundColor": "#34C759",
+          "borderColor": "",
           "borderRadius": 16,
+          "borderWidth": 0,
+          "gap": 0,
+          "height": 50,
+          "left": 26,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+          "top": 100,
+          "width": 323,
         },
         {
           "marginTop": 20,
         },
       ]
     }
-    variant="primary"
+    variant="large"
   >
     <RNGestureHandlerButton
       activeOpacity={0.105}
@@ -82,19 +93,25 @@ exports[`renders ScreenAuthBase story 1`] = `
         }
       />
       <Text
+        buttonVariant="large"
         style={
           [
+            {
+              "color": "#081F32",
+            },
             {
               "fontFamily": undefined,
             },
             [
               {
-                "color": "#FFFFFF",
+                "fontSize": 17,
+                "fontWeight": "600",
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
               },
             ],
           ]
         }
-        variant="primary"
       >
         Fake login
       </Text>

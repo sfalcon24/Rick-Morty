@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Icon story 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="28"
+  bbWidth="28"
+  fill="none"
+  focusable={false}
+  height={28}
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "flex": 0,
+        "height": 28,
+        "width": 28,
+      },
+    ]
+  }
+  vbHeight={28}
+  vbWidth={28}
+  width={28}
+>
+  <RNSVGGroup
+    fill={null}
+    propList={
+      [
+        "fill",
+      ]
+    }
+  >
+    <RNSVGPath
+      d="M22 9.00003H6C4.89543 9.00003 4 9.89546 4 11V22C4 23.1046 4.89543 24 6 24H22C23.1045 24 24 23.1046 24 22V11C24 9.89546 23.1045 9.00003 22 9.00003Z"
+      fill={
+        {
+          "payload": 4287532691,
+          "type": 0,
+        }
+      }
+      propList={
+        [
+          "fill",
+        ]
+      }
+    />
+    <RNSVGPath
+      d="M19.0001 4L14.0001 8.99999L9.00012 4"
+      propList={
+        [
+          "stroke",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4287532691,
+          "type": 0,
+        }
+      }
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
