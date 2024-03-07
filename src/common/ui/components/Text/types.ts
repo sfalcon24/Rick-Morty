@@ -1,17 +1,21 @@
-import type {ReactNode} from 'react';
 import type {TextProps} from 'react-native';
 
-export type Fonts = 'CabinetGrotesk-Medium' | 'Inter-Medium';
+export type Fonts =
+  | 'SpaceGrotesk-Regular'
+  | 'SpaceGrotesk-Medium'
+  | 'SpaceGrotesk-Light'
+  | 'SpaceGrotesk-Bold'
+  | 'SpaceGrotesk-SemiBold';
 
 export type Variant =
   | 'headline1'
   | 'headline2'
   | 'headline3'
-  | 'headline3-regular'
+  | 'headline3-bold'
   | 'body20-bold'
-  | 'body20-regular'
+  | 'body20'
   | 'body17-semibold'
-  | 'body17-regular'
+  | 'body17'
   | 'body15-semibold'
   | 'large-title'
   | 'caption13'
@@ -22,7 +26,6 @@ export type Variant =
 
 export type Props = {
   family?: Fonts;
-  children?: ReactNode;
   variant?: Variant;
 } & TextProps;
 

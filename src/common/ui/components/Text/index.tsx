@@ -5,15 +5,10 @@ import {Text as BaseText} from './styles';
 import type {Props} from './types';
 
 const Text: FC<Props> = forwardRef<NativeText, Props>(
-  ({family = undefined, style, variant, ...rest}, ref) => (
+  ({family = undefined, style, variant = 'body20', ...rest}, ref) => (
     <BaseText
       testID="text"
-      style={[
-        {
-          fontFamily: family,
-        },
-        style,
-      ]}
+      style={[family ? {fontFamily: family} : {}, style]}
       variant={variant}
       ref={ref}
       {...rest}

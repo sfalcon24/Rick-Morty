@@ -10,8 +10,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		49A5DE5510CF4ED4BECAB43C /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8827D4C44F674841B17CDD4F /* SpaceGrotesk-Medium.ttf */; };
+		6225950A8E4F489A875608C9 /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEB8156939F5455EA6737DAC /* SpaceGrotesk-Bold.ttf */; };
+		62ED44F6550748519DA3B18C /* SpaceGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11224F61177F449BAA1F96A4 /* SpaceGrotesk-SemiBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		86A054437AE55D731D11A6F5 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C967DF2FA6847FCC852FBFC5 /* ExpoModulesProvider.swift */; };
+		8E102FAE3F8149869C42355F /* SpaceGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA0637D3897D42EF91E94E60 /* SpaceGrotesk-Light.ttf */; };
 		8EA4CC581D03C5E84E954445 /* libPods-common-rnapp-dev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3689D322ED8FFA9B83137E /* libPods-common-rnapp-dev.a */; };
 		CEB68E0FD58AC2A81B150A57 /* libPods-common-rnapp-staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AD042F0BF2F87C46E37D6E /* libPods-common-rnapp-staging.a */; };
 		D3C30E04C85B18965088B614 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E64B2FB0ACBF9DC503F9A90 /* ExpoModulesProvider.swift */; };
@@ -25,12 +29,14 @@
 		E58080DE2A94AC09002F4695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		E58080E32A94AC09002F4695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		E58080E42A94AC09002F4695 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		EE18912ED02A44FFAFF4E8F2 /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47CDAFD8C61C4CB198115334 /* SpaceGrotesk-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnappTests.m; sourceTree = "<group>"; };
 		04C8FC112013875A198C7155 /* Pods-common-rnapp-production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-rnapp-production.release.xcconfig"; path = "Target Support Files/Pods-common-rnapp-production/Pods-common-rnapp-production.release.xcconfig"; sourceTree = "<group>"; };
+		11224F61177F449BAA1F96A4 /* SpaceGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-SemiBold.ttf"; path = "../src/assets/fonts/SpaceGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* rnapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = rnapp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -42,10 +48,12 @@
 		2FCA297EF77894D9B0878F9A /* Pods-common-rnapp-production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-rnapp-production.debug.xcconfig"; path = "Target Support Files/Pods-common-rnapp-production/Pods-common-rnapp-production.debug.xcconfig"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp.debug.xcconfig"; path = "Target Support Files/Pods-rnapp/Pods-rnapp.debug.xcconfig"; sourceTree = "<group>"; };
 		46AD042F0BF2F87C46E37D6E /* libPods-common-rnapp-staging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-common-rnapp-staging.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CDAFD8C61C4CB198115334 /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Regular.ttf"; path = "../src/assets/fonts/SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp.release.xcconfig"; path = "Target Support Files/Pods-rnapp/Pods-rnapp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnapp-rnappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp-rnappTests.debug.xcconfig"; path = "Target Support Files/Pods-rnapp-rnappTests/Pods-rnapp-rnappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E64B2FB0ACBF9DC503F9A90 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-common-rnapp-staging/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8827D4C44F674841B17CDD4F /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Medium.ttf"; path = "../src/assets/fonts/SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnapp-rnappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp-rnappTests.release.xcconfig"; path = "Target Support Files/Pods-rnapp-rnappTests/Pods-rnapp-rnappTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E3689D322ED8FFA9B83137E /* libPods-common-rnapp-dev.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-common-rnapp-dev.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		974DEE630724EC7B6B56F0CF /* Pods-common-rnapp-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-rnapp-dev.release.xcconfig"; path = "Target Support Files/Pods-common-rnapp-dev/Pods-common-rnapp-dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,8 +61,10 @@
 		B278C992105ECEABED1718A6 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-common-rnapp-dev/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		B58AB7BD95302D1D70B9C243 /* Pods-common-rnapp-staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-rnapp-staging.debug.xcconfig"; path = "Target Support Files/Pods-common-rnapp-staging/Pods-common-rnapp-staging.debug.xcconfig"; sourceTree = "<group>"; };
 		C967DF2FA6847FCC852FBFC5 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-common-rnapp-production/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		DEB8156939F5455EA6737DAC /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Bold.ttf"; path = "../src/assets/fonts/SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
 		E58080D72A94ABF7002F4695 /* rnapp-staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rnapp-staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58080EB2A94AC09002F4695 /* rnapp-production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rnapp-production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0637D3897D42EF91E94E60 /* SpaceGrotesk-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SpaceGrotesk-Light.ttf"; path = "../src/assets/fonts/SpaceGrotesk-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FD2F7FA8EBDC4F435B3CAEAE /* Pods-common-rnapp-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-common-rnapp-dev.debug.xcconfig"; path = "Target Support Files/Pods-common-rnapp-dev/Pods-common-rnapp-dev.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +112,19 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E065B4138184B348CD0B3DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEB8156939F5455EA6737DAC /* SpaceGrotesk-Bold.ttf */,
+				EA0637D3897D42EF91E94E60 /* SpaceGrotesk-Light.ttf */,
+				8827D4C44F674841B17CDD4F /* SpaceGrotesk-Medium.ttf */,
+				47CDAFD8C61C4CB198115334 /* SpaceGrotesk-Regular.ttf */,
+				11224F61177F449BAA1F96A4 /* SpaceGrotesk-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* rnapp */ = {
@@ -162,6 +185,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
 				E4F42C7FE011A68D3A0AF8F0 /* ExpoModulesProviders */,
+				0E065B4138184B348CD0B3DC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -322,6 +346,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6225950A8E4F489A875608C9 /* SpaceGrotesk-Bold.ttf in Resources */,
+				8E102FAE3F8149869C42355F /* SpaceGrotesk-Light.ttf in Resources */,
+				49A5DE5510CF4ED4BECAB43C /* SpaceGrotesk-Medium.ttf in Resources */,
+				EE18912ED02A44FFAFF4E8F2 /* SpaceGrotesk-Regular.ttf in Resources */,
+				62ED44F6550748519DA3B18C /* SpaceGrotesk-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
