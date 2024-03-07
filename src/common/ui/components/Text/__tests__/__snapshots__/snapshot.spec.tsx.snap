@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Body17 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 17,
+        "letterSpacing": -0.41,
+        "lineHeight": 22,
+        "textAlign": "right",
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="body17"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Body17SemiBold story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskSemiBold",
+        "fontSize": 17,
+        "letterSpacing": -0.41,
+        "lineHeight": 22,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="body17-semibold"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Body20 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 20,
+        "letterSpacing": 0.38,
+        "lineHeight": 25,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="body20"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Body20Bold story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 20,
+        "letterSpacing": 0.38,
+        "lineHeight": 25,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="body20-bold"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Caption11 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 11,
+        "letterSpacing": 0.07,
+        "lineHeight": 13,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="caption11"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Caption13 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 13,
+        "letterSpacing": -0.08,
+        "lineHeight": 18,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="caption13"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Headline1 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 40,
+        "letterSpacing": 0.41,
+        "lineHeight": 48,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="headline1"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Headline2 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 28,
+        "letterSpacing": 0.34,
+        "lineHeight": 34,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="headline2"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Headline3 story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 22,
+        "letterSpacing": 0.35,
+        "lineHeight": 28,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="headline3"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Headline3Bold story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 22,
+        "letterSpacing": 0.35,
+        "lineHeight": 28,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="headline3-bold"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders LargeTitle story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskBold",
+        "fontSize": 34,
+        "letterSpacing": 0.41,
+        "lineHeight": 41,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="large-title"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Tagline11Tag story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskSemiBold",
+        "fontSize": 11,
+        "letterSpacing": 0.07,
+        "lineHeight": 13,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="tagline11-tag"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Tagline13Tag story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskSemiBold",
+        "fontSize": 13,
+        "letterSpacing": -0.08,
+        "lineHeight": 18,
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="tagline13-tag"
+>
+  Lorem ipsum dolor
+</Text>
+`;
+
+exports[`renders Tagline15Tag story 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#081F32",
+        "fontFamily": "SpaceGroteskSemiBold",
+        "fontSize": 15,
+        "letterSpacing": -0.24,
+        "lineHeight": 20,
+        "textAlign": "center",
+      },
+      {},
+      undefined,
+    ]
+  }
+  testID="text"
+  variant="tagline15-tag"
+>
+  Lorem ipsum dolor
+</Text>
+`;

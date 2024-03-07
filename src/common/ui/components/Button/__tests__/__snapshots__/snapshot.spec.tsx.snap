@@ -5,7 +5,7 @@ exports[`renders Primary story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "",
         "borderRadius": 16,
       },
     ]
@@ -58,8 +58,10 @@ exports[`renders Primary story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "SpaceGroteskBold",
           },
+          {},
           [
             {
               "color": "#FFFFFF",
@@ -80,7 +82,7 @@ exports[`renders PrimaryLoading story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "",
         "borderRadius": 16,
       },
     ]
@@ -133,8 +135,10 @@ exports[`renders PrimaryLoading story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "SpaceGroteskBold",
           },
+          {},
           [
             {
               "color": "#FFFFFF",
@@ -155,7 +159,7 @@ exports[`renders Secondary story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "",
         "borderRadius": 16,
       },
     ]
@@ -208,11 +212,13 @@ exports[`renders Secondary story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "SpaceGroteskBold",
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "#081F32",
             },
           ],
         ]
@@ -230,7 +236,7 @@ exports[`renders SecondaryLoading story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "",
         "borderRadius": 16,
       },
     ]
@@ -283,11 +289,13 @@ exports[`renders SecondaryLoading story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "SpaceGroteskBold",
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "#081F32",
             },
           ],
         ]

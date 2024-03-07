@@ -92,7 +92,7 @@ const fontFamilyByVariant: FontDescriptor[] = [
       'body20-bold',
       'large-title',
     ],
-    family: 'SpaceGrotesk-Bold',
+    family: 'Roboto-Bold',
   },
   {
     variants: [
@@ -102,19 +102,27 @@ const fontFamilyByVariant: FontDescriptor[] = [
       'tagline13-tag',
       'tagline11-tag',
     ],
-    family: 'SpaceGrotesk-SemiBold',
+    family: 'Roboto-Medium',
   },
   {
     variants: ['headline3', 'body20', 'body17', 'caption13', 'caption11'],
-    family: 'SpaceGrotesk-Bold',
+    family: 'Roboto-Regular',
   },
 ];
 
-export const getTextStyle = (variant: Variant) => css`
-  ${variantStyles[variant]};
-  font-family: ${fontFamilyByVariant.find(it => it.variants.includes(variant))
-    ?.family ?? 'SpaceGrotesk-Bold'};
-`;
+export const getTextStyle = (variant: Variant) => {
+  const style = variantStyles[variant];
+  const fontFamily =
+    fontFamilyByVariant.find(it => it.variants.includes(variant))?.family ??
+    'SpaceGroteskBold';
+
+  return style
+    ? css`
+        ${style};
+        font-family: ${fontFamily};
+      `
+    : css``;
+};
 
 export const Text = styled(BaseText)<Props>`
   color: ${({theme}) => theme.colors.black};
