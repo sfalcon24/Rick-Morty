@@ -1,32 +1,14 @@
-import styled, {css} from 'styled-components/native';
+import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
-import theme from 'common/ui/theme';
 import {RectButton} from 'react-native-gesture-handler';
-import {getTextStyle} from '../Text/styles';
+import {BACKGROUND_COLOR, TEXT_COLOR, WIDTH} from './constants';
 import type {ContainerProps, TitleProps} from './types';
 
 export const Container = styled.View<ContainerProps>`
-  background-color: ${({theme: {colors}, variant}) => {
-    if (variant === 'large-dark') {
-      return colors.black;
-    } else if (variant === 'large') {
-      return colors.adding;
-    } else {
-      return colors.indigo;
-    }
-  }};
-  border-width: ${({variant}) => (variant === 'large-dark' ? '2px' : '0px')};
-  border-color: ${({theme: {colors}, variant}) => {
-    if (variant === 'large-dark') {
-      return colors.adding;
-    }
-  }};
-  width: ${({variant}) =>
-    variant === 'large-dark' || variant === 'large'
-      ? '323px'
-      : variant === 'small'
-      ? '66px'
-      : '42px'};
+  background-color: ${({variant}) => BACKGROUND_COLOR[variant]};
+  border-width: ${({variant}) => (variant === 'large-dark' ? 2 : 0)}px;
+  border-color: ${({theme}) => theme.colors.adding};
+  width: ${({variant}) => WIDTH[variant]}px;
   height: ${({variant}) =>
     variant === 'large-dark' || variant === 'large'
       ? '50px'
@@ -45,7 +27,7 @@ export const Container = styled.View<ContainerProps>`
       : variant === 'small'
       ? '8px'
       : '0px'};
-  gap: ${({variant}) => (variant === 'small' ? '10px' : '0px')};
+  gap: ${({variant}) => (variant === 'small' ? 10 : 0)}px;
   padding: ${({variant}) => (variant === 'small' ? '0px 12px' : '0px')};
   border-radius: 16px;
 `;
@@ -57,22 +39,8 @@ export const Pressable = styled(RectButton)`
   justify-content: center;
 `;
 
-export const Title = styled(Text)<TitleProps>`
-  ${({buttonVariant}) => {
-    if (buttonVariant === 'large-dark') {
-      return css`
-        ${getTextStyle('body17-semibold')};
-        color: ${theme.colors.adding};
-      `;
-    } else if (buttonVariant === 'large') {
-      return css`
-        ${getTextStyle('body17-semibold')};
-      `;
-    } else {
-      return css`
-        ${getTextStyle('tagline13-tag')};
-        color: ${theme.colors.white};
-      `;
-    }
-  }};
+export const Title = styled(Text).attrs<TitleProps>(({buttonVariant}) => ({
+  variant: buttonVariant === 'small' ? 'tagline13-tag' : 'body17-semibold',
+}))<TitleProps>`
+  color: ${({buttonVariant}) => TEXT_COLOR[buttonVariant]};
 `;
