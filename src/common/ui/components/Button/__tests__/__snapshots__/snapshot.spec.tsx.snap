@@ -5,12 +5,16 @@ exports[`renders Primary story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "#081F32",
+        "borderColor": "#34C759",
         "borderRadius": 16,
+        "borderWidth": 2,
+        "height": 50,
+        "width": 323,
       },
     ]
   }
-  variant="primary"
+  variant="large-dark"
 >
   <RNGestureHandlerButton
     activeOpacity={0.105}
@@ -29,7 +33,7 @@ exports[`renders Primary story 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "height": 48,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -55,43 +59,53 @@ exports[`renders Primary story 1`] = `
       }
     />
     <Text
+      buttonVariant="large-dark"
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
           },
+          {},
           [
             {
-              "color": "#FFFFFF",
+              "color": "#34C759",
             },
           ],
         ]
       }
-      variant="primary"
+      variant="body17-semibold"
     >
-      Primary
+      GET THE INSTRUCTIONS
     </Text>
   </RNGestureHandlerButton>
 </View>
 `;
 
-exports[`renders PrimaryLoading story 1`] = `
+exports[`renders Secondary story 1`] = `
 <View
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "#34C759",
+        "borderColor": "#34C759",
         "borderRadius": 16,
+        "borderWidth": 0,
+        "height": 50,
+        "width": 323,
       },
     ]
   }
-  variant="primary"
+  variant="large"
 >
   <RNGestureHandlerButton
     activeOpacity={0.105}
     collapsable={false}
     delayLongPress={600}
-    enabled={false}
+    enabled={true}
     handlerTag={2}
     handlerType="NativeViewGestureHandler"
     onActiveStateChange={[Function]}
@@ -104,7 +118,7 @@ exports[`renders PrimaryLoading story 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "height": 48,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -130,37 +144,47 @@ exports[`renders PrimaryLoading story 1`] = `
       }
     />
     <Text
+      buttonVariant="large"
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
           },
+          {},
           [
             {
-              "color": "#FFFFFF",
+              "color": "#081F32",
             },
           ],
         ]
       }
-      variant="primary"
+      variant="body17-semibold"
     >
-      Primary loading
+      START PROTOTYPE
     </Text>
   </RNGestureHandlerButton>
 </View>
 `;
 
-exports[`renders Secondary story 1`] = `
+exports[`renders Simple story 1`] = `
 <View
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "#34C759",
         "borderRadius": 16,
+        "borderWidth": 0,
+        "height": 22,
+        "width": 42,
       },
     ]
   }
-  variant="secondary"
+  variant="simple"
 >
   <RNGestureHandlerButton
     activeOpacity={0.105}
@@ -179,7 +203,7 @@ exports[`renders Secondary story 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "height": 48,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -205,43 +229,53 @@ exports[`renders Secondary story 1`] = `
       }
     />
     <Text
+      buttonVariant="simple"
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "#5856D6",
             },
           ],
         ]
       }
-      variant="secondary"
+      variant="body17-semibold"
     >
-      Secondary
+      Filter
     </Text>
   </RNGestureHandlerButton>
 </View>
 `;
 
-exports[`renders SecondaryLoading story 1`] = `
+exports[`renders Small story 1`] = `
 <View
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "#5856D6",
+        "borderColor": "#34C759",
         "borderRadius": 16,
+        "borderWidth": 0,
+        "height": 28,
+        "width": 66,
       },
     ]
   }
-  variant="secondary"
+  variant="small"
 >
   <RNGestureHandlerButton
     activeOpacity={0.105}
     collapsable={false}
     delayLongPress={600}
-    enabled={false}
+    enabled={true}
     handlerTag={4}
     handlerType="NativeViewGestureHandler"
     onActiveStateChange={[Function]}
@@ -254,7 +288,7 @@ exports[`renders SecondaryLoading story 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "height": 48,
+        "height": 50,
         "justifyContent": "center",
       }
     }
@@ -280,21 +314,27 @@ exports[`renders SecondaryLoading story 1`] = `
       }
     />
     <Text
+      buttonVariant="small"
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 13,
+            "letterSpacing": -0.08,
+            "lineHeight": 18,
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "#FFFFFF",
             },
           ],
         ]
       }
-      variant="secondary"
+      variant="tagline13-tag"
     >
-      Secondary loading
+      APPLY
     </Text>
   </RNGestureHandlerButton>
 </View>

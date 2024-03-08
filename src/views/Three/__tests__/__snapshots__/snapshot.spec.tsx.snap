@@ -28,15 +28,19 @@ exports[`renders ScreenTabBase story 1`] = `
     style={
       [
         {
-          "backgroundColor": "#0000FF",
+          "backgroundColor": "#34C759",
+          "borderColor": "#34C759",
           "borderRadius": 16,
+          "borderWidth": 0,
+          "height": 50,
+          "width": 323,
         },
         {
           "marginTop": 20,
         },
       ]
     }
-    variant="primary"
+    variant="large"
   >
     <RNGestureHandlerButton
       activeOpacity={0.105}
@@ -55,7 +59,7 @@ exports[`renders ScreenTabBase story 1`] = `
         {
           "alignItems": "center",
           "borderRadius": 16,
-          "height": 48,
+          "height": 50,
           "justifyContent": "center",
         }
       }
@@ -82,19 +86,25 @@ exports[`renders ScreenTabBase story 1`] = `
         }
       />
       <Text
+        buttonVariant="large"
         style={
           [
             {
-              "fontFamily": undefined,
+              "color": "#081F32",
+              "fontFamily": "Roboto-Medium",
+              "fontSize": 17,
+              "letterSpacing": -0.41,
+              "lineHeight": 22,
             },
+            {},
             [
               {
-                "color": "#FFFFFF",
+                "color": "#081F32",
               },
             ],
           ]
         }
-        variant="primary"
+        variant="body17-semibold"
       >
         Fake logout
       </Text>
