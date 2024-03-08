@@ -15,7 +15,6 @@ export const Container = styled.View`
 export const ImageCard = styled.View`
   width: 163px;
   height: 140px;
-  border-width: 2px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 `;
