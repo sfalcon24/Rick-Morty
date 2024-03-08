@@ -114,7 +114,7 @@ export const getTextStyle = (variant: Variant) => {
   const style = variantStyles[variant];
   const fontFamily =
     fontFamilyByVariant.find(it => it.variants.includes(variant))?.family ??
-    'SpaceGroteskBold';
+    'Roboto-Regular';
 
   return style
     ? css`

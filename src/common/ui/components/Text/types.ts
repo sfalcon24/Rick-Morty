@@ -1,6 +1,6 @@
 import type {TextProps} from 'react-native';
 
-export type Fonts = 'Roboto-Bold' | 'Roboto-Medium' | 'Roboto-Light';
+export type Fonts = 'Roboto-Bold' | 'Roboto-Medium' | 'Roboto-Regular';
 
 export type Variant =
   | 'headline1'
