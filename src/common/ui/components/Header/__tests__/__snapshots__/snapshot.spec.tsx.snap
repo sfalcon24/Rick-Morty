@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Default story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "#F2F2F7",
+        "flexDirection": "row",
+        "height": 44,
+        "justifyContent": "space-between",
+        "paddingLeft": 10,
+        "paddingRight": 15,
+        "width": "100%",
+      },
+    ]
+  }
+  variantContainer="default"
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
+        },
+        {},
+        [
+          {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 15,
+            "letterSpacing": -0.24,
+            "lineHeight": 20,
+            "textAlign": "center",
+          },
+        ],
+      ]
+    }
+    textVariant="default"
+    variant="body20"
+  >
+    Title
+  </Text>
+</View>
+`;

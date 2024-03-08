@@ -1,40 +1,42 @@
+import React from 'react';
+import type {ComponentMeta, Story} from '@storybook/react-native';
 import {action} from '@storybook/addon-actions';
+import type {Props} from './types';
 import Button from '.';
 
 export default {
   title: 'Button',
   component: Button,
+} as ComponentMeta<typeof Button>;
+
+type Args = Props;
+
+const Template: Story<Args> = args => <Button {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  variant: 'large-dark',
+  title: 'GET THE INSTRUCTIONS',
+  onPress: action('onPress'),
 };
 
-export const Primary = () => (
-  <Button
-    variant="large-dark"
-    title="GET THE INSTRUCTIONS"
-    onPress={action('onPress')}
-  />
-);
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: 'large',
+  title: 'START PROTOTYPE',
+  onPress: action('onPress'),
+};
 
-// export const PrimaryLoading = () => (
-//   <Button
-//     variant="primary"
-//     title="Primary loading"
-//     onPress={action('onPress')}
-//     loading
-//   />
-// );
+export const Small = Template.bind({});
+Small.args = {
+  variant: 'small',
+  title: 'APPLY',
+  onPress: action('onPress'),
+};
 
-export const Secondary = () => (
-  <Button variant="large" title="START PROTOTYPE" onPress={action('onPress')} />
-);
-
-export const Small = () => (
-  <Button variant="small" title="APPLY" onPress={action('onPress')} />
-);
-// export const SecondaryLoading = () => (
-//   <Button
-//     variant="secondary"
-//     title="Secondary loading"
-//     onPress={action('onPress')}
-//     loading
-//   />
-// );
+export const Simple = Template.bind({});
+Simple.args = {
+  variant: 'simple',
+  title: 'Filter',
+  onPress: action('onPress'),
+};

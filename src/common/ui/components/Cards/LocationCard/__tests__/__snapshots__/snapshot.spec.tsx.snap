@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Card2 story 1`] = `
+<View
+  style={
+    [
+      {
+        "borderColor": "#E5E5EA",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 80,
+        "marginLeft": 9,
+        "marginTop": 9,
+        "width": 163,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
+        },
+        {},
+        [
+          {
+            "color": "#8E8E93",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 11,
+            "letterSpacing": 0.07,
+            "lineHeight": 13,
+            "marginLeft": 10,
+            "marginTop": 10,
+          },
+        ],
+      ]
+    }
+    variant="body20"
+  >
+    Status
+  </Text>
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
+        },
+        {},
+        [
+          {
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
+            "marginLeft": 10,
+            "marginTop": 3,
+          },
+        ],
+      ]
+    }
+    variant="body20"
+  >
+    Planet Blue
+  </Text>
+</View>
+`;

@@ -1,8 +1,8 @@
-import TvIcon from './TvIcon';
+import GhostIcon from './GhostIcon';
 
 export default {
   title: 'Icons',
-  component: TvIcon,
+  component: GhostIcon,
 };
 
-export const Icon = () => <TvIcon />;
+export const Icon = () => <GhostIcon />;

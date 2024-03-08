@@ -5,7 +5,7 @@ import Svg, {Path} from 'react-native-svg';
 import {colors} from '../../theme/colors';
 import type {IconProps} from './types';
 
-const PlanetIcon: FC<IconProps> = ({size = 28, color = colors.gray1}) => (
+const PlanetIcon: FC<IconProps> = ({size = 28, color = colors.indigo}) => (
   <Svg width={size} height={size} viewBox="0 0 28 28" fill="none">
     <Path
       d="M19.5 14.5L21.7019 15.8155C24.768 18.2759 26.4732 20.4508 25.8847 21.469C24.955 23.0758 18.6567 21.1836 11.8172 17.2425C4.97768 13.3014 0.186078 8.80411 1.11523 7.19789C1.69647 6.19373 4.37456 6.55623 7.97139 7.93173C8.81426 8.28781 10.6 9.09998 11 9.49998"

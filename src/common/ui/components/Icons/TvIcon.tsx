@@ -5,7 +5,7 @@ import {colors} from 'common/ui/theme/colors';
 import Svg, {Path} from 'react-native-svg';
 import type {IconProps} from './types';
 
-const TvIcon: FC<IconProps> = ({size = 28, color = colors.gray1}) => (
+const TvIcon: FC<IconProps> = ({size = 28, color = colors.indigo}) => (
   <Svg width={size} height={size} viewBox="0 0 28 28" fill="none">
     <Path
       d="M22 9.00003H6C4.89543 9.00003 4 9.89546 4 11V22C4 23.1046 4.89543 24 6 24H22C23.1045 24 24 23.1046 24 22V11C24 9.89546 23.1045 9.00003 22 9.00003Z"
