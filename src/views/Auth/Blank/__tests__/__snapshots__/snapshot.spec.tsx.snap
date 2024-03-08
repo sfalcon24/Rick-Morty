@@ -29,17 +29,10 @@ exports[`renders ScreenAuthBase story 1`] = `
       [
         {
           "backgroundColor": "#34C759",
-          "borderColor": "",
+          "borderColor": "#34C759",
           "borderRadius": 16,
           "borderWidth": 0,
-          "gap": 0,
           "height": 50,
-          "left": 26,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "top": 100,
           "width": 323,
         },
         {
@@ -66,7 +59,7 @@ exports[`renders ScreenAuthBase story 1`] = `
         {
           "alignItems": "center",
           "borderRadius": 16,
-          "height": 48,
+          "height": 50,
           "justifyContent": "center",
         }
       }
@@ -98,20 +91,20 @@ exports[`renders ScreenAuthBase story 1`] = `
           [
             {
               "color": "#081F32",
+              "fontFamily": "Roboto-Medium",
+              "fontSize": 17,
+              "letterSpacing": -0.41,
+              "lineHeight": 22,
             },
-            {
-              "fontFamily": undefined,
-            },
+            {},
             [
               {
-                "fontSize": 17,
-                "fontWeight": "600",
-                "letterSpacing": -0.41,
-                "lineHeight": 22,
+                "color": "#081F32",
               },
             ],
           ]
         }
+        variant="body17-semibold"
       >
         Fake login
       </Text>

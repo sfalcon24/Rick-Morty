@@ -1,75 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Body15SemiBold story 1`] = `
-<Text
-  style={
-    [
-      {
-        "color": "#081F32",
-        "fontSize": 15,
-        "fontWeight": "600",
-        "letterSpacing": -0.24,
-        "lineHeight": 20,
-      },
-      {
-        "fontFamily": undefined,
-      },
-      undefined,
-    ]
-  }
-  testID="text"
-  variant="body15-semibold"
->
-  Prueba
-</Text>
-`;
-
 exports[`renders Body17 story 1`] = `
 <Text
   style={
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 17,
-        "fontWeight": "400",
         "letterSpacing": -0.41,
         "lineHeight": 22,
         "textAlign": "right",
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="body17"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
-exports[`renders Body17Semibold story 1`] = `
+exports[`renders Body17SemiBold story 1`] = `
 <Text
   style={
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 17,
-        "fontWeight": "600",
         "letterSpacing": -0.41,
         "lineHeight": 22,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="body17-semibold"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -79,21 +51,19 @@ exports[`renders Body20 story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 20,
-        "fontWeight": "400",
         "letterSpacing": 0.38,
         "lineHeight": 25,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="body20"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -103,21 +73,19 @@ exports[`renders Body20Bold story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 20,
-        "fontWeight": "700",
         "letterSpacing": 0.38,
         "lineHeight": 25,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="body20-bold"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -127,21 +95,19 @@ exports[`renders Caption11 story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 11,
-        "fontWeight": "400",
         "letterSpacing": 0.07,
         "lineHeight": 13,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="caption11"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -151,21 +117,19 @@ exports[`renders Caption13 story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 13,
-        "fontWeight": "400",
         "letterSpacing": -0.08,
         "lineHeight": 18,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="caption13"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -175,22 +139,19 @@ exports[`renders Headline1 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "CabinetGrotesk-Medium",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 40,
-        "fontWeight": "700",
         "letterSpacing": 0.41,
         "lineHeight": 48,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="headline1"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -200,21 +161,19 @@ exports[`renders Headline2 story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 28,
-        "fontWeight": "700",
         "letterSpacing": 0.34,
         "lineHeight": 34,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="headline2"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -224,21 +183,19 @@ exports[`renders Headline3 story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 22,
-        "fontWeight": "400",
         "letterSpacing": 0.35,
         "lineHeight": 28,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="headline3"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -248,21 +205,19 @@ exports[`renders Headline3Bold story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 22,
-        "fontWeight": "700",
         "letterSpacing": 0.35,
         "lineHeight": 28,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="headline3-bold"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -272,21 +227,19 @@ exports[`renders LargeTitle story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 34,
-        "fontWeight": "700",
         "letterSpacing": 0.41,
         "lineHeight": 41,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="large-title"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -296,21 +249,19 @@ exports[`renders Tagline11Tag story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 11,
-        "fontWeight": "600",
         "letterSpacing": 0.07,
         "lineHeight": 13,
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="tagline11-tag"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -319,24 +270,20 @@ exports[`renders Tagline13Tag story 1`] = `
   style={
     [
       {
-        "color": "#5856D6",
+        "color": "#081F32",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 13,
-        "fontWeight": "600",
         "letterSpacing": -0.08,
         "lineHeight": 18,
-        "marginTop": -20,
-        "textAlign": "center",
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="tagline13-tag"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;
 
@@ -346,21 +293,19 @@ exports[`renders Tagline15Tag story 1`] = `
     [
       {
         "color": "#081F32",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 15,
-        "fontWeight": "600",
         "letterSpacing": -0.24,
         "lineHeight": 20,
         "textAlign": "center",
       },
-      {
-        "fontFamily": undefined,
-      },
+      {},
       undefined,
     ]
   }
   testID="text"
   variant="tagline15-tag"
 >
-  Prueba
+  Lorem ipsum dolor
 </Text>
 `;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Card story 1`] = `
+exports[`renders Card1 story 1`] = `
 <View
   style={
     [
@@ -22,7 +22,6 @@ exports[`renders Card story 1`] = `
         {
           "borderTopLeftRadius": 8,
           "borderTopRightRadius": 8,
-          "borderWidth": 2,
           "height": 140,
           "width": 163,
         },
@@ -34,15 +33,17 @@ exports[`renders Card story 1`] = `
       [
         {
           "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
         },
-        {
-          "fontFamily": undefined,
-        },
+        {},
         [
           {
             "color": "#8E8E93",
+            "fontFamily": "Roboto-Regular",
             "fontSize": 11,
-            "fontWeight": "400",
             "letterSpacing": 0.07,
             "lineHeight": 13,
             "marginLeft": 10,
@@ -51,6 +52,7 @@ exports[`renders Card story 1`] = `
         ],
       ]
     }
+    variant="body20"
   >
     Status
   </Text>
@@ -59,14 +61,16 @@ exports[`renders Card story 1`] = `
       [
         {
           "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
         },
-        {
-          "fontFamily": undefined,
-        },
+        {},
         [
           {
+            "fontFamily": "Roboto-Medium",
             "fontSize": 17,
-            "fontWeight": "600",
             "letterSpacing": -0.41,
             "lineHeight": 22,
             "marginLeft": 10,
@@ -75,6 +79,7 @@ exports[`renders Card story 1`] = `
         ],
       ]
     }
+    variant="body20"
   >
     Pepperoni Pizza
   </Text>
