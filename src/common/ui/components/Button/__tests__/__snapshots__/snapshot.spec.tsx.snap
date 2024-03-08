@@ -59,7 +59,6 @@ exports[`renders Primary story 1`] = `
         [
           {
             "color": "#081F32",
-            "fontFamily": "SpaceGroteskBold",
           },
           {},
           [
@@ -136,7 +135,6 @@ exports[`renders PrimaryLoading story 1`] = `
         [
           {
             "color": "#081F32",
-            "fontFamily": "SpaceGroteskBold",
           },
           {},
           [
@@ -213,7 +211,6 @@ exports[`renders Secondary story 1`] = `
         [
           {
             "color": "#081F32",
-            "fontFamily": "SpaceGroteskBold",
           },
           {},
           [
@@ -290,7 +287,6 @@ exports[`renders SecondaryLoading story 1`] = `
         [
           {
             "color": "#081F32",
-            "fontFamily": "SpaceGroteskBold",
           },
           {},
           [

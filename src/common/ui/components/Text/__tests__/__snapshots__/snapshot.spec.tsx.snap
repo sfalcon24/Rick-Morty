@@ -6,7 +6,7 @@ exports[`renders Body17 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 17,
         "letterSpacing": -0.41,
         "lineHeight": 22,
@@ -29,7 +29,7 @@ exports[`renders Body17SemiBold story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskSemiBold",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 17,
         "letterSpacing": -0.41,
         "lineHeight": 22,
@@ -51,7 +51,7 @@ exports[`renders Body20 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 20,
         "letterSpacing": 0.38,
         "lineHeight": 25,
@@ -73,7 +73,7 @@ exports[`renders Body20Bold story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 20,
         "letterSpacing": 0.38,
         "lineHeight": 25,
@@ -95,7 +95,7 @@ exports[`renders Caption11 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 11,
         "letterSpacing": 0.07,
         "lineHeight": 13,
@@ -117,7 +117,7 @@ exports[`renders Caption13 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 13,
         "letterSpacing": -0.08,
         "lineHeight": 18,
@@ -139,7 +139,7 @@ exports[`renders Headline1 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 40,
         "letterSpacing": 0.41,
         "lineHeight": 48,
@@ -161,7 +161,7 @@ exports[`renders Headline2 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 28,
         "letterSpacing": 0.34,
         "lineHeight": 34,
@@ -183,7 +183,7 @@ exports[`renders Headline3 story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Regular",
         "fontSize": 22,
         "letterSpacing": 0.35,
         "lineHeight": 28,
@@ -205,7 +205,7 @@ exports[`renders Headline3Bold story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 22,
         "letterSpacing": 0.35,
         "lineHeight": 28,
@@ -227,7 +227,7 @@ exports[`renders LargeTitle story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskBold",
+        "fontFamily": "Roboto-Bold",
         "fontSize": 34,
         "letterSpacing": 0.41,
         "lineHeight": 41,
@@ -249,7 +249,7 @@ exports[`renders Tagline11Tag story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskSemiBold",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 11,
         "letterSpacing": 0.07,
         "lineHeight": 13,
@@ -271,7 +271,7 @@ exports[`renders Tagline13Tag story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskSemiBold",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 13,
         "letterSpacing": -0.08,
         "lineHeight": 18,
@@ -293,7 +293,7 @@ exports[`renders Tagline15Tag story 1`] = `
     [
       {
         "color": "#081F32",
-        "fontFamily": "SpaceGroteskSemiBold",
+        "fontFamily": "Roboto-Medium",
         "fontSize": 15,
         "letterSpacing": -0.24,
         "lineHeight": 20,

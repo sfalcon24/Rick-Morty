@@ -86,7 +86,6 @@ exports[`renders ScreenTabBase story 1`] = `
           [
             {
               "color": "#081F32",
-              "fontFamily": "SpaceGroteskBold",
             },
             {},
             [
