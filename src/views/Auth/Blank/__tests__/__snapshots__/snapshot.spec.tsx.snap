@@ -28,7 +28,7 @@ exports[`renders ScreenAuthBase story 1`] = `
     style={
       [
         {
-          "backgroundColor": "",
+          "backgroundColor": "#5856D6",
           "borderRadius": 16,
         },
         {
@@ -86,19 +86,21 @@ exports[`renders ScreenAuthBase story 1`] = `
           [
             {
               "color": "#081F32",
+              "fontFamily": "Roboto-Regular",
+              "fontSize": 20,
+              "letterSpacing": 0.38,
+              "lineHeight": 25,
             },
             {},
             [
               {
-                "color": "#FFFFFF",
+                "color": "",
               },
             ],
           ]
         }
-        variant="primary"
-      >
-        Fake login
-      </Text>
+        variant="body20"
+      />
     </RNGestureHandlerButton>
   </View>
 </View>

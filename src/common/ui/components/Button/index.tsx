@@ -9,7 +9,6 @@ const Button: FC<Props> = ({
   onPress,
   style,
   testID,
-  title,
   variant = 'primary',
 }) => (
   <Container style={style} variant={variant}>
@@ -17,7 +16,7 @@ const Button: FC<Props> = ({
       enabled={!loading && !!onPress}
       onPress={onPress}
       testID={testID}>
-      <Title variant={variant}>{title}</Title>
+      <Title />
     </Pressable>
   </Container>
 );
