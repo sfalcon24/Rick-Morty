@@ -17,10 +17,11 @@ export const Default = () => (
   />
 );
 
-// export const Large = () =>
-//   <Header
-//     variant="large"
-//     title="Title"
-//     onPressRight={action('onPressRight')}
-//     rightButton='small'
-//   />;
+export const Large = () => (
+  <Header
+    variant="large"
+    title="Title"
+    onPressRight={action('onPressRight')}
+    rightButton="simple"
+  />
+);

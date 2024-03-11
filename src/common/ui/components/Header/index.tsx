@@ -1,40 +1,36 @@
 import type {FC} from 'react';
 import {memo} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {
-  Container,
-  Title,
-  // LeftAction,
-  // RightAction
-} from './styles';
+import Button from '../Button';
+import StatusBar from '../StatusBar';
+import {Container, Title, LeftAction, RightAction} from './styles';
 import type {Props} from './types';
-// import StatusBar from '../StatusBar';
-// import Button from '../Button';
 
 const Header: FC<Props> = ({
   title,
   style,
   variant = 'default',
-  //   leftIcon,
-  //   rightButton,
-  //   leftButton,
-  //   onPressLeft,
-  //   onPressRight,
+  rightButton,
+  leftButton,
+  onPressLeft,
+  onPressRight,
 }) => (
   <SafeAreaProvider>
     <Container style={style} variantContainer={variant}>
-      {/* <StatusBar /> */}
-      {/* <LeftAction>
-        {leftButton && (
-          <Button variant={leftButton} title="APPLY" onPress={onPressLeft} />
-        )}
-      </LeftAction> */}
+      {<StatusBar />}
+      {
+        <LeftAction actionVariant={variant}>
+          {leftButton && (
+            <Button variant={leftButton} title="APPLY" onPress={onPressLeft} />
+          )}
+        </LeftAction>
+      }
       <Title textVariant={variant}>{title}</Title>
-      {/* <RightAction>
+      <RightAction actionVariant={variant}>
         {rightButton && (
-          <Button variant={rightButton} title="APPLY" onPress={onPressRight} />
+          <Button variant={rightButton} title="Filter" onPress={onPressRight} />
         )}
-      </RightAction> */}
+      </RightAction>
     </Container>
   </SafeAreaProvider>
 );
