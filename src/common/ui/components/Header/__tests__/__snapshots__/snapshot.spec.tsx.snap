@@ -18,6 +18,99 @@ exports[`renders Default story 1`] = `
   }
   variantContainer="default"
 >
+  <View
+    actionVariant="default"
+    style={
+      [
+        {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#5856D6",
+            "borderColor": "#34C759",
+            "borderRadius": 16,
+            "borderWidth": 0,
+            "height": 28,
+            "width": 66,
+          },
+        ]
+      }
+      variant="small"
+    >
+      <RNGestureHandlerButton
+        activeOpacity={0.105}
+        collapsable={false}
+        delayLongPress={600}
+        enabled={true}
+        handlerTag={1}
+        handlerType="NativeViewGestureHandler"
+        onActiveStateChange={[Function]}
+        onGestureEvent={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onHandlerStateChange={[Function]}
+        onPress={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 16,
+            "height": 50,
+            "justifyContent": "center",
+          }
+        }
+        underlayColor="black"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "black",
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderRadius": 16,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <Text
+          buttonVariant="small"
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 13,
+                "letterSpacing": -0.08,
+                "lineHeight": 18,
+              },
+              {},
+              [
+                {
+                  "color": "#FFFFFF",
+                },
+              ],
+            ]
+          }
+          variant="tagline13-tag"
+        >
+          APPLY
+        </Text>
+      </RNGestureHandlerButton>
+    </View>
+  </View>
   <Text
     style={
       [
@@ -35,10 +128,8 @@ exports[`renders Default story 1`] = `
             "flexBasis": 0,
             "flexGrow": 1,
             "flexShrink": 1,
-            "fontFamily": "Roboto-Medium",
-            "fontSize": 15,
-            "letterSpacing": -0.24,
-            "lineHeight": 20,
+            "marginBottom": 0,
+            "marginLeft": 0,
             "textAlign": "center",
           },
         ],
@@ -46,8 +137,258 @@ exports[`renders Default story 1`] = `
     }
     textVariant="default"
     variant="body20"
+    variantContainer="body15-semibold"
   >
     Title
   </Text>
+  <View
+    actionVariant="default"
+    style={
+      [
+        {
+          "alignItems": "flex-end",
+          "marginBottom": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#5856D6",
+            "borderColor": "#34C759",
+            "borderRadius": 16,
+            "borderWidth": 0,
+            "height": 28,
+            "width": 66,
+          },
+        ]
+      }
+      variant="small"
+    >
+      <RNGestureHandlerButton
+        activeOpacity={0.105}
+        collapsable={false}
+        delayLongPress={600}
+        enabled={true}
+        handlerTag={2}
+        handlerType="NativeViewGestureHandler"
+        onActiveStateChange={[Function]}
+        onGestureEvent={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onHandlerStateChange={[Function]}
+        onPress={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 16,
+            "height": 50,
+            "justifyContent": "center",
+          }
+        }
+        underlayColor="black"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "black",
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderRadius": 16,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <Text
+          buttonVariant="small"
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 13,
+                "letterSpacing": -0.08,
+                "lineHeight": 18,
+              },
+              {},
+              [
+                {
+                  "color": "#FFFFFF",
+                },
+              ],
+            ]
+          }
+          variant="tagline13-tag"
+        >
+          Filter
+        </Text>
+      </RNGestureHandlerButton>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders Large story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "flex-end",
+        "backgroundColor": "#F2F2F7",
+        "flexDirection": "row",
+        "height": 96,
+        "justifyContent": "space-between",
+        "paddingLeft": 10,
+        "paddingRight": 15,
+        "width": "100%",
+      },
+    ]
+  }
+  variantContainer="large"
+>
+  <View
+    actionVariant="large"
+    style={
+      [
+        {
+          "alignItems": "flex-start",
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+          "fontFamily": "Roboto-Regular",
+          "fontSize": 20,
+          "letterSpacing": 0.38,
+          "lineHeight": 25,
+        },
+        {},
+        [
+          {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "marginBottom": 10,
+            "marginLeft": 5,
+            "textAlign": "left",
+          },
+        ],
+      ]
+    }
+    textVariant="large"
+    variant="body20"
+    variantContainer="large-title"
+  >
+    Title
+  </Text>
+  <View
+    actionVariant="large"
+    style={
+      [
+        {
+          "alignItems": "flex-end",
+          "marginBottom": 75,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderColor": "#34C759",
+            "borderRadius": 16,
+            "borderWidth": 0,
+            "height": 22,
+            "width": 42,
+          },
+        ]
+      }
+      variant="simple"
+    >
+      <RNGestureHandlerButton
+        activeOpacity={0.105}
+        collapsable={false}
+        delayLongPress={600}
+        enabled={true}
+        handlerTag={3}
+        handlerType="NativeViewGestureHandler"
+        onActiveStateChange={[Function]}
+        onGestureEvent={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onHandlerStateChange={[Function]}
+        onPress={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 16,
+            "height": 50,
+            "justifyContent": "center",
+          }
+        }
+        underlayColor="black"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "black",
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderRadius": 16,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <Text
+          buttonVariant="simple"
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 17,
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
+              },
+              {},
+              [
+                {
+                  "color": "#5856D6",
+                },
+              ],
+            ]
+          }
+          variant="body17-semibold"
+        >
+          Filter
+        </Text>
+      </RNGestureHandlerButton>
+    </View>
+  </View>
 </View>
 `;
