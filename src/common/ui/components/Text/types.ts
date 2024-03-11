@@ -1,10 +1,30 @@
-import type {ReactNode} from 'react';
 import type {TextProps} from 'react-native';
 
-// TODO: add more weights here if needed
-export type Fonts = '';
+export type Fonts = 'Roboto-Bold' | 'Roboto-Medium' | 'Roboto-Regular';
+
+export type Variant =
+  | 'headline1'
+  | 'headline2'
+  | 'headline3'
+  | 'headline3-bold'
+  | 'body20-bold'
+  | 'body20'
+  | 'body17-semibold'
+  | 'body17'
+  | 'body15-semibold'
+  | 'large-title'
+  | 'caption13'
+  | 'caption11'
+  | 'tagline15-tag'
+  | 'tagline13-tag'
+  | 'tagline11-tag';
 
 export type Props = {
   family?: Fonts;
-  children?: ReactNode;
+  variant?: Variant;
 } & TextProps;
+
+export type FontDescriptor = {
+  variants: Variant[];
+  family: Fonts;
+};

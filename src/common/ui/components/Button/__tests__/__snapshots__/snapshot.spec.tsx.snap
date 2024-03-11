@@ -5,7 +5,7 @@ exports[`renders Primary story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "#5856D6",
         "borderRadius": 16,
       },
     ]
@@ -58,19 +58,22 @@ exports[`renders Primary story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 20,
+            "letterSpacing": 0.38,
+            "lineHeight": 25,
           },
+          {},
           [
             {
-              "color": "#FFFFFF",
+              "color": "",
             },
           ],
         ]
       }
-      variant="primary"
-    >
-      Primary
-    </Text>
+      variant="body20"
+    />
   </RNGestureHandlerButton>
 </View>
 `;
@@ -80,7 +83,7 @@ exports[`renders PrimaryLoading story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#0000FF",
+        "backgroundColor": "#5856D6",
         "borderRadius": 16,
       },
     ]
@@ -133,19 +136,22 @@ exports[`renders PrimaryLoading story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 20,
+            "letterSpacing": 0.38,
+            "lineHeight": 25,
           },
+          {},
           [
             {
-              "color": "#FFFFFF",
+              "color": "",
             },
           ],
         ]
       }
-      variant="primary"
-    >
-      Primary loading
-    </Text>
+      variant="body20"
+    />
   </RNGestureHandlerButton>
 </View>
 `;
@@ -155,7 +161,7 @@ exports[`renders Secondary story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "#FF3B30",
         "borderRadius": 16,
       },
     ]
@@ -208,19 +214,22 @@ exports[`renders Secondary story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 20,
+            "letterSpacing": 0.38,
+            "lineHeight": 25,
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "",
             },
           ],
         ]
       }
-      variant="secondary"
-    >
-      Secondary
-    </Text>
+      variant="body20"
+    />
   </RNGestureHandlerButton>
 </View>
 `;
@@ -230,7 +239,7 @@ exports[`renders SecondaryLoading story 1`] = `
   style={
     [
       {
-        "backgroundColor": "#FFFF00",
+        "backgroundColor": "#FF3B30",
         "borderRadius": 16,
       },
     ]
@@ -283,19 +292,22 @@ exports[`renders SecondaryLoading story 1`] = `
       style={
         [
           {
-            "fontFamily": undefined,
+            "color": "#081F32",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 20,
+            "letterSpacing": 0.38,
+            "lineHeight": 25,
           },
+          {},
           [
             {
-              "color": "#000000",
+              "color": "",
             },
           ],
         ]
       }
-      variant="secondary"
-    >
-      Secondary loading
-    </Text>
+      variant="body20"
+    />
   </RNGestureHandlerButton>
 </View>
 `;

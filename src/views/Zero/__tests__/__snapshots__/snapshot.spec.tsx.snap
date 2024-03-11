@@ -28,7 +28,7 @@ exports[`renders ScreenTabBase story 1`] = `
     style={
       [
         {
-          "backgroundColor": "#0000FF",
+          "backgroundColor": "#5856D6",
           "borderRadius": 16,
         },
         {
@@ -85,19 +85,22 @@ exports[`renders ScreenTabBase story 1`] = `
         style={
           [
             {
-              "fontFamily": undefined,
+              "color": "#081F32",
+              "fontFamily": "Roboto-Regular",
+              "fontSize": 20,
+              "letterSpacing": 0.38,
+              "lineHeight": 25,
             },
+            {},
             [
               {
-                "color": "#FFFFFF",
+                "color": "",
               },
             ],
           ]
         }
-        variant="primary"
-      >
-        Fake logout
-      </Text>
+        variant="body20"
+      />
     </RNGestureHandlerButton>
   </View>
 </View>
