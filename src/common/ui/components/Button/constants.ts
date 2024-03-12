@@ -22,13 +22,6 @@ export const HEIGHT: Record<Variant, number> = {
   simple: 22,
 };
 
-export const HEIGHT_PRESSABLE: Record<Variant, number> = {
-  'large-dark': 50,
-  large: 50,
-  small: 28,
-  simple: 22,
-};
-
 export const TEXT_COLOR: Record<Variant, string> = {
   'large-dark': colors.adding,
   large: colors.black,
