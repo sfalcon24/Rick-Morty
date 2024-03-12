@@ -10,4 +10,9 @@ export const Container = styled.View`
 export const View = styled.View`
   padding-top: 66px;
   align-items: center;
+  justify-content: center;
+`;
+
+export const ButtonContainer = styled.View`
+  padding-top: 150px;
 `;
