@@ -55,6 +55,7 @@ const getStories = () => {
     "./src/common/ui/components/Header/index.stories.tsx": require("../src/common/ui/components/Header/index.stories.tsx"),
     "./src/common/ui/components/Icons/index.stories.tsx": require("../src/common/ui/components/Icons/index.stories.tsx"),
     "./src/common/ui/components/Text/index.stories.tsx": require("../src/common/ui/components/Text/index.stories.tsx"),
+    "./src/views/Welcome/index.stories.tsx": require("../src/views/Welcome/index.stories.tsx"),
     "./src/views/Auth/Blank/index.stories.tsx": require("../src/views/Auth/Blank/index.stories.tsx"),
     "./src/views/Blank/index.stories.tsx": require("../src/views/Blank/index.stories.tsx"),
     "./src/views/One/index.stories.tsx": require("../src/views/One/index.stories.tsx"),
