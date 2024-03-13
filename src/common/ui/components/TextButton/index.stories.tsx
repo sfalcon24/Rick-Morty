@@ -15,7 +15,6 @@ const Template: Story<Args> = args => <TextButton {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  leftIcon: 'plus',
   title: 'Filter',
   onPress: action('onPress'),
 };

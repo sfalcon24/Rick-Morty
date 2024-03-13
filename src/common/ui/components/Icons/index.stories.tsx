@@ -1,8 +1,8 @@
-import GhostIcon from './GhostIcon';
+import PointIcon from './PointIcon';
 
 export default {
   title: 'Icons',
-  component: GhostIcon,
+  component: PointIcon,
 };
 
-export const Icon = () => <GhostIcon />;
+export const Icon = () => <PointIcon />;
