@@ -63,7 +63,6 @@ exports[`renders ScreenTabBase story 1`] = `
           "justifyContent": "center",
         }
       }
-      testID="logout_button"
       underlayColor="black"
       variant="large"
     >
