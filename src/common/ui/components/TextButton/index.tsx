@@ -14,11 +14,11 @@ const Button: FC<Props> = ({
   leftIcon,
 }) => (
   <Container style={style}>
-    <LeftAction>{leftIcon && <Icons name={leftIcon} />}</LeftAction>
     <Pressable
       enabled={!loading && !!onPress}
       onPress={onPress}
       testID={testID}>
+      <LeftAction>{leftIcon && <Icons name={leftIcon} />}</LeftAction>
       <Title>{title}</Title>
     </Pressable>
   </Container>
