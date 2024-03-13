@@ -5,8 +5,6 @@ export type Props = {
   title: string;
   leftIcon?: IconName;
   loading?: boolean;
-  testID?: string;
-  onPressLeft?: () => void;
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;
 };
