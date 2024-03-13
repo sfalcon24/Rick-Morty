@@ -9,9 +9,13 @@ export type Props = {
   style?: StyleProp<ViewStyle>;
 };
 
-export type Variant = 'large' | 'large-dark' | 'small' | 'simple';
+export type Variant = 'large' | 'large-dark' | 'small';
 
 export type ContainerProps = {
+  variant: Variant;
+};
+
+export type PressablePrps = {
   variant: Variant;
 };
 
