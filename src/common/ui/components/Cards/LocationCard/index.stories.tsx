@@ -13,9 +13,9 @@ type Args = Props;
 
 const Template: Story<Args> = args => <LocationCard {...args} />;
 
-export const Card2 = Template.bind({});
-Card2.args = {
-  status: 'Status',
+export const Location_Card = Template.bind({});
+Location_Card.args = {
+  status: 'Dead',
   name: 'Planet Blue',
   onPress: action('onPress'),
 };

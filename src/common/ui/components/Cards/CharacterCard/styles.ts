@@ -1,7 +1,7 @@
+import {Image as ImageBase} from 'react-native';
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import theme from 'common/ui/theme';
-import {getTextStyle} from '../../Text/styles';
 
 export const Container = styled.View`
   width: 163px;
@@ -12,22 +12,25 @@ export const Container = styled.View`
   margin-top: 9px;
   margin-left: 9px;
 `;
-export const ImageCard = styled.View`
+
+export const Image = styled(ImageBase)`
   width: 163px;
   height: 140px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
 `;
 
-export const TextStatus = styled(Text)`
+export const Status = styled(Text).attrs({
+  variant: 'caption11',
+})`
   margin-top: 10px;
   margin-left: 10px;
-  ${getTextStyle('caption11')};
   color: ${theme.colors.gray1};
 `;
 
-export const TextName = styled(Text)`
+export const Name = styled(Text).attrs({
+  variant: 'body17-semibold',
+})`
   margin-left: 10px;
   margin-top: 3px;
-  ${getTextStyle('body17-semibold')};
 `;
