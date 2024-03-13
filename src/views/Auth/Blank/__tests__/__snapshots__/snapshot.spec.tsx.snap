@@ -65,6 +65,7 @@ exports[`renders ScreenAuthBase story 1`] = `
       }
       testID="login_button"
       underlayColor="black"
+      variant="large"
     >
       <View
         collapsable={false}
