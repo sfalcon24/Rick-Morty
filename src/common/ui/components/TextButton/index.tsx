@@ -1,7 +1,8 @@
 import type {FC} from 'react';
 import {memo} from 'react';
 import React from 'react';
-import {Container, Pressable, Title} from './styles';
+import Icons from '../Icons';
+import {Container, LeftAction, Pressable, Title} from './styles';
 import type {Props} from './types';
 
 const Button: FC<Props> = ({
@@ -10,15 +11,15 @@ const Button: FC<Props> = ({
   style,
   testID,
   title,
-  variant = 'large',
+  leftIcon,
 }) => (
-  <Container style={style} variant={variant}>
+  <Container style={style}>
     <Pressable
-      variant={variant}
       enabled={!loading && !!onPress}
       onPress={onPress}
       testID={testID}>
-      <Title buttonVariant={variant}>{title}</Title>
+      <LeftAction>{leftIcon && <Icons name={leftIcon} />}</LeftAction>
+      <Title>{title}</Title>
     </Pressable>
   </Container>
 );

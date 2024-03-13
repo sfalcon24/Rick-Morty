@@ -6,7 +6,7 @@ import {iconName} from './constants';
 import type {Props} from './types';
 
 const Icon: FC<Props> = ({icon, focused}) => {
-  const color = focused ? colors.red : colors.white;
+  const color = focused ? colors.indigo : colors.white;
   return <Icons name={iconName[icon]} color={color} />;
 };
 export default memo(Icon);

@@ -33,10 +33,3 @@ Small.args = {
   title: 'APPLY',
   onPress: action('onPress'),
 };
-
-export const Simple = Template.bind({});
-Simple.args = {
-  variant: 'simple',
-  title: 'Filter',
-  onPress: action('onPress'),
-};

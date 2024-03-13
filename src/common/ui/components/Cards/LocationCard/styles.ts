@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import theme from 'common/ui/theme';
-import {getTextStyle} from '../../Text/styles';
 
 export const Container = styled.View`
   width: 163px;
@@ -13,15 +12,17 @@ export const Container = styled.View`
   margin-left: 9px;
 `;
 
-export const TextStatus = styled(Text)`
+export const Status = styled(Text).attrs({
+  variant: 'caption11',
+})`
   margin-top: 10px;
   margin-left: 10px;
-  ${getTextStyle('caption11')};
   color: ${theme.colors.gray1};
 `;
 
-export const TextName = styled(Text)`
+export const Name = styled(Text).attrs({
+  variant: 'body17-semibold',
+})`
   margin-left: 10px;
   margin-top: 3px;
-  ${getTextStyle('body17-semibold')};
 `;
