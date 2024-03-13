@@ -4,17 +4,17 @@ import {BorderlessButton} from 'react-native-gesture-handler';
 import {getTextStyle} from '../Text/styles';
 
 export const Container = styled.View`
-  display: flex;
   flex-direction: row;
-  width: 42px;
+  align-items: center;
   height: 22px;
 `;
 
 export const Pressable = styled(BorderlessButton)`
+  display: flex;
+  flex-direction: row;
   align-items: center;
   border-radius: 16px;
   height: 22px;
-  justify-content: center;
 `;
 
 export const LeftAction = styled.View`
@@ -23,7 +23,9 @@ export const LeftAction = styled.View`
   margin-left: 5px;
 `;
 
-export const Title = styled(Text)`
+export const Title = styled(Text).attrs({
+  variant: 'body17-semibold',
+})`
   color: ${({theme}) => theme.colors.indigo};
   ${getTextStyle('body17-semibold')};
 `;
