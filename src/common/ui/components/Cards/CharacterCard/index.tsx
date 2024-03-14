@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import React from 'react';
 import {memo} from 'react';
 import {TouchableOpacity} from 'react-native';
-import useIdCallback from '../../../../../../.storybook/utils/useIdCallback';
+import useIdCallback from '../../../utils/useIdCallback';
 import {Container, Image, Name, Status} from './styles';
 import type {Props} from './types';
 
@@ -11,7 +11,7 @@ const CharacterCard: FC<Props> = ({id, image, status, name, onPress}) => {
   return (
     <TouchableOpacity onPress={handleOnPress}>
       <Container>
-        <Image source={image} />
+        <Image source={{uri: image}} />
         <Status>{status}</Status>
         <Name>{name}</Name>
       </Container>

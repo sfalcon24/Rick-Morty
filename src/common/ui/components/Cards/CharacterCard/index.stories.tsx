@@ -15,10 +15,8 @@ const Template: Story<Args> = args => <CharacterCard {...args} />;
 
 export const Character_Card = Template.bind({});
 Character_Card.args = {
-  image: {
-    uri: 'https://i.blogs.es/15b725/rickymorty-t7/375_375.jpeg',
-  },
+  image: 'https://i.blogs.es/15b725/rickymorty-t7/375_375.jpeg',
   status: 'Dead',
-  name: 'Pepperoni Pizza',
+  name: 'Pepperoni Pizza Pepperoni PizzaPepperoni PizzaPepperoni Pizza',
   onPress: action('onPress'),
 };

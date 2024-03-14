@@ -45,6 +45,10 @@ exports[`renders Location_Card story 1`] = `
           "height": 80,
           "marginLeft": 9,
           "marginTop": 9,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
           "width": 163,
         },
       ]
@@ -64,8 +68,6 @@ exports[`renders Location_Card story 1`] = `
           [
             {
               "color": "#8E8E93",
-              "marginLeft": 10,
-              "marginTop": 10,
             },
           ],
         ]
@@ -75,6 +77,7 @@ exports[`renders Location_Card story 1`] = `
       Dead
     </Text>
     <Text
+      numberOfLines={2}
       style={
         [
           {
@@ -87,7 +90,6 @@ exports[`renders Location_Card story 1`] = `
           {},
           [
             {
-              "marginLeft": 10,
               "marginTop": 3,
             },
           ],
@@ -95,7 +97,7 @@ exports[`renders Location_Card story 1`] = `
       }
       variant="body17-semibold"
     >
-      Planet Blue
+      Planet Blue Planet Blue Planet Blue Planet Blue
     </Text>
   </View>
 </View>

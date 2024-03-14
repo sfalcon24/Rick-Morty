@@ -92,6 +92,7 @@ exports[`renders Character_Card story 1`] = `
       Dead
     </Text>
     <Text
+      numberOfLines={2}
       style={
         [
           {
@@ -105,6 +106,7 @@ exports[`renders Character_Card story 1`] = `
           [
             {
               "marginLeft": 10,
+              "marginRight": 10,
               "marginTop": 3,
             },
           ],
@@ -112,7 +114,7 @@ exports[`renders Character_Card story 1`] = `
       }
       variant="body17-semibold"
     >
-      Pepperoni Pizza
+      Pepperoni Pizza Pepperoni PizzaPepperoni PizzaPepperoni Pizza
     </Text>
   </View>
 </View>

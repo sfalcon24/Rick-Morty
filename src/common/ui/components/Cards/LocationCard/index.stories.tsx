@@ -16,6 +16,6 @@ const Template: Story<Args> = args => <LocationCard {...args} />;
 export const Location_Card = Template.bind({});
 Location_Card.args = {
   status: 'Dead',
-  name: 'Planet Blue',
+  name: 'Planet Blue Planet Blue Planet Blue Planet Blue',
   onPress: action('onPress'),
 };
