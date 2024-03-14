@@ -1,8 +1,17 @@
-import PointIcon from './PointIcon';
+import React from 'react';
+import type {ComponentMeta, Story} from '@storybook/react-native';
+import type {Props} from './types';
+import Icon from '.';
 
 export default {
-  title: 'Icons',
-  component: PointIcon,
-};
+  title: 'Icon',
+  component: Icon,
+} as ComponentMeta<typeof Icon>;
 
-export const Icon = () => <PointIcon />;
+type Args = Pick<Props, 'name' | 'size' | 'color'>;
+
+const Template: Story<Args> = ({name = 'rocket', size}) => (
+  <Icon name={name} size={size} />
+);
+
+export const Basic = Template.bind({});

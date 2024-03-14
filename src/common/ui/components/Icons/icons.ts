@@ -3,7 +3,6 @@ import ArrowLeftIcon from './ArrowLeftIcon';
 import GhostIcon from './GhostIcon';
 import PlanetIcon from './PlanetIcon';
 import PlusIcon from './PlusIcon';
-
 import PointIcon from './PointIcon';
 import RocketIcon from './RocketIcon';
 import TvIcon from './TvIcon';
