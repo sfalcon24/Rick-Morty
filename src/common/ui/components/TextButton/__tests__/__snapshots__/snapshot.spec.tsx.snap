@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Primary story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 22,
+      },
+    ]
+  }
+>
+  <RNGestureHandlerButton
+    activeOpacity={0.3}
+    borderless={true}
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    onActiveStateChange={[Function]}
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    onPress={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "borderRadius": 16,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 22,
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "marginLeft": 5,
+            "marginRight": 5,
+          },
+        ]
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
+          },
+          {},
+          [
+            {
+              "color": "#5856D6",
+            },
+          ],
+        ]
+      }
+      variant="body17-semibold"
+    >
+      Filter
+    </Text>
+  </RNGestureHandlerButton>
+</View>
+`;

@@ -13,11 +13,10 @@ type Args = Props;
 
 const Template: Story<Args> = args => <CharacterCard {...args} />;
 
-export const Card1 = Template.bind({});
-Card1.args = {
-  image:
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.motor1.com%2Fnews%2F596157%2Fnovitec-ferrari-sf90-stradale-2022%2F&psig=AOvVaw37L7gF3ibcDKePaprxJm5Z&ust=1709645443727000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjagafi2oQDFQAAAAAdAAAAABAD',
-  status: 'Status',
-  name: 'Pepperoni Pizza',
+export const Character_Card = Template.bind({});
+Character_Card.args = {
+  image: 'https://i.blogs.es/15b725/rickymorty-t7/375_375.jpeg',
+  status: 'Dead',
+  name: 'Pepperoni Pizza Pepperoni PizzaPepperoni PizzaPepperoni Pizza',
   onPress: action('onPress'),
 };
