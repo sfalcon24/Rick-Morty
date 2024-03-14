@@ -8,11 +8,7 @@ export const BlankAuth: FC = () => {
   return (
     <Container>
       <Text>Auth screen</Text>
-      <Button
-        testID="login_button"
-        title="Fake login"
-        onPress={handleFakeLogin}
-      />
+      <Button title="Fake login" onPress={handleFakeLogin} />
     </Container>
   );
 };

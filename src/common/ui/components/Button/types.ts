@@ -3,7 +3,6 @@ import type {StyleProp, ViewStyle} from 'react-native';
 export type Props = {
   title: string;
   loading?: boolean;
-  testID?: string;
   variant?: Variant;
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;

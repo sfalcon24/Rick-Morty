@@ -62,10 +62,6 @@ exports[`renders Primary story 1`] = `
           [
             {
               "color": "#5856D6",
-              "fontFamily": "Roboto-Medium",
-              "fontSize": 17,
-              "letterSpacing": -0.41,
-              "lineHeight": 22,
             },
           ],
         ]

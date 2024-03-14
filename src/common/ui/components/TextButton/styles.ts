@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import {BorderlessButton} from 'react-native-gesture-handler';
-import {getTextStyle} from '../Text/styles';
 
 export const Container = styled.View`
   flex-direction: row;
@@ -27,5 +26,4 @@ export const Title = styled(Text).attrs({
   variant: 'body17-semibold',
 })`
   color: ${({theme}) => theme.colors.indigo};
-  ${getTextStyle('body17-semibold')};
 `;

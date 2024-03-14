@@ -4,7 +4,7 @@ export type Props = {
   id: string;
   status: 'Alive' | 'Dead' | 'unknown';
   name: string;
-  image?: any;
+  image?: string;
   onPress?: (id: string) => void;
   style?: StyleProp<ViewStyle>;
 };
