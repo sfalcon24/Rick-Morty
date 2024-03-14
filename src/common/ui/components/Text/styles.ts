@@ -43,7 +43,6 @@ const variantStyles: Record<Variant, FlattenSimpleInterpolation> = {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: -0.41px;
-    text-align: right;
   `,
   'body15-semibold': css`
     font-size: 15px;
@@ -69,7 +68,6 @@ const variantStyles: Record<Variant, FlattenSimpleInterpolation> = {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.24px;
-    text-align: center;
   `,
   'tagline13-tag': css`
     font-size: 13px;

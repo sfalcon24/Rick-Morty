@@ -38,6 +38,7 @@ exports[`renders Primary story 1`] = `
       }
     }
     underlayColor="black"
+    variant="large-dark"
   >
     <View
       collapsable={false}
@@ -123,6 +124,7 @@ exports[`renders Secondary story 1`] = `
       }
     }
     underlayColor="black"
+    variant="large"
   >
     <View
       collapsable={false}
@@ -170,91 +172,6 @@ exports[`renders Secondary story 1`] = `
 </View>
 `;
 
-exports[`renders Simple story 1`] = `
-<View
-  style={
-    [
-      {
-        "backgroundColor": "rgba(0, 0, 0, 0)",
-        "borderColor": "#34C759",
-        "borderRadius": 16,
-        "borderWidth": 0,
-        "height": 22,
-        "width": 42,
-      },
-    ]
-  }
-  variant="simple"
->
-  <RNGestureHandlerButton
-    activeOpacity={0.105}
-    collapsable={false}
-    delayLongPress={600}
-    enabled={true}
-    handlerTag={3}
-    handlerType="NativeViewGestureHandler"
-    onActiveStateChange={[Function]}
-    onGestureEvent={[Function]}
-    onGestureHandlerEvent={[Function]}
-    onGestureHandlerStateChange={[Function]}
-    onHandlerStateChange={[Function]}
-    onPress={[Function]}
-    style={
-      {
-        "alignItems": "center",
-        "borderRadius": 16,
-        "height": 50,
-        "justifyContent": "center",
-      }
-    }
-    underlayColor="black"
-  >
-    <View
-      collapsable={false}
-      style={
-        {
-          "backgroundColor": "black",
-          "borderBottomLeftRadius": undefined,
-          "borderBottomRightRadius": undefined,
-          "borderRadius": 16,
-          "borderTopLeftRadius": undefined,
-          "borderTopRightRadius": undefined,
-          "bottom": 0,
-          "left": 0,
-          "opacity": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        }
-      }
-    />
-    <Text
-      buttonVariant="simple"
-      style={
-        [
-          {
-            "color": "#081F32",
-            "fontFamily": "Roboto-Medium",
-            "fontSize": 17,
-            "letterSpacing": -0.41,
-            "lineHeight": 22,
-          },
-          {},
-          [
-            {
-              "color": "#5856D6",
-            },
-          ],
-        ]
-      }
-      variant="body17-semibold"
-    >
-      Filter
-    </Text>
-  </RNGestureHandlerButton>
-</View>
-`;
-
 exports[`renders Small story 1`] = `
 <View
   style={
@@ -276,7 +193,7 @@ exports[`renders Small story 1`] = `
     collapsable={false}
     delayLongPress={600}
     enabled={true}
-    handlerTag={4}
+    handlerTag={3}
     handlerType="NativeViewGestureHandler"
     onActiveStateChange={[Function]}
     onGestureEvent={[Function]}
@@ -288,11 +205,12 @@ exports[`renders Small story 1`] = `
       {
         "alignItems": "center",
         "borderRadius": 16,
-        "height": 50,
+        "height": 28,
         "justifyContent": "center",
       }
     }
     underlayColor="black"
+    variant="small"
   >
     <View
       collapsable={false}
