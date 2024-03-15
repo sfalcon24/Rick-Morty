@@ -8,3 +8,5 @@ export type Props = {
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;
 };
+
+export type TextButtonVariant = 'textButton';

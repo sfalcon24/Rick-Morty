@@ -10,7 +10,6 @@ exports[`renders Default story 1`] = `
         "flexDirection": "row",
         "height": 44,
         "justifyContent": "space-between",
-        "paddingLeft": 10,
         "paddingRight": 15,
         "width": "100%",
       },
@@ -24,6 +23,10 @@ exports[`renders Default story 1`] = `
       [
         {
           "alignItems": "flex-start",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginLeft": 15,
         },
       ]
     }
@@ -32,19 +35,16 @@ exports[`renders Default story 1`] = `
       style={
         [
           {
-            "backgroundColor": "#5856D6",
-            "borderColor": "#34C759",
-            "borderRadius": 16,
-            "borderWidth": 0,
-            "height": 28,
-            "width": 66,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 22,
           },
         ]
       }
-      variant="small"
     >
       <RNGestureHandlerButton
-        activeOpacity={0.105}
+        activeOpacity={0.3}
+        borderless={true}
         collapsable={false}
         delayLongPress={600}
         enabled={true}
@@ -60,53 +60,97 @@ exports[`renders Default story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 50,
-            "justifyContent": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 22,
+            "opacity": 1,
           }
         }
-        underlayColor="black"
       >
         <View
-          collapsable={false}
           style={
-            {
-              "backgroundColor": "black",
-              "borderBottomLeftRadius": undefined,
-              "borderBottomRightRadius": undefined,
-              "borderRadius": 16,
-              "borderTopLeftRadius": undefined,
-              "borderTopRightRadius": undefined,
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
+            [
+              {
+                "alignItems": "flex-start",
+                "marginLeft": 5,
+                "marginRight": 5,
+              },
+            ]
           }
-        />
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="14"
+            bbWidth="14"
+            fill="none"
+            focusable={false}
+            height={14}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": 14,
+                  "width": 14,
+                },
+              ]
+            }
+            vbHeight={14}
+            vbWidth={14}
+            width={14}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                d="M7 12.7222C10.3137 12.7222 13 10.0359 13 6.72223C13 3.40852 10.3137 0.722229 7 0.722229C3.68629 0.722229 1 3.40852 1 6.72223C1 10.0359 3.68629 12.7222 7 12.7222Z"
+                fill={
+                  {
+                    "payload": 4283979478,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
         <Text
-          buttonVariant="small"
           style={
             [
               {
                 "color": "#081F32",
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 13,
-                "letterSpacing": -0.08,
-                "lineHeight": 18,
+                "fontSize": 17,
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
               },
               {},
               [
                 {
-                  "color": "#FFFFFF",
+                  "color": "#5856D6",
                 },
               ],
             ]
           }
-          variant="tagline13-tag"
+          variant="body17-semibold"
         >
-          APPLY
+          Back
         </Text>
       </RNGestureHandlerButton>
     </View>
@@ -116,28 +160,26 @@ exports[`renders Default story 1`] = `
       [
         {
           "color": "#081F32",
-          "fontFamily": "Roboto-Regular",
-          "fontSize": 20,
-          "letterSpacing": 0.38,
-          "lineHeight": 25,
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 15,
+          "letterSpacing": -0.24,
+          "lineHeight": 20,
         },
         {},
         [
           {
             "alignItems": "center",
             "flexBasis": 0,
-            "flexGrow": 1,
+            "flexGrow": 2,
             "flexShrink": 1,
             "marginBottom": 0,
-            "marginLeft": 0,
             "textAlign": "center",
           },
         ],
       ]
     }
     textVariant="default"
-    variant="body20"
-    variantContainer="body15-semibold"
+    variant="body15-semibold"
   >
     Title
   </Text>
@@ -147,6 +189,9 @@ exports[`renders Default story 1`] = `
       [
         {
           "alignItems": "flex-end",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
           "marginBottom": 0,
         },
       ]
@@ -184,11 +229,12 @@ exports[`renders Default story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 50,
+            "height": 28,
             "justifyContent": "center",
           }
         }
         underlayColor="black"
+        variant="small"
       >
         <View
           collapsable={false}
@@ -248,7 +294,6 @@ exports[`renders Large story 1`] = `
         "flexDirection": "row",
         "height": 96,
         "justifyContent": "space-between",
-        "paddingLeft": 10,
         "paddingRight": 15,
         "width": "100%",
       },
@@ -262,6 +307,10 @@ exports[`renders Large story 1`] = `
       [
         {
           "alignItems": "flex-start",
+          "flexBasis": 0,
+          "flexGrow": 0,
+          "flexShrink": 1,
+          "marginLeft": 15,
         },
       ]
     }
@@ -271,28 +320,26 @@ exports[`renders Large story 1`] = `
       [
         {
           "color": "#081F32",
-          "fontFamily": "Roboto-Regular",
-          "fontSize": 20,
-          "letterSpacing": 0.38,
-          "lineHeight": 25,
+          "fontFamily": "Roboto-Bold",
+          "fontSize": 34,
+          "letterSpacing": 0.41,
+          "lineHeight": 41,
         },
         {},
         [
           {
             "alignItems": "center",
             "flexBasis": 0,
-            "flexGrow": 1,
+            "flexGrow": 2,
             "flexShrink": 1,
             "marginBottom": 10,
-            "marginLeft": 5,
             "textAlign": "left",
           },
         ],
       ]
     }
     textVariant="large"
-    variant="body20"
-    variantContainer="large-title"
+    variant="large-title"
   >
     Title
   </Text>
@@ -302,7 +349,10 @@ exports[`renders Large story 1`] = `
       [
         {
           "alignItems": "flex-end",
-          "marginBottom": 75,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 60,
         },
       ]
     }
@@ -311,19 +361,16 @@ exports[`renders Large story 1`] = `
       style={
         [
           {
-            "backgroundColor": "rgba(0, 0, 0, 0)",
-            "borderColor": "#34C759",
-            "borderRadius": 16,
-            "borderWidth": 0,
+            "alignItems": "center",
+            "flexDirection": "row",
             "height": 22,
-            "width": 42,
           },
         ]
       }
-      variant="simple"
     >
       <RNGestureHandlerButton
-        activeOpacity={0.105}
+        activeOpacity={0.3}
+        borderless={true}
         collapsable={false}
         delayLongPress={600}
         enabled={true}
@@ -339,33 +386,25 @@ exports[`renders Large story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 50,
-            "justifyContent": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 22,
+            "opacity": 1,
           }
         }
-        underlayColor="black"
       >
         <View
-          collapsable={false}
           style={
-            {
-              "backgroundColor": "black",
-              "borderBottomLeftRadius": undefined,
-              "borderBottomRightRadius": undefined,
-              "borderRadius": 16,
-              "borderTopLeftRadius": undefined,
-              "borderTopRightRadius": undefined,
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
+            [
+              {
+                "alignItems": "flex-start",
+                "marginLeft": 5,
+                "marginRight": 5,
+              },
+            ]
           }
         />
         <Text
-          buttonVariant="simple"
           style={
             [
               {

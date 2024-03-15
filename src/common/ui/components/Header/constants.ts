@@ -15,17 +15,17 @@ export const TEXT_ALIGN: Record<VariantHeader, string> = {
   large: 'left',
 };
 
-export const MARGIN_LEFT: Record<VariantHeader, number> = {
-  default: 0,
-  large: 5,
-};
-
 export const MARGIN_BOTTOM: Record<VariantHeader, number> = {
   default: 0,
   large: 10,
 };
 
+export const FLEX: Record<VariantHeader, number> = {
+  default: 1,
+  large: 0,
+};
+
 export const MARGIN_BOTTOM_RIGHT_ACTION: Record<VariantHeader, number> = {
   default: 0,
-  large: 75,
+  large: 60,
 };
