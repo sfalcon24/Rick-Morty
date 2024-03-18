@@ -7,11 +7,7 @@ export const ThreeTab: Props = () => {
   return (
     <Container>
       <Text>Tab screen</Text>
-      <Button
-        onPress={handleFakeLogin}
-        testID="logout_button"
-        title="Fake logout"
-      />
+      <Button onPress={handleFakeLogin} title="Fake logout" />
     </Container>
   );
 };

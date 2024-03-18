@@ -8,11 +8,7 @@ export const OneTab: Props = () => {
   return (
     <Container>
       <TitleText1>Ta screen</TitleText1>
-      <Button
-        onPress={handleFakeLogin}
-        testID="logout_button"
-        title="Fake logout"
-      />
+      <Button onPress={handleFakeLogin} title="Fake logout" />
     </Container>
   );
 };

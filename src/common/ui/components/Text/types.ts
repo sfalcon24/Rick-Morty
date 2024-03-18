@@ -5,8 +5,8 @@ export type Fonts = 'Roboto-Bold' | 'Roboto-Medium' | 'Roboto-Regular';
 export type Variant =
   | 'headline1'
   | 'headline2'
-  | 'headline3'
   | 'headline3-bold'
+  | 'headline3'
   | 'body20-bold'
   | 'body20'
   | 'body17-semibold'

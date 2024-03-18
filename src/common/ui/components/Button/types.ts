@@ -1,20 +1,19 @@
 import type {StyleProp, ViewStyle} from 'react-native';
 
-export type ButtonVariant = 'primary' | 'secondary';
-
 export type Props = {
+  title: string;
   loading?: boolean;
+  variant?: Variant;
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;
-  testID?: string;
-  title?: string;
-  variant?: ButtonVariant;
 };
+
+export type Variant = 'large' | 'large-dark' | 'small';
 
 export type ContainerProps = {
-  variant: NonNullable<Props['variant']>;
+  variant: Variant;
 };
 
-export type TextProps = {
-  variant: NonNullable<Props['variant']>;
+export type TitleProps = {
+  buttonVariant: Variant;
 };

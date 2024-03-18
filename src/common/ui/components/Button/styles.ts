@@ -1,21 +1,27 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import {RectButton} from 'react-native-gesture-handler';
-import {backgroundColor, textColor} from './constants';
-import type {ContainerProps, TextProps} from './types';
+import {BACKGROUND_COLOR, HEIGHT, TEXT_COLOR, WIDTH} from './constants';
+import type {ContainerProps, TitleProps} from './types';
 
 export const Container = styled.View<ContainerProps>`
-  background-color: ${({variant}) => backgroundColor[variant]};
+  background-color: ${({variant}) => BACKGROUND_COLOR[variant]};
+  border-width: ${({variant}) => (variant === 'large-dark' ? 2 : 0)}px;
+  border-color: ${({theme}) => theme.colors.adding};
+  width: ${({variant}) => WIDTH[variant]}px;
+  height: ${({variant}) => HEIGHT[variant]}px;
   border-radius: 16px;
 `;
 
-export const Pressable = styled(RectButton)`
+export const Pressable = styled(RectButton)<ContainerProps>`
   align-items: center;
   border-radius: 16px;
-  height: 48px;
+  height: ${({variant}) => HEIGHT[variant]}px;
   justify-content: center;
 `;
 
-export const Title = styled(Text)<TextProps>`
-  color: ${({variant}) => textColor[variant]};
+export const Title = styled(Text).attrs<TitleProps>(({buttonVariant}) => ({
+  variant: buttonVariant === 'small' ? 'tagline13-tag' : 'body17-semibold',
+}))<TitleProps>`
+  color: ${({buttonVariant}) => TEXT_COLOR[buttonVariant]};
 `;
