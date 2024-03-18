@@ -50,6 +50,8 @@ try {
 const getStories = () => {
   return {
     "./src/common/ui/components/Button/index.stories.tsx": require("../src/common/ui/components/Button/index.stories.tsx"),
+    "./src/common/ui/components/Cards/CharacterCard/index.stories.tsx": require("../src/common/ui/components/Cards/CharacterCard/index.stories.tsx"),
+    "./src/common/ui/components/Cards/LocationCard/index.stories.tsx": require("../src/common/ui/components/Cards/LocationCard/index.stories.tsx"),
     "./src/common/ui/components/Header/index.stories.tsx": require("../src/common/ui/components/Header/index.stories.tsx"),
     "./src/common/ui/components/Text/index.stories.tsx": require("../src/common/ui/components/Text/index.stories.tsx"),
     "./src/common/ui/components/TextButton/index.stories.tsx": require("../src/common/ui/components/TextButton/index.stories.tsx"),
