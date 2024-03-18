@@ -24,9 +24,3 @@ export const TEXT_COLOR: Record<Variant, string> = {
   large: colors.black,
   small: colors.white,
 };
-
-export const HEIGHT_PRESSABLE: Record<Variant, number> = {
-  'large-dark': 50,
-  large: 50,
-  small: 28,
-};
