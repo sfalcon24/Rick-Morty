@@ -7,7 +7,6 @@ export type Variant =
   | 'headline2'
   | 'headline3-bold'
   | 'headline3'
-  | 'headline3-bold'
   | 'body20-bold'
   | 'body20'
   | 'body17-semibold'

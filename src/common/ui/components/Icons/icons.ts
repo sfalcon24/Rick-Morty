@@ -13,11 +13,11 @@ const createSvgIcons = <T extends {[name: string]: FC<IconProps>}>(
 ): Record<keyof T, FC<IconProps>> => cfg;
 
 export const icons = createSvgIcons({
-  plus: PlusIcon,
-  tv: TvIcon,
-  planet: PlanetIcon,
-  ghost: GhostIcon,
   arrowLeft: ArrowLeftIcon,
+  ghost: GhostIcon,
+  planet: PlanetIcon,
+  plus: PlusIcon,
   point: PointIcon,
   rocket: RocketIcon,
+  tv: TvIcon,
 });

@@ -1,14 +1,8 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import {RectButton} from 'react-native-gesture-handler';
-import {
-  BACKGROUND_COLOR,
-  HEIGHT,
-  HEIGHT_PRESSABLE,
-  TEXT_COLOR,
-  WIDTH,
-} from './constants';
-import type {ContainerProps, TitleProps, PressablePrps} from './types';
+import {BACKGROUND_COLOR, HEIGHT, TEXT_COLOR, WIDTH} from './constants';
+import type {ContainerProps, TitleProps} from './types';
 
 export const Container = styled.View<ContainerProps>`
   background-color: ${({variant}) => BACKGROUND_COLOR[variant]};
@@ -19,10 +13,10 @@ export const Container = styled.View<ContainerProps>`
   border-radius: 16px;
 `;
 
-export const Pressable = styled(RectButton)<PressablePrps>`
+export const Pressable = styled(RectButton)<ContainerProps>`
   align-items: center;
   border-radius: 16px;
-  height: ${({variant}) => HEIGHT_PRESSABLE[variant]}px;
+  height: ${({variant}) => HEIGHT[variant]}px;
   justify-content: center;
 `;
 
