@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
 import {BorderlessButton} from 'react-native-gesture-handler';
+import Icons from '../Icons';
 
 export const Container = styled.View`
   flex-direction: row;
@@ -9,15 +10,13 @@ export const Container = styled.View`
 `;
 
 export const Pressable = styled(BorderlessButton)`
-  display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 16px;
   height: 22px;
 `;
 
-export const LeftAction = styled.View`
-  align-items: flex-start;
+export const Icon = styled(Icons)`
   margin-right: 5px;
   margin-left: 5px;
 `;

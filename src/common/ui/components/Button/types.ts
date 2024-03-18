@@ -14,10 +14,6 @@ export type ContainerProps = {
   variant: Variant;
 };
 
-export type PressablePrps = {
-  variant: Variant;
-};
-
 export type TitleProps = {
   buttonVariant: Variant;
 };
