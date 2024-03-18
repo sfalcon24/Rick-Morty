@@ -5,7 +5,7 @@ import type {Props} from './types';
 import TextButton from '.';
 
 export default {
-  title: 'TextButton',
+  title: 'Button',
   component: TextButton,
 } as ComponentMeta<typeof TextButton>;
 
@@ -13,8 +13,9 @@ type Args = Props;
 
 const Template: Story<Args> = args => <TextButton {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Text_Button = Template.bind({});
+Text_Button.args = {
+  leftIcon: 'plus',
   title: 'Filter',
   onPress: action('onPress'),
 };
