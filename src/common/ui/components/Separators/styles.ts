@@ -1,10 +1,8 @@
 import styled from 'styled-components/native';
-import {WIDTH} from './constants';
-import type {ContainerProps} from './types';
+import type {Props} from './types';
 
-export const Container = styled.View<ContainerProps>`
+export const Container = styled.View<Props>`
   height: 1px;
-  width: ${({variant}) => WIDTH[variant]}px;
   background-color: ${({theme}) => theme.colors.gray4};
   align-self: flex-end;
 `;
