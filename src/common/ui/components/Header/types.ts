@@ -1,7 +1,4 @@
 import type {StyleProp, ViewStyle} from 'react-native';
-// import type {Variant} from '../Button/types';
-// import type {IconName} from '../Icons/types';
-// import type {TextButtonVariant} from '../TextButton/types';
 
 export type Props = {
   title?: string;

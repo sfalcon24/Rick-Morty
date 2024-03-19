@@ -1,20 +1,14 @@
 import styled from 'styled-components/native';
 import Text from 'common/ui/components/Text';
-import {
-  ALIGN,
-  FLEX,
-  HEIGHT,
-  MARGIN_BOTTOM,
-  MARGIN_BOTTOM_RIGHT_ACTION,
-  TEXT_ALIGN,
-} from './constants';
 import type {ActionProps, ContainerProps, TitleProps} from './types';
 
 export const Container = styled.View<ContainerProps>`
   flex-direction: row;
   width: 100%;
-  height: ${({variantContainer}) => HEIGHT[variantContainer]}px;
-  align-items: ${({variantContainer}) => ALIGN[variantContainer]};
+  height: ${({variantContainer}) =>
+    variantContainer === 'default' ? 44 : 96}px;
+  align-items: ${({variantContainer}) =>
+    variantContainer === 'default' ? 'center' : 'flex-end'};
   justify-content: space-between;
   background-color: ${({theme}) => theme.colors.gray6};
   padding-right: 15px;
@@ -25,13 +19,14 @@ export const Title = styled(Text).attrs<TitleProps>(({textVariant}) => ({
 }))<TitleProps>`
   flex: 2;
   align-items: center;
-  text-align: ${({textVariant}) => TEXT_ALIGN[textVariant]};
-  margin-bottom: ${({textVariant}) => MARGIN_BOTTOM[textVariant]}px;
+  text-align: ${({textVariant}) =>
+    textVariant === 'default' ? 'center' : 'left'};
+  margin-bottom: ${({textVariant}) => (textVariant === 'default' ? 0 : 10)}px;
 `;
 
 export const LeftAction = styled.View<ActionProps>`
   align-items: flex-start;
-  flex: ${({actionVariant}) => FLEX[actionVariant]};
+  flex: ${({actionVariant}) => (actionVariant === 'default' ? 1 : 0)};
   margin-left: 15px;
 `;
 
@@ -39,5 +34,5 @@ export const RightAction = styled.View<ActionProps>`
   align-items: flex-end;
   flex: 1;
   margin-bottom: ${({actionVariant}) =>
-    MARGIN_BOTTOM_RIGHT_ACTION[actionVariant]}px;
+    actionVariant === 'default' ? 0 : 60}px;
 `;
