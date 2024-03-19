@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Location_Card story 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E5E5EA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "height": 80,
+          "marginLeft": 9,
+          "marginTop": 9,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+          "width": 163,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#081F32",
+            "fontFamily": "Roboto-Regular",
+            "fontSize": 11,
+            "letterSpacing": 0.07,
+            "lineHeight": 13,
+          },
+          {},
+          [
+            {
+              "color": "#8E8E93",
+            },
+          ],
+        ]
+      }
+      variant="caption11"
+    >
+      Dead
+    </Text>
+    <Text
+      numberOfLines={2}
+      style={
+        [
+          {
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
+          },
+          {},
+          [
+            {
+              "marginTop": 3,
+            },
+          ],
+        ]
+      }
+      variant="body17-semibold"
+    >
+      Planet Blue Planet Blue Planet Blue Planet Blue
+    </Text>
+  </View>
+</View>
+`;
