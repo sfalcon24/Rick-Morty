@@ -14,8 +14,10 @@ const Header: FC<Props> = ({
   variant = 'default',
   rightTextButton,
   rightIcon,
+  titleRightButton = '',
   leftTextButton,
   leftIcon,
+  titleLeftButton = '',
   onPressLeft,
   onPressRight,
 }) => (
@@ -26,13 +28,13 @@ const Header: FC<Props> = ({
         {leftTextButton && leftTextButton !== 'textButton' ? (
           <Button
             variant={leftTextButton as Variant}
-            title="APPLY"
+            title={titleLeftButton}
             onPress={onPressLeft}
           />
         ) : leftTextButton === 'textButton' ? (
           <TextButton
             leftIcon={leftIcon ? 'arrowLeft' : undefined}
-            title="Back"
+            title={titleLeftButton}
             onPress={onPressLeft}
           />
         ) : null}
@@ -41,14 +43,14 @@ const Header: FC<Props> = ({
       <RightAction actionVariant={variant}>
         {rightTextButton && rightTextButton !== 'textButton' ? (
           <Button
-            variant={leftTextButton as Variant}
-            title="APPLY"
+            variant={rightTextButton as Variant}
+            title={titleRightButton}
             onPress={onPressRight}
           />
         ) : rightTextButton === 'textButton' ? (
           <TextButton
-            leftIcon={rightIcon ? 'point' : undefined}
-            title="Back"
+            rightIcon={rightIcon ? 'point' : undefined}
+            title={titleRightButton}
             onPress={onPressRight}
           />
         ) : null}

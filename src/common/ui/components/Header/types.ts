@@ -8,9 +8,10 @@ export type Props = {
   sizeIcon?: number;
   leftIcon?: boolean;
   leftTextButton?: string;
+  titleLeftButton?: string;
   rightIcon?: boolean;
   rightTextButton?: string;
-  // leftButton?: Variant | TextButtonVariant;
+  titleRightButton?: string;
   onPressLeft?: () => void;
   onPressRight?: () => void;
   variant?: VariantHeader;
