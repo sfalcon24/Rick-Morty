@@ -1,15 +1,16 @@
 import type {StyleProp, ViewStyle} from 'react-native';
-import type {Variant} from '../Button/types';
-import type {IconName} from '../Icons/types';
-import type {TextButtonVariant} from '../TextButton/types';
+// import type {Variant} from '../Button/types';
+// import type {IconName} from '../Icons/types';
+// import type {TextButtonVariant} from '../TextButton/types';
 
 export type Props = {
   title?: string;
   sizeIcon?: number;
-  leftIcon?: IconName;
-  rightIcon?: IconName;
-  rightButton?: Variant | TextButtonVariant;
-  leftButton?: Variant | TextButtonVariant;
+  leftIcon?: boolean;
+  leftTextButton?: string;
+  rightIcon?: boolean;
+  rightTextButton?: string;
+  // leftButton?: Variant | TextButtonVariant;
   onPressLeft?: () => void;
   onPressRight?: () => void;
   variant?: VariantHeader;

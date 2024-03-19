@@ -2,6 +2,7 @@ import type {FC} from 'react';
 import {memo} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Button from '../Button';
+import type {Variant} from '../Button/types';
 import StatusBar from '../StatusBar';
 import TextButton from '../TextButton';
 import {Container, Title, LeftAction, RightAction} from './styles';
@@ -11,8 +12,9 @@ const Header: FC<Props> = ({
   title,
   style,
   variant = 'default',
-  rightButton,
-  leftButton,
+  rightTextButton,
+  rightIcon,
+  leftTextButton,
   leftIcon,
   onPressLeft,
   onPressRight,
@@ -21,27 +23,35 @@ const Header: FC<Props> = ({
     <Container style={style} variantContainer={variant}>
       {<StatusBar />}
       <LeftAction actionVariant={variant}>
-        {leftButton && leftButton !== 'textButton' ? (
-          <Button variant={leftButton} title="APPLY" onPress={onPressLeft} />
-        ) : (
-          leftButton === 'textButton' && (
-            <TextButton
-              leftIcon={leftIcon}
-              title="Back"
-              onPress={onPressLeft}
-            />
-          )
-        )}
+        {leftTextButton && leftTextButton !== 'textButton' ? (
+          <Button
+            variant={leftTextButton as Variant}
+            title="APPLY"
+            onPress={onPressLeft}
+          />
+        ) : leftTextButton === 'textButton' ? (
+          <TextButton
+            leftIcon={leftIcon ? 'arrowLeft' : undefined}
+            title="Back"
+            onPress={onPressLeft}
+          />
+        ) : null}
       </LeftAction>
       <Title textVariant={variant}>{title}</Title>
       <RightAction actionVariant={variant}>
-        {rightButton && rightButton !== 'textButton' ? (
-          <Button variant={rightButton} title="Filter" onPress={onPressRight} />
-        ) : (
-          rightButton === 'textButton' && (
-            <TextButton title="Filter" onPress={onPressRight} />
-          )
-        )}
+        {rightTextButton && rightTextButton !== 'textButton' ? (
+          <Button
+            variant={leftTextButton as Variant}
+            title="APPLY"
+            onPress={onPressRight}
+          />
+        ) : rightTextButton === 'textButton' ? (
+          <TextButton
+            leftIcon={rightIcon ? 'point' : undefined}
+            title="Back"
+            onPress={onPressRight}
+          />
+        ) : null}
       </RightAction>
     </Container>
   </SafeAreaProvider>
