@@ -10,7 +10,6 @@ exports[`renders Default story 1`] = `
         "flexDirection": "row",
         "height": 44,
         "justifyContent": "space-between",
-        "paddingLeft": 10,
         "paddingRight": 15,
         "width": "100%",
       },
@@ -24,6 +23,164 @@ exports[`renders Default story 1`] = `
       [
         {
           "alignItems": "flex-start",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginLeft": 15,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 22,
+          },
+        ]
+      }
+    >
+      <RNGestureHandlerButton
+        activeOpacity={0.3}
+        borderless={true}
+        collapsable={false}
+        delayLongPress={600}
+        enabled={true}
+        handlerTag={1}
+        handlerType="NativeViewGestureHandler"
+        onActiveStateChange={[Function]}
+        onGestureEvent={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onHandlerStateChange={[Function]}
+        onPress={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderRadius": 16,
+            "flexDirection": "row",
+            "height": 22,
+            "opacity": 1,
+          }
+        }
+      >
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="20"
+          bbWidth="20"
+          fill="none"
+          focusable={false}
+          height={20}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          style={
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 20,
+                "width": 20,
+              },
+            ]
+          }
+          vbHeight={21}
+          vbWidth={13}
+          width={20}
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGPath
+              d="M10.0371 20.5827L0.792152 11.4458C0.402616 11.0612 0.402616 10.4398 0.792152 10.0542L10.0371 0.917333C10.5995 0.360889 11.5144 0.360889 12.0777 0.917333C12.64 1.47378 12.64 2.37687 12.0777 2.93332L4.16913 10.7505L12.0777 18.5657C12.64 19.1231 12.64 20.0262 12.0777 20.5827C11.5144 21.1391 10.5995 21.1391 10.0371 20.5827Z"
+              fill={
+                {
+                  "payload": 4283979478,
+                  "type": 0,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+        <Text
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 17,
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
+              },
+              {},
+              [
+                {
+                  "color": "#5856D6",
+                  "marginLeft": 5,
+                },
+              ],
+            ]
+          }
+          variant="body17-semibold"
+        >
+          Back
+        </Text>
+      </RNGestureHandlerButton>
+    </View>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "color": "#081F32",
+          "fontFamily": "Roboto-Medium",
+          "fontSize": 15,
+          "letterSpacing": -0.24,
+          "lineHeight": 20,
+        },
+        {},
+        [
+          {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexGrow": 2,
+            "flexShrink": 1,
+            "marginBottom": 0,
+            "textAlign": "center",
+          },
+        ],
+      ]
+    }
+    textVariant="default"
+    variant="body15-semibold"
+  >
+    Title
+  </Text>
+  <View
+    actionVariant="default"
+    style={
+      [
+        {
+          "alignItems": "flex-end",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 0,
         },
       ]
     }
@@ -48,7 +205,7 @@ exports[`renders Default story 1`] = `
         collapsable={false}
         delayLongPress={600}
         enabled={true}
-        handlerTag={1}
+        handlerTag={2}
         handlerType="NativeViewGestureHandler"
         onActiveStateChange={[Function]}
         onGestureEvent={[Function]}
@@ -60,11 +217,12 @@ exports[`renders Default story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 50,
+            "height": 28,
             "justifyContent": "center",
           }
         }
         underlayColor="black"
+        variant="small"
       >
         <View
           collapsable={false}
@@ -111,130 +269,6 @@ exports[`renders Default story 1`] = `
       </RNGestureHandlerButton>
     </View>
   </View>
-  <Text
-    style={
-      [
-        {
-          "color": "#081F32",
-          "fontFamily": "Roboto-Regular",
-          "fontSize": 20,
-          "letterSpacing": 0.38,
-          "lineHeight": 25,
-        },
-        {},
-        [
-          {
-            "alignItems": "center",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "marginBottom": 0,
-            "marginLeft": 0,
-            "textAlign": "center",
-          },
-        ],
-      ]
-    }
-    textVariant="default"
-    variant="body20"
-    variantContainer="body15-semibold"
-  >
-    Title
-  </Text>
-  <View
-    actionVariant="default"
-    style={
-      [
-        {
-          "alignItems": "flex-end",
-          "marginBottom": 0,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        [
-          {
-            "backgroundColor": "#5856D6",
-            "borderColor": "#34C759",
-            "borderRadius": 16,
-            "borderWidth": 0,
-            "height": 28,
-            "width": 66,
-          },
-        ]
-      }
-      variant="small"
-    >
-      <RNGestureHandlerButton
-        activeOpacity={0.105}
-        collapsable={false}
-        delayLongPress={600}
-        enabled={true}
-        handlerTag={2}
-        handlerType="NativeViewGestureHandler"
-        onActiveStateChange={[Function]}
-        onGestureEvent={[Function]}
-        onGestureHandlerEvent={[Function]}
-        onGestureHandlerStateChange={[Function]}
-        onHandlerStateChange={[Function]}
-        onPress={[Function]}
-        style={
-          {
-            "alignItems": "center",
-            "borderRadius": 16,
-            "height": 50,
-            "justifyContent": "center",
-          }
-        }
-        underlayColor="black"
-      >
-        <View
-          collapsable={false}
-          style={
-            {
-              "backgroundColor": "black",
-              "borderBottomLeftRadius": undefined,
-              "borderBottomRightRadius": undefined,
-              "borderRadius": 16,
-              "borderTopLeftRadius": undefined,
-              "borderTopRightRadius": undefined,
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-        />
-        <Text
-          buttonVariant="small"
-          style={
-            [
-              {
-                "color": "#081F32",
-                "fontFamily": "Roboto-Medium",
-                "fontSize": 13,
-                "letterSpacing": -0.08,
-                "lineHeight": 18,
-              },
-              {},
-              [
-                {
-                  "color": "#FFFFFF",
-                },
-              ],
-            ]
-          }
-          variant="tagline13-tag"
-        >
-          Filter
-        </Text>
-      </RNGestureHandlerButton>
-    </View>
-  </View>
 </View>
 `;
 
@@ -248,7 +282,6 @@ exports[`renders Large story 1`] = `
         "flexDirection": "row",
         "height": 96,
         "justifyContent": "space-between",
-        "paddingLeft": 10,
         "paddingRight": 15,
         "width": "100%",
       },
@@ -262,6 +295,10 @@ exports[`renders Large story 1`] = `
       [
         {
           "alignItems": "flex-start",
+          "flexBasis": 0,
+          "flexGrow": 0,
+          "flexShrink": 1,
+          "marginLeft": 15,
         },
       ]
     }
@@ -271,28 +308,26 @@ exports[`renders Large story 1`] = `
       [
         {
           "color": "#081F32",
-          "fontFamily": "Roboto-Regular",
-          "fontSize": 20,
-          "letterSpacing": 0.38,
-          "lineHeight": 25,
+          "fontFamily": "Roboto-Bold",
+          "fontSize": 34,
+          "letterSpacing": 0.41,
+          "lineHeight": 41,
         },
         {},
         [
           {
             "alignItems": "center",
             "flexBasis": 0,
-            "flexGrow": 1,
+            "flexGrow": 2,
             "flexShrink": 1,
             "marginBottom": 10,
-            "marginLeft": 5,
             "textAlign": "left",
           },
         ],
       ]
     }
     textVariant="large"
-    variant="body20"
-    variantContainer="large-title"
+    variant="large-title"
   >
     Title
   </Text>
@@ -302,7 +337,10 @@ exports[`renders Large story 1`] = `
       [
         {
           "alignItems": "flex-end",
-          "marginBottom": 75,
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 60,
         },
       ]
     }
@@ -311,19 +349,16 @@ exports[`renders Large story 1`] = `
       style={
         [
           {
-            "backgroundColor": "rgba(0, 0, 0, 0)",
-            "borderColor": "#34C759",
-            "borderRadius": 16,
-            "borderWidth": 0,
+            "alignItems": "center",
+            "flexDirection": "row",
             "height": 22,
-            "width": 42,
           },
         ]
       }
-      variant="simple"
     >
       <RNGestureHandlerButton
-        activeOpacity={0.105}
+        activeOpacity={0.3}
+        borderless={true}
         collapsable={false}
         delayLongPress={600}
         enabled={true}
@@ -339,33 +374,64 @@ exports[`renders Large story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 50,
-            "justifyContent": "center",
+            "flexDirection": "row",
+            "height": 22,
+            "opacity": 1,
           }
         }
-        underlayColor="black"
       >
-        <View
-          collapsable={false}
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="14"
+          bbWidth="14"
+          fill="none"
+          focusable={false}
+          height={14}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
           style={
-            {
-              "backgroundColor": "black",
-              "borderBottomLeftRadius": undefined,
-              "borderBottomRightRadius": undefined,
-              "borderRadius": 16,
-              "borderTopLeftRadius": undefined,
-              "borderTopRightRadius": undefined,
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
+            [
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 14,
+                "width": 14,
+              },
+            ]
           }
-        />
+          vbHeight={14}
+          vbWidth={14}
+          width={14}
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGPath
+              d="M7 12.7222C10.3137 12.7222 13 10.0359 13 6.72223C13 3.40852 10.3137 0.722229 7 0.722229C3.68629 0.722229 1 3.40852 1 6.72223C1 10.0359 3.68629 12.7222 7 12.7222Z"
+              fill={
+                {
+                  "payload": 4283979478,
+                  "type": 0,
+                }
+              }
+              propList={
+                [
+                  "fill",
+                ]
+              }
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
         <Text
-          buttonVariant="simple"
           style={
             [
               {
@@ -379,14 +445,13 @@ exports[`renders Large story 1`] = `
               [
                 {
                   "color": "#5856D6",
+                  "marginLeft": 5,
                 },
               ],
             ]
           }
           variant="body17-semibold"
-        >
-          Filter
-        </Text>
+        />
       </RNGestureHandlerButton>
     </View>
   </View>

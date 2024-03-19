@@ -11,9 +11,13 @@ export const Default = () => (
     variant="default"
     title="Title"
     onPressLeft={action('onPressLeft')}
-    leftButton="small"
+    leftTextButton="textButton"
+    leftIcon={true}
+    titleLeftButton="Back"
     onPressRight={action('onPressRight')}
-    rightButton="small"
+    rightTextButton="small"
+    rightIcon={false}
+    titleRightButton="APPLY"
   />
 );
 
@@ -22,6 +26,7 @@ export const Large = () => (
     variant="large"
     title="Title"
     onPressRight={action('onPressRight')}
-    rightButton="simple"
+    rightTextButton="textButton"
+    rightIcon={true}
   />
 );

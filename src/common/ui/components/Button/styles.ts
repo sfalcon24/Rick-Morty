@@ -13,10 +13,10 @@ export const Container = styled.View<ContainerProps>`
   border-radius: 16px;
 `;
 
-export const Pressable = styled(RectButton)`
+export const Pressable = styled(RectButton)<ContainerProps>`
   align-items: center;
   border-radius: 16px;
-  height: 50px;
+  height: ${({variant}) => HEIGHT[variant]}px;
   justify-content: center;
 `;
 

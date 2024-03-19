@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Text_Button story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 22,
+      },
+    ]
+  }
+>
+  <RNGestureHandlerButton
+    activeOpacity={0.3}
+    borderless={true}
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    onActiveStateChange={[Function]}
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    onPress={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "borderRadius": 16,
+        "flexDirection": "row",
+        "height": 22,
+        "opacity": 1,
+      }
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight="20"
+      bbWidth="20"
+      focusable={false}
+      height={20}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        [
+          {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          [
+            {
+              "marginLeft": 5,
+              "marginRight": 5,
+            },
+          ],
+          {
+            "flex": 0,
+            "height": 20,
+            "width": 20,
+          },
+        ]
+      }
+      vbHeight={20}
+      vbWidth={20}
+      width={20}
+    >
+      <RNSVGGroup>
+        <RNSVGPath
+          clipRule={0}
+          d="M11 .833C11 .373 10.552 0 10 0S9 .373 9 .833V9H.833C.373 9 0 9.448 0 10s.373 1 .833 1H9v8.167c0 .46.448.833 1 .833s1-.373 1-.833V11h8.167c.46 0 .833-.448.833-1s-.373-1-.833-1H11V.833z"
+          fill={
+            {
+              "payload": 4283321747,
+              "type": 0,
+            }
+          }
+          fillRule={0}
+          propList={
+            [
+              "fill",
+              "fillRule",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+    <Text
+      style={
+        [
+          {
+            "color": "#081F32",
+            "fontFamily": "Roboto-Medium",
+            "fontSize": 17,
+            "letterSpacing": -0.41,
+            "lineHeight": 22,
+          },
+          {},
+          [
+            {
+              "color": "#5856D6",
+              "marginLeft": 5,
+            },
+          ],
+        ]
+      }
+      variant="body17-semibold"
+    >
+      Filter
+    </Text>
+  </RNGestureHandlerButton>
+</View>
+`;
