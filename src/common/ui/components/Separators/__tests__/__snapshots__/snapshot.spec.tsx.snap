@@ -8,11 +8,10 @@ exports[`renders Separator_Large story 1`] = `
         "alignSelf": "flex-end",
         "backgroundColor": "#D1D1D6",
         "height": 1,
-        "width": 395,
       },
     ]
   }
-  variant="large"
+  width={395}
 />
 `;
 
@@ -24,11 +23,10 @@ exports[`renders Separator_Medium story 1`] = `
         "alignSelf": "flex-end",
         "backgroundColor": "#D1D1D6",
         "height": 1,
-        "width": 359,
       },
     ]
   }
-  variant="medium"
+  width={359}
 />
 `;
 
@@ -40,10 +38,9 @@ exports[`renders Separator_Small story 1`] = `
         "alignSelf": "flex-end",
         "backgroundColor": "#D1D1D6",
         "height": 1,
-        "width": 319,
       },
     ]
   }
-  variant="small"
+  width={319}
 />
 `;

@@ -14,15 +14,15 @@ const Template: Story<Args> = args => <Separators {...args} />;
 
 export const Separator_Large = Template.bind({});
 Separator_Large.args = {
-  variant: 'large',
+  width: 395,
 };
 
 export const Separator_Medium = Template.bind({});
 Separator_Medium.args = {
-  variant: 'medium',
+  width: 359,
 };
 
 export const Separator_Small = Template.bind({});
 Separator_Small.args = {
-  variant: 'small',
+  width: 319,
 };
