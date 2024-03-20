@@ -10,7 +10,6 @@ export const Container = styled.View<ContainerProps>`
   align-items: ${({variantContainer}) =>
     variantContainer === 'default' ? 'center' : 'flex-end'};
   justify-content: space-between;
-  background-color: ${({theme}) => theme.colors.gray6};
   padding-right: 15px;
 `;
 
