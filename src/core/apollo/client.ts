@@ -1,37 +1,44 @@
-import {ApolloClient, HttpLink} from '@apollo/client';
-import {setContext} from '@apollo/client/link/context';
-import {onError} from '@apollo/client/link/error';
-import {getRequestHeaders} from 'features/auth/getRequestHeaders/data/getRequestHeaders';
-import {buildCache} from './cache';
-import {setupFlipper} from './flipper';
+import {ApolloClient, InMemoryCache} from '@apollo/client';
+// import {setContext} from '@apollo/client/link/context';
+// import {onError} from '@apollo/client/link/error';
+// import {getRequestHeaders} from 'features/auth/getRequestHeaders/data/getRequestHeaders';
+// import {buildCache} from './cache';
+// import {setupFlipper} from './flipper';
 
-const buildApolloClient = () => {
-  const cache = buildCache();
+// const buildApolloClient = () => {
+//   const cache = buildCache();
 
-  const httpLink = new HttpLink({
-    uri: '', // TODO
-  });
+//   const httpLink = new HttpLink({
+//     uri: '', // TODO
+//   });
 
-  const authLink = setContext(async () => ({
-    headers: getRequestHeaders(),
-  }));
+//   const authLink = setContext(async () => ({
+//     headers: getRequestHeaders(),
+//   }));
 
-  const errorsLink = onError(() => {
-    // TODO Handle any errors
-  });
+//   const errorsLink = onError(() => {
+//     // TODO Handle any errors
+//   });
 
-  const link = authLink.concat(errorsLink).concat(httpLink);
+//   const link = authLink.concat(errorsLink).concat(httpLink);
 
-  const client = new ApolloClient({
-    link,
-    cache,
-  });
+//   const client = new ApolloClient({
+//     link,
+//     cache,
+//   });
 
-  if (__DEV__) {
-    setupFlipper(client);
-  }
+//   if (__DEV__) {
+//     setupFlipper(client);
+//   }
 
-  return client;
-};
+//   return client;
+// };
 
-export const apolloClient = buildApolloClient();
+// export const apolloClient = buildApolloClient();
+
+const apolloClient = new ApolloClient({
+  uri: 'https://rickandmortyapi.com/graphql',
+  cache: new InMemoryCache(),
+});
+
+export default apolloClient;

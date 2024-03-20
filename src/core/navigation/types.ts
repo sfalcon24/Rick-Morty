@@ -11,6 +11,7 @@ declare global {
 }
 
 export type RootParamsList = {
+  Character: undefined;
   Welcome: undefined;
   BlankMain: undefined;
   BlankAuth: undefined;
