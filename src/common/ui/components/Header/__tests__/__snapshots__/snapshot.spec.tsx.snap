@@ -2,11 +2,11 @@
 
 exports[`renders Default story 1`] = `
 <View
+  backgroundColor="#F2F2F7"
   style={
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#F2F2F7",
         "flexDirection": "row",
         "height": 44,
         "justifyContent": "space-between",
@@ -138,7 +138,7 @@ exports[`renders Default story 1`] = `
           }
           variant="body17-semibold"
         >
-          Back
+          Filter
         </Text>
       </RNGestureHandlerButton>
     </View>
@@ -189,19 +189,16 @@ exports[`renders Default story 1`] = `
       style={
         [
           {
-            "backgroundColor": "#5856D6",
-            "borderColor": "#34C759",
-            "borderRadius": 16,
-            "borderWidth": 0,
-            "height": 28,
-            "width": 66,
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 22,
           },
         ]
       }
-      variant="small"
     >
       <RNGestureHandlerButton
-        activeOpacity={0.105}
+        activeOpacity={0.3}
+        borderless={true}
         collapsable={false}
         delayLongPress={600}
         enabled={true}
@@ -217,54 +214,34 @@ exports[`renders Default story 1`] = `
           {
             "alignItems": "center",
             "borderRadius": 16,
-            "height": 28,
-            "justifyContent": "center",
+            "flexDirection": "row",
+            "height": 22,
+            "opacity": 1,
           }
         }
-        underlayColor="black"
-        variant="small"
       >
-        <View
-          collapsable={false}
-          style={
-            {
-              "backgroundColor": "black",
-              "borderBottomLeftRadius": undefined,
-              "borderBottomRightRadius": undefined,
-              "borderRadius": 16,
-              "borderTopLeftRadius": undefined,
-              "borderTopRightRadius": undefined,
-              "bottom": 0,
-              "left": 0,
-              "opacity": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-        />
         <Text
-          buttonVariant="small"
           style={
             [
               {
                 "color": "#081F32",
                 "fontFamily": "Roboto-Medium",
-                "fontSize": 13,
-                "letterSpacing": -0.08,
-                "lineHeight": 18,
+                "fontSize": 17,
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
               },
               {},
               [
                 {
-                  "color": "#FFFFFF",
+                  "color": "#5856D6",
+                  "marginLeft": 5,
                 },
               ],
             ]
           }
-          variant="tagline13-tag"
+          variant="body17-semibold"
         >
-          APPLY
+          Filter
         </Text>
       </RNGestureHandlerButton>
     </View>
@@ -274,11 +251,11 @@ exports[`renders Default story 1`] = `
 
 exports[`renders Large story 1`] = `
 <View
+  backgroundColor="#FFFFFF"
   style={
     [
       {
         "alignItems": "flex-end",
-        "backgroundColor": "#F2F2F7",
         "flexDirection": "row",
         "height": 96,
         "justifyContent": "space-between",
@@ -451,7 +428,9 @@ exports[`renders Large story 1`] = `
             ]
           }
           variant="body17-semibold"
-        />
+        >
+          Filter
+        </Text>
       </RNGestureHandlerButton>
     </View>
   </View>

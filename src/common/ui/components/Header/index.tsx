@@ -2,7 +2,6 @@ import type {FC} from 'react';
 import {memo} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Button from '../Button';
-import type {Variant} from '../Button/types';
 import StatusBar from '../StatusBar';
 import TextButton from '../TextButton';
 import {Container, Title, LeftAction, RightAction} from './styles';
@@ -10,50 +9,44 @@ import type {Props} from './types';
 
 const Header: FC<Props> = ({
   title,
-  style,
-  variant = 'default',
-  rightTextButton,
-  rightIcon,
-  titleRightButton = '',
-  leftTextButton,
+  backgroundColor,
   leftIcon,
-  titleLeftButton = '',
+  leftTextButton,
+  rightIcon,
+  rightTextButton,
+  rightButton,
   onPressLeft,
   onPressRight,
+  variant = 'default',
+  style,
 }) => (
   <SafeAreaProvider>
-    <Container style={style} variantContainer={variant}>
+    <Container
+      style={style}
+      variantContainer={variant}
+      backgroundColor={backgroundColor}>
       {<StatusBar />}
       <LeftAction actionVariant={variant}>
-        {leftTextButton && leftTextButton !== 'textButton' ? (
-          <Button
-            variant={leftTextButton as Variant}
-            title={titleLeftButton}
-            onPress={onPressLeft}
-          />
-        ) : leftTextButton === 'textButton' ? (
+        {leftTextButton && (
           <TextButton
             leftIcon={leftIcon ? 'arrowLeft' : undefined}
-            title={titleLeftButton}
+            title={leftTextButton}
             onPress={onPressLeft}
           />
-        ) : null}
+        )}
       </LeftAction>
       <Title textVariant={variant}>{title}</Title>
       <RightAction actionVariant={variant}>
-        {rightTextButton && rightTextButton !== 'textButton' ? (
-          <Button
-            variant={rightTextButton as Variant}
-            title={titleRightButton}
-            onPress={onPressRight}
-          />
-        ) : rightTextButton === 'textButton' ? (
+        {rightButton && (
+          <Button variant="small" title={rightButton} onPress={onPressRight} />
+        )}
+        {rightTextButton && (
           <TextButton
             rightIcon={rightIcon ? 'point' : undefined}
-            title={titleRightButton}
+            title={rightTextButton}
             onPress={onPressRight}
           />
-        ) : null}
+        )}
       </RightAction>
     </Container>
   </SafeAreaProvider>

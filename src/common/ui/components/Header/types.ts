@@ -2,13 +2,12 @@ import type {StyleProp, ViewStyle} from 'react-native';
 
 export type Props = {
   title?: string;
-  sizeIcon?: number;
+  backgroundColor?: string;
   leftIcon?: boolean;
   leftTextButton?: string;
-  titleLeftButton?: string;
   rightIcon?: boolean;
   rightTextButton?: string;
-  titleRightButton?: string;
+  rightButton?: string;
   onPressLeft?: () => void;
   onPressRight?: () => void;
   variant?: VariantHeader;
@@ -19,6 +18,7 @@ export type VariantHeader = 'default' | 'large';
 
 export type ContainerProps = {
   variantContainer: VariantHeader;
+  backgroundColor?: string;
 };
 
 export type TitleProps = {

@@ -1,4 +1,5 @@
 import {action} from '@storybook/addon-actions';
+import theme from 'common/ui/theme';
 import Header from '.';
 
 export default {
@@ -10,14 +11,13 @@ export const Default = () => (
   <Header
     variant="default"
     title="Title"
-    onPressLeft={action('onPressLeft')}
-    leftTextButton="textButton"
+    backgroundColor={theme.colors.gray6}
+    leftTextButton="Filter"
     leftIcon={true}
-    titleLeftButton="Back"
+    onPressLeft={action('onPressLeft')}
     onPressRight={action('onPressRight')}
-    rightTextButton="small"
+    rightTextButton="Filter"
     rightIcon={false}
-    titleRightButton="APPLY"
   />
 );
 
@@ -25,8 +25,9 @@ export const Large = () => (
   <Header
     variant="large"
     title="Title"
-    onPressRight={action('onPressRight')}
-    rightTextButton="textButton"
+    backgroundColor={theme.colors.white}
+    rightTextButton="Filter"
     rightIcon={true}
+    onPressRight={action('onPressRight')}
   />
 );
