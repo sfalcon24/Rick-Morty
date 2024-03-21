@@ -63,7 +63,6 @@ const getStories = () => {
     "./src/views/Three/index.stories.tsx": require("../src/views/Three/index.stories.tsx"),
     "./src/views/Two/index.stories.tsx": require("../src/views/Two/index.stories.tsx"),
     "./src/views/Welcome/index.stories.tsx": require("../src/views/Welcome/index.stories.tsx"),
-    "./src/views/Zero/index.stories.tsx": require("../src/views/Zero/index.stories.tsx"),
   };
 };
 

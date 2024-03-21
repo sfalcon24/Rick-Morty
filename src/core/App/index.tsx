@@ -5,7 +5,7 @@ import {ApolloProvider} from '@apollo/client';
 import {NavigationContainer} from '@react-navigation/native';
 import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
-import apolloClient from 'core/apollo/client';
+import {apolloClient} from 'core/apollo/client';
 import AppNavigator from 'core/navigation';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';

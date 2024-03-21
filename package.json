@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@apollo/client": "3.7.14",
+    "@apollo/react-hooks": "^4.0.0",
     "@hookform/resolvers": "3.1.0",
     "@react-navigation/bottom-tabs": "6.5.7",
     "@react-navigation/native": "6.1.6",

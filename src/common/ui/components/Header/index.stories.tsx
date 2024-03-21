@@ -25,7 +25,7 @@ export const Large = () => (
   <Header
     variant="large"
     title="Title"
-    backgroundColor={theme.colors.white}
+    backgroundColor={theme.colors.gray6}
     rightTextButton="Filter"
     rightIcon={true}
     onPressRight={action('onPressRight')}

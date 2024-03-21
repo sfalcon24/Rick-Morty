@@ -1,9 +1,9 @@
 import {useQuery} from '@apollo/client';
-import {query} from 'common/data/apollo/generated/nodes';
+import {CharactersList} from '../../features/characters/getAll/data/query.gql';
 import type {Lesson} from './model';
 
 const useViewModel = () => {
-  const {data} = useQuery(query);
+  const {data} = useQuery(CharactersList);
 
   const apiData = data?.items as Lesson[];
 

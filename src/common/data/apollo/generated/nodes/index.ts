@@ -7,27 +7,6 @@ export const MeData = gql`
     email
   }
 `;
-export const query = gql`
-  query {
-    character(id: 1) {
-      id
-      name
-      status
-      species
-      type
-      gender
-      origin {
-        name
-        type
-      }
-      location {
-        name
-        type
-      }
-      image
-    }
-  }
-`;
 export const Login = gql`
   mutation Login($input: LoginInput!) {
     loginMobile(input: $input) {

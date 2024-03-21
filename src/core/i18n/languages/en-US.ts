@@ -1,7 +1,7 @@
 import type {RootTabParamList} from 'core/navigation/Tabs/types';
 
 const tabs: Record<keyof RootTabParamList, string> = {
-  Zero: 'Zero',
+  Character: 'Character',
   One: 'One',
   Two: 'Two',
   Three: 'Three',

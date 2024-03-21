@@ -251,7 +251,7 @@ exports[`renders Default story 1`] = `
 
 exports[`renders Large story 1`] = `
 <View
-  backgroundColor="#FFFFFF"
+  backgroundColor="#F2F2F7"
   style={
     [
       {

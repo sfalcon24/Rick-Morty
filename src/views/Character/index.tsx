@@ -8,6 +8,7 @@ import useViewModelDefault from './viewmodel';
 
 const Character = ({useViewModel = useViewModelDefault}) => {
   const {apiData} = useViewModel();
+  console.log(apiData);
   return (
     <Container>
       <StatusBar />
