@@ -9,9 +9,9 @@ export default {
 
 export const Default = () => (
   <Header
+    style={{backgroundColor: theme.colors.gray6}}
     variant="default"
     title="Title"
-    backgroundColor={theme.colors.gray6}
     leftTextButton="Filter"
     leftIcon={true}
     onPressLeft={action('onPressLeft')}
@@ -23,9 +23,9 @@ export const Default = () => (
 
 export const Large = () => (
   <Header
+    style={{backgroundColor: theme.colors.gray5}}
     variant="large"
     title="Title"
-    backgroundColor={theme.colors.gray6}
     rightTextButton="Filter"
     rightIcon={true}
     onPressRight={action('onPressRight')}

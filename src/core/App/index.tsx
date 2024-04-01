@@ -33,18 +33,23 @@ export const Root: FC = () => {
     return null;
   }
 
+  if (!apolloClient) {
+    console.error('No se ha proporcionado un cliente valido.');
+    return null;
+  }
+
   return (
-    <ThemeProvider theme={theme}>
-      <ApolloProvider client={apolloClient}>
-        <SafeAreaProvider>
+    <SafeAreaProvider>
+      <ThemeProvider theme={theme}>
+        <ApolloProvider client={apolloClient}>
           <GestureHandlerRootView style={styles.gestureHandler}>
             <NavigationContainer>
               <StatusBar />
               <AppNavigator />
             </NavigationContainer>
           </GestureHandlerRootView>
-        </SafeAreaProvider>
-      </ApolloProvider>
-    </ThemeProvider>
+        </ApolloProvider>
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 };

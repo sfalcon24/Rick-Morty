@@ -1,0 +1,402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders EmptyState story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#F9F0EC",
+            "borderRadius": 48,
+            "marginBottom": 12,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="25"
+        bbWidth="24"
+        fill="none"
+        focusable={false}
+        height={25}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 25,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={25}
+        vbWidth={24}
+        width={24}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M9 4.5V2.5M15 20.5V22.5M4 9.5H2M20 15.5H22M4.91421 5.41421L3.5 4M19.0858 19.5858L20.5 21M12 18.1569L9.87868 20.2782C8.31658 21.8403 5.78392 21.8403 4.22183 20.2782C2.65973 18.7161 2.65973 16.1834 4.22183 14.6213L6.34315 12.5M17.6569 12.5L19.7782 10.3787C21.3403 8.81658 21.3403 6.28392 19.7782 4.72183C18.2161 3.15973 15.6834 3.15973 14.1213 4.72183L12 6.84315"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4281545523,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth="2"
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      allowFontScaling={false}
+      style={
+        [
+          {
+            "color": "#333333",
+            "fontFamily": "CabinetGrotesk-Medium",
+            "fontSize": 18,
+            "lineHeight": 25.2,
+          },
+          {},
+          [
+            {
+              "textAlign": "center",
+            },
+          ],
+        ]
+      }
+      variant="body1-medium"
+    >
+      There are no items matching your criteria. Try a different one!
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders ErrorState story 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#F9F0EC",
+            "borderRadius": 48,
+            "marginBottom": 12,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="25"
+        bbWidth="24"
+        fill="none"
+        focusable={false}
+        height={25}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 25,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={25}
+        vbWidth={24}
+        width={24}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            d="M9 4.5V2.5M15 20.5V22.5M4 9.5H2M20 15.5H22M4.91421 5.41421L3.5 4M19.0858 19.5858L20.5 21M12 18.1569L9.87868 20.2782C8.31658 21.8403 5.78392 21.8403 4.22183 20.2782C2.65973 18.7161 2.65973 16.1834 4.22183 14.6213L6.34315 12.5M17.6569 12.5L19.7782 10.3787C21.3403 8.81658 21.3403 6.28392 19.7782 4.72183C18.2161 3.15973 15.6834 3.15973 14.1213 4.72183L12 6.84315"
+            fill={
+              {
+                "payload": 4278190080,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "stroke",
+                "strokeWidth",
+                "strokeLinecap",
+                "strokeLinejoin",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4281545523,
+                "type": 0,
+              }
+            }
+            strokeLinecap={1}
+            strokeLinejoin={1}
+            strokeWidth="2"
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <Text
+      allowFontScaling={false}
+      style={
+        [
+          {
+            "color": "#333333",
+            "fontFamily": "CabinetGrotesk-Bold",
+            "fontSize": 24,
+            "lineHeight": 33.6,
+          },
+          {},
+          [
+            {
+              "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 4,
+            },
+          ],
+        ]
+      }
+      variant="title3"
+    >
+      Error title
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        [
+          {
+            "color": "#333333",
+            "fontFamily": "CabinetGrotesk-Medium",
+            "fontSize": 18,
+            "lineHeight": 25.2,
+          },
+          {},
+          [
+            {
+              "textAlign": "center",
+            },
+          ],
+        ]
+      }
+      variant="body1-medium"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+    </Text>
+    <View
+      disabled={false}
+      enabled={true}
+      size="normal"
+      style={
+        [
+          {
+            "backgroundColor": "#215DF6",
+            "borderColor": "#215DF6",
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          {
+            "marginTop": 16,
+          },
+        ]
+      }
+      variant="primary"
+    >
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flexDirection": "row",
+              "gap": 8,
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          buttonVariant="primary"
+          disabled={false}
+          loading={false}
+          size="normal"
+          style={
+            [
+              {
+                "color": "#333333",
+                "fontFamily": "CabinetGrotesk-Bold",
+                "fontSize": 15,
+                "letterSpacing": 0.3,
+                "textTransform": "uppercase",
+              },
+              {},
+              [
+                {
+                  "color": "#FFFFFF",
+                  "opacity": 1,
+                  "textAlign": "center",
+                },
+              ],
+            ]
+          }
+          variant="button"
+        >
+          Try again
+        </Text>
+      </View>
+      <RNGestureHandlerButton
+        activeOpacity={0.105}
+        collapsable={false}
+        delayLongPress={600}
+        enabled={true}
+        handlerTag={1}
+        handlerType="NativeViewGestureHandler"
+        onActiveStateChange={[Function]}
+        onGestureEvent={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        onHandlerStateChange={[Function]}
+        onPress={[Function]}
+        style={
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        underlayColor="black"
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "black",
+              "borderBottomLeftRadius": undefined,
+              "borderBottomRightRadius": undefined,
+              "borderRadius": undefined,
+              "borderTopLeftRadius": undefined,
+              "borderTopRightRadius": undefined,
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </RNGestureHandlerButton>
+    </View>
+  </View>
+</View>
+`;

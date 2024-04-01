@@ -2,7 +2,6 @@
 
 exports[`renders Default story 1`] = `
 <View
-  backgroundColor="#F2F2F7"
   style={
     [
       {
@@ -12,6 +11,9 @@ exports[`renders Default story 1`] = `
         "justifyContent": "space-between",
         "paddingRight": 15,
         "width": "100%",
+      },
+      {
+        "backgroundColor": "#F2F2F7",
       },
     ]
   }
@@ -251,7 +253,6 @@ exports[`renders Default story 1`] = `
 
 exports[`renders Large story 1`] = `
 <View
-  backgroundColor="#F2F2F7"
   style={
     [
       {
@@ -261,6 +262,9 @@ exports[`renders Large story 1`] = `
         "justifyContent": "space-between",
         "paddingRight": 15,
         "width": "100%",
+      },
+      {
+        "backgroundColor": "#E5E5EA",
       },
     ]
   }

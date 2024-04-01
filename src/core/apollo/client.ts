@@ -1,8 +1,11 @@
+import type {NormalizedCacheObject} from '@apollo/client';
 import {ApolloClient, HttpLink} from '@apollo/client';
 import {buildCache} from './cache';
 import {setupFlipper} from './flipper';
 
-const buildApolloClient = () => {
+export let apolloClient: ApolloClient<NormalizedCacheObject> | null = null;
+
+export const buildApolloClient = () => {
   const cache = buildCache();
 
   const httpLink = new HttpLink({
@@ -15,10 +18,8 @@ const buildApolloClient = () => {
   });
 
   if (__DEV__) {
-    setupFlipper(client);
+    setupFlipper(apolloClient);
   }
 
   return client;
 };
-
-export const apolloClient = buildApolloClient();

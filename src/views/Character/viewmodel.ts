@@ -5,7 +5,7 @@ import type {Lesson} from './model';
 const useViewModel = () => {
   const {data} = useQuery(CharactersList);
 
-  const apiData = data?.items as Lesson[];
+  const apiData = data?.characters.results as Lesson[];
 
   return {
     apiData,

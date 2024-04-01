@@ -1,4 +1,5 @@
 import {useCallback, useEffect, useState} from 'react';
+import {buildApolloClient} from 'core/apollo/client';
 import {noop} from 'lodash';
 // import RNBootSplash from 'react-native-bootsplash';
 
@@ -7,6 +8,7 @@ const useConnect = () => {
 
   const handleInit = useCallback(async () => {
     try {
+      buildApolloClient();
       // TODO Setup code
     } catch {
       noop();
