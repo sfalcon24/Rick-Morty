@@ -2,7 +2,6 @@ import type {StyleProp, ViewStyle} from 'react-native';
 
 export type Props = {
   title?: string;
-  backgroundColor?: string;
   leftIcon?: boolean;
   leftTextButton?: string;
   rightIcon?: boolean;
