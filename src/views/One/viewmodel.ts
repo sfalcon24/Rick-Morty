@@ -1,9 +1,9 @@
 import {useCallback} from 'react';
-import {clearAuthToken} from 'features/auth/common/data/authToken';
+// import {clearAuthToken} from 'features/auth/common/data/authToken';
 
 const useViewModel = () => {
   const handleFakeLogin = useCallback(() => {
-    clearAuthToken();
+    // clearAuthToken();
   }, []);
 
   return {handleFakeLogin};
