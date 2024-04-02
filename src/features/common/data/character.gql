@@ -1,0 +1,6 @@
+fragment CharacterSummary on Character {
+  id
+  name
+  status
+  image
+}

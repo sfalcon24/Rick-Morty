@@ -1,24 +1,24 @@
 /* THIS IS A GENERATED FILE - DO NOT MODIFY */
 /* eslint-disable */
 import gql from 'graphql-tag';
-export const MeData = gql`
-  fragment MeData on UserType {
+export const CharacterSummary = gql`
+  fragment CharacterSummary on Character {
     id
-    email
+    name
+    status
+    image
   }
 `;
-export const Login = gql`
-  mutation Login($input: LoginInput!) {
-    loginMobile(input: $input) {
-      token
+export const Characters = gql`
+  query Characters($page: Int, $filter: FilterCharacter) {
+    characters(page: $page, filter: $filter) {
+      info {
+        next
+      }
+      results {
+        ...CharacterSummary
+      }
     }
   }
-`;
-export const Me = gql`
-  query Me {
-    me {
-      id
-      email
-    }
-  }
+  ${CharacterSummary}
 `;

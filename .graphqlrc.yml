@@ -1,5 +1,5 @@
 overwrite: true
-schema: 'https://api-dev.longevityone.co/graphql/'
+schema: 'https://rickandmortyapi.com/graphql'
 documents: 'src/**/*.gql'
 extensions:
   codegen:
@@ -14,6 +14,7 @@ extensions:
         Decimal: string
         UUID: string
         JSONString: string
+        Upload: any
       addDocBlocks: false
       maybeValue: T | undefined | null
       strictScalars: true
