@@ -2,6 +2,7 @@ import type {FC} from 'react';
 import type {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabBarBottom from 'common/ui/components/TabBarBottom';
+import {Character} from 'views/Character';
 import {OneTab} from 'views/One';
 import {ThreeTab} from 'views/Three';
 import {TwoTab} from 'views/Two';
@@ -22,5 +23,6 @@ export const Tabs: FC = () => (
     <Screen name="One" component={OneTab} />
     <Screen name="Two" component={TwoTab} />
     <Screen name="Three" component={ThreeTab} />
+    <Screen name="Character" component={Character} />
   </Navigator>
 );
