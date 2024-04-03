@@ -1,5 +1,6 @@
 import type {FC} from 'react';
 import ArrowLeftIcon from './ArrowLeftIcon';
+import ArrowRightIcon from './ArrowRightIcon';
 import GhostIcon from './GhostIcon';
 import PlanetIcon from './PlanetIcon';
 import PlusIcon from './PlusIcon';
@@ -14,6 +15,7 @@ const createSvgIcons = <T extends {[name: string]: FC<IconProps>}>(
 
 export const icons = createSvgIcons({
   arrowLeft: ArrowLeftIcon,
+  arrowRight: ArrowRightIcon,
   ghost: GhostIcon,
   planet: PlanetIcon,
   plus: PlusIcon,

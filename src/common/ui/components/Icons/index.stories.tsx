@@ -10,7 +10,7 @@ export default {
 
 type Args = Pick<Props, 'name' | 'size' | 'color'>;
 
-const Template: Story<Args> = ({name = 'rocket', size}) => (
+const Template: Story<Args> = ({name = 'arrowRight', size}) => (
   <Icon name={name} size={size} />
 );
 
