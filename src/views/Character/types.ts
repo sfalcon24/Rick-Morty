@@ -1,7 +1,9 @@
 import {Component} from 'react';
-import type {FlatListProps} from 'react-native';
+import type {FlatListProps, ListRenderItemInfo} from 'react-native';
 import type {ScreenComponent} from 'core/navigation/types';
 import type {Lesson} from './model';
+
+export type RenderItemParams = ListRenderItemInfo<Lesson>;
 
 export type Props = ScreenComponent<'Character'>;
 
