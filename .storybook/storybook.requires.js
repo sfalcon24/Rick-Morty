@@ -54,6 +54,7 @@ const getStories = () => {
     "./src/common/ui/components/Cards/LocationCard/index.stories.tsx": require("../src/common/ui/components/Cards/LocationCard/index.stories.tsx"),
     "./src/common/ui/components/Checkbox/index.stories.tsx": require("../src/common/ui/components/Checkbox/index.stories.tsx"),
     "./src/common/ui/components/FilterSelectors/FilterSelection/index.stories.tsx": require("../src/common/ui/components/FilterSelectors/FilterSelection/index.stories.tsx"),
+    "./src/common/ui/components/FilterSelectors/FilterSimple/index.stories.tsx": require("../src/common/ui/components/FilterSelectors/FilterSimple/index.stories.tsx"),
     "./src/common/ui/components/FilterSelectors/Selector/index.stories.tsx": require("../src/common/ui/components/FilterSelectors/Selector/index.stories.tsx"),
     "./src/common/ui/components/Header/index.stories.tsx": require("../src/common/ui/components/Header/index.stories.tsx"),
     "./src/common/ui/components/Icons/index.stories.tsx": require("../src/common/ui/components/Icons/index.stories.tsx"),
