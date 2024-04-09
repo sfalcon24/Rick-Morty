@@ -1,5 +1,6 @@
 import type {FC} from 'react';
 import {memo} from 'react';
+import {useNavigation} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import Header from 'common/ui/components/Header';
 import SearchBar from 'common/ui/components/SearchBar';
@@ -10,7 +11,7 @@ import {Container} from './styles';
 import type {Props} from './types';
 
 export const SearchFilter: FC<Props> = ({}) => {
-  const handleClearFilter = () => {};
+  const navigation = useNavigation();
 
   return (
     <ScrollView>
@@ -23,7 +24,7 @@ export const SearchFilter: FC<Props> = ({}) => {
           onPressRight={action('onPressRight')}
           leftTextButton="Back"
           leftIcon={true}
-          onPressLeft={handleClearFilter}
+          onPressLeft={() => navigation.navigate('CharacterFilter')}
         />
         <SearchBar />
       </Container>
