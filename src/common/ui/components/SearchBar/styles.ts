@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
-import Text from '../Text';
-import type {ActionProps} from './types';
+import {TextInput} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex-direction: row;
@@ -13,7 +12,7 @@ export const Container = styled.View`
   margin-bottom: 10px;
 `;
 
-export const BackgroundText = styled(Text).attrs({
+export const BackgroundText = styled(TextInput).attrs({
   variant: 'body20',
 })`
   align-self: center;
@@ -23,12 +22,12 @@ export const BackgroundText = styled(Text).attrs({
   flex: 2;
 `;
 
-export const LeftAction = styled.View<ActionProps>`
+export const LeftAction = styled.View`
   margin-left: 10px;
   align-self: center;
 `;
 
-export const RightAction = styled.View<ActionProps>`
+export const RightAction = styled.View`
   align-items: flex-end;
   align-self: center;
   flex: 1;

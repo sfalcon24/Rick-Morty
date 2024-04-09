@@ -15,6 +15,10 @@ import type {Props} from './types';
 export const CharacterFilter: FC<Props> = ({}) => {
   const navigation = useNavigation();
 
+  const navigateToSearchFilter = (title: string) => {
+    navigation.navigate('SearchFilter', {title});
+  };
+
   const [anyCheckboxChecked, setAnyCheckboxChecked] = useState(false);
   const [showClearButton, setShowClearButton] = useState(false);
   // const [selectedStatus, setSelectedStatus] = useState(null);
@@ -57,12 +61,12 @@ export const CharacterFilter: FC<Props> = ({}) => {
             title="Name"
             subtitle="Give a name"
             onPressLeft={() => setShowClearButton(true)}
-            onPressRight={() => navigation.navigate('SearchFilter')}
+            onPressRight={() => navigateToSearchFilter('Name')}
           />
           <FilterSimple
             title="Species"
             subtitle="Select one"
-            onPressLeft={() => setShowClearButton(true)}
+            onPressRight={() => navigateToSearchFilter('Species')}
           />
           <FilterSelection
             title="Status"

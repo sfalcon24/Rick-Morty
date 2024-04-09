@@ -1,6 +1,6 @@
 import {useCallback} from 'react';
 import {Text} from 'react-native';
-import {action} from '@storybook/addon-actions';
+import {useNavigation} from '@react-navigation/native';
 import CharacterCard from 'common/ui/components/Cards/CharacterCard';
 import Header from 'common/ui/components/Header';
 import StatusBar from 'common/ui/components/StatusBar';
@@ -10,6 +10,8 @@ import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
 export const Character = ({useViewModel = useViewModelDefault}) => {
+  const navigation = useNavigation();
+
   const {loading, error, apiData} = useViewModel();
 
   const renderItem = useCallback(
@@ -38,7 +40,7 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         variant="large"
         backgroundColor={theme.colors.gray5}
         title="Character"
-        onPressRight={action('onPressRight')}
+        onPressRight={() => navigation.navigate('CharacterFilter')}
         rightTextButton="Filter"
         rightIcon={false}
       />

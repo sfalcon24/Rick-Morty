@@ -1,6 +1,6 @@
 import type {FC} from 'react';
 import {memo} from 'react';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import Header from 'common/ui/components/Header';
 import SearchBar from 'common/ui/components/SearchBar';
@@ -12,6 +12,8 @@ import type {Props} from './types';
 
 export const SearchFilter: FC<Props> = ({}) => {
   const navigation = useNavigation();
+  const route = useRoute();
+  const {title} = route.params || {};
 
   return (
     <ScrollView>
@@ -20,7 +22,7 @@ export const SearchFilter: FC<Props> = ({}) => {
         <Header
           variant="default"
           backgroundColor={theme.colors.white}
-          title="Name"
+          title={title}
           onPressRight={action('onPressRight')}
           leftTextButton="Back"
           leftIcon={true}

@@ -10,7 +10,10 @@ export const Container = styled.View`
 export const List = styled(FlatList).attrs({
   contentContainerStyle: {
     alignItems: 'flex-start',
-    marginTop: 150,
-    paddingBottom: 270,
+    // marginTop: 150,
+    paddingBottom: 130,
   },
-})`` as unknown as ListType;
+})`
+  height: 100%;
+  margin-top: 150px;
+` as unknown as ListType;
