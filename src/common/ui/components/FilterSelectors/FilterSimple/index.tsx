@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import {memo} from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Checkbox} from '../../Checkbox';
@@ -22,13 +22,17 @@ const FilterSimple: FC<Props> = ({
   style,
   title,
   subtitle,
+  onCheckboxChange,
 }) => {
   const [isChecked, setIsChecked] = useState(false);
+  // const [showClearButton, setShowClearButton] = useState(false);
 
-  const handleCheckboxPress = () => {
+  const handleCheckboxPress = useCallback(() => {
     setIsChecked(!isChecked);
     onPressLeft && onPressLeft();
-  };
+    onCheckboxChange && onCheckboxChange(!isChecked);
+  }, [isChecked, onPressLeft, onCheckboxChange]);
+
   return (
     <MainContainer style={style}>
       <Separator />

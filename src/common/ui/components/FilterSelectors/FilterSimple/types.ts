@@ -4,8 +4,9 @@ export type Props = {
   title?: string;
   subtitle?: string;
   value?: boolean;
-  onPressLeft?: () => void;
+  onPressLeft?: (isChecked: any) => void;
   onPressRight?: () => void;
   setValue?: (value: boolean) => void;
+  onCheckboxChange: (isChecked: boolean) => void;
   style?: StyleProp<ViewStyle>;
 };

@@ -4,8 +4,10 @@ export type Props = {
   options?: string;
   value?: boolean;
   isLast?: boolean;
-  onPressLeft?: () => void;
+  onPressLeft?: (isChecked: any) => void;
   onPressRight?: () => void;
   setValue?: (value: boolean) => void;
+  onCheckboxChange: (isChecked: boolean) => void;
+  anyCheckboxChecked: boolean;
   style?: StyleProp<ViewStyle>;
 };
