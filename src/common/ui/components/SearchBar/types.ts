@@ -1,5 +1,5 @@
 export type Props = {
-  id: string;
+  id?: string;
   onPress?: (id: string) => void;
 };
 

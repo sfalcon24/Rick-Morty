@@ -1,5 +1,6 @@
 import type {FC} from 'react';
 import {memo, useRef, useState} from 'react';
+import {useNavigation} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import FilterSelection from 'common/ui/components/FilterSelectors/FilterSelection';
 import FilterSimple from 'common/ui/components/FilterSelectors/FilterSimple';
@@ -12,6 +13,8 @@ import {Container, SelectorsContainer} from './styles';
 import type {Props} from './types';
 
 export const CharacterFilter: FC<Props> = ({}) => {
+  const navigation = useNavigation();
+
   const [anyCheckboxChecked, setAnyCheckboxChecked] = useState(false);
   const [showClearButton, setShowClearButton] = useState(false);
   // const [selectedStatus, setSelectedStatus] = useState(null);
@@ -54,6 +57,7 @@ export const CharacterFilter: FC<Props> = ({}) => {
             title="Name"
             subtitle="Give a name"
             onPressLeft={() => setShowClearButton(true)}
+            onPressRight={() => navigation.navigate('SearchFilter')}
           />
           <FilterSimple
             title="Species"
