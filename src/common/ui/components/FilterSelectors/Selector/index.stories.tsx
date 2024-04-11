@@ -7,9 +7,5 @@ export default {
 };
 
 export const Filter_Selector = () => (
-  <Selector
-    options="Give a name"
-    onPressLeft={action('onPressLeft')}
-    onPressRight={action('onPressRight')}
-  />
+  <Selector options="Give a name" onPressLeft={action('onPressLeft')} />
 );

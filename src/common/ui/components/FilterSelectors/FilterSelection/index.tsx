@@ -5,17 +5,16 @@ import Selector from '../Selector';
 import {MainContainer, Title, SelectorsContainer} from './styles';
 import type {Props, Selectors} from './types';
 
-const FilterSelection: FC<Props> = ({
-  style,
-  title,
-  selector,
-  // anyCheckboxChecked,
-}) => {
+const FilterSelection: FC<Props> = ({style, title, selector, onPressLeft}) => {
   const [anyCheckboxChecked, setAnyCheckboxChecked] = useState(false);
 
-  const handleCheckboxChange = useCallback(isChecked => {
-    setAnyCheckboxChecked(isChecked);
-  }, []);
+  const handleCheckboxChange = useCallback(
+    (isChecked: any) => {
+      setAnyCheckboxChecked(isChecked);
+      onPressLeft && onPressLeft(isChecked);
+    },
+    [onPressLeft],
+  );
 
   return (
     <MainContainer style={style}>
