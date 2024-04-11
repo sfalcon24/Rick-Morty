@@ -11,7 +11,6 @@ export const Container = styled.View<ContainerProps>`
     variantContainer === 'default' ? 'center' : 'flex-end'};
   justify-content: space-between;
   padding-right: 15px;
-  padding-top: 90px;
 `;
 
 export const Title = styled(Text).attrs<TitleProps>(({textVariant}) => ({

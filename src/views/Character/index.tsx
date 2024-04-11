@@ -40,7 +40,7 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         title="Character"
         onPressRight={action('onPressRight')}
         rightTextButton="Filter"
-        rightIcon={true}
+        rightIcon={false}
       />
       <List
         data={apiData}
