@@ -1,9 +1,10 @@
 import type {StyleProp, ViewStyle} from 'react-native';
 
 export type Selectors = {
-  id: string | number;
-  options: string;
-  onPressLeft?: (isChecked?: any) => void;
+  id: string;
+  options: string[];
+  onPressLeft: () => void;
+  clearSelection?: () => void;
 };
 
 export type Props = {

@@ -10,7 +10,8 @@ export type Props = {
   title?: string;
   selector?: Selectors[];
   isChecked?: boolean;
+  selectedValue?: boolean | string;
+  onValueChange?: (value: boolean | string) => void;
   onPressLeft?: (isChecked?: any) => void;
-  onCheckboxChange?: (isChecked: boolean) => void;
   style?: StyleProp<ViewStyle>;
 };

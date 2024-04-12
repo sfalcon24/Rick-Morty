@@ -10,41 +10,6 @@ exports[`renders Filter_Selector story 1`] = `
     ]
   }
 >
-  <Text
-    style={
-      [
-        {
-          "color": "#081F32",
-          "fontFamily": "Roboto-Medium",
-          "fontSize": 15,
-          "letterSpacing": -0.24,
-          "lineHeight": 20,
-        },
-        {},
-        [
-          {
-            "color": "#8E8E93",
-            "marginBottom": 10,
-            "marginLeft": 15,
-          },
-        ],
-      ]
-    }
-    variant="body15-semibold"
-  />
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#D1D1D6",
-          "height": 1,
-        },
-        {
-          "alignSelf": "flex-end",
-        },
-      ]
-    }
-  />
   <View
     style={
       [
