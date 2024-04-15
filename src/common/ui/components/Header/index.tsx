@@ -1,40 +1,49 @@
 import type {FC} from 'react';
 import {memo} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {
-  Container,
-  Title,
-  // LeftAction,
-  // RightAction
-} from './styles';
+import Button from '../Button';
+import StatusBar from '../StatusBar';
+import TextButton from '../TextButton';
+import {Container, Title, LeftAction, RightAction} from './styles';
 import type {Props} from './types';
-// import StatusBar from '../StatusBar';
-// import Button from '../Button';
 
 const Header: FC<Props> = ({
   title,
-  style,
+  leftIcon,
+  leftTextButton,
+  rightIcon,
+  rightTextButton,
+  rightButton,
+  onPressLeft,
+  onPressRight,
   variant = 'default',
-  //   leftIcon,
-  //   rightButton,
-  //   leftButton,
-  //   onPressLeft,
-  //   onPressRight,
+  style,
 }) => (
   <SafeAreaProvider>
     <Container style={style} variantContainer={variant}>
-      {/* <StatusBar /> */}
-      {/* <LeftAction>
-        {leftButton && (
-          <Button variant={leftButton} title="APPLY" onPress={onPressLeft} />
+      {<StatusBar />}
+      <LeftAction actionVariant={variant}>
+        {leftTextButton && (
+          <TextButton
+            leftIcon={leftIcon ? 'arrowLeft' : undefined}
+            title={leftTextButton}
+            onPress={onPressLeft}
+          />
         )}
-      </LeftAction> */}
+      </LeftAction>
       <Title textVariant={variant}>{title}</Title>
-      {/* <RightAction>
+      <RightAction actionVariant={variant}>
         {rightButton && (
-          <Button variant={rightButton} title="APPLY" onPress={onPressRight} />
+          <Button variant="small" title={rightButton} onPress={onPressRight} />
         )}
-      </RightAction> */}
+        {rightTextButton && (
+          <TextButton
+            rightIcon={rightIcon ? 'point' : undefined}
+            title={rightTextButton}
+            onPress={onPressRight}
+          />
+        )}
+      </RightAction>
     </Container>
   </SafeAreaProvider>
 );

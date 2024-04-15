@@ -1,60 +1,37 @@
-import styled, {css} from 'styled-components/native';
-import Text from '../Text';
-import {getTextStyle} from '../Text/styles';
+import styled from 'styled-components/native';
+import Text from 'common/ui/components/Text';
 import type {ActionProps, ContainerProps, TitleProps} from './types';
 
 export const Container = styled.View<ContainerProps>`
   flex-direction: row;
   width: 100%;
-  ${({variantContainer}) => {
-    if (variantContainer === 'default') {
-      return css`
-        height: 44px;
-        align-items: center;
-      `;
-    } else {
-      return css`
-        height: 96px;
-        align-items: flex-end;
-      `;
-    }
-  }};
+  height: ${({variantContainer}) =>
+    variantContainer === 'default' ? 44 : 96}px;
+  align-items: ${({variantContainer}) =>
+    variantContainer === 'default' ? 'center' : 'flex-end'};
   justify-content: space-between;
-  background-color: ${({theme}) => theme.colors.gray6};
   padding-right: 15px;
-  padding-left: 10px;
 `;
 
-export const Title = styled(Text)<TitleProps>`
-  flex: 1;
+export const Title = styled(Text).attrs<TitleProps>(({textVariant}) => ({
+  variant: textVariant === 'default' ? 'body15-semibold' : 'large-title',
+}))<TitleProps>`
+  flex: 2;
   align-items: center;
-  ${({textVariant}) => {
-    if (textVariant === 'default') {
-      return css`
-        ${getTextStyle('body15-semibold')};
-        text-align: center;
-      `;
-    } else {
-      return css`
-        ${getTextStyle('large-title')};
-        margin-left: 5px;
-        margin-bottom: 10px;
-      `;
-    }
-  }};
+  text-align: ${({textVariant}) =>
+    textVariant === 'default' ? 'center' : 'left'};
+  margin-bottom: ${({textVariant}) => (textVariant === 'default' ? 0 : 10)}px;
 `;
 
 export const LeftAction = styled.View<ActionProps>`
   align-items: flex-start;
-  flex: ${({actionVariant}) => (actionVariant === 'large' ? 1 : 0)};
+  flex: ${({actionVariant}) => (actionVariant === 'default' ? 1 : 0)};
+  margin-left: 15px;
 `;
 
-export const RightAction = styled.View<ContainerProps>`
+export const RightAction = styled.View<ActionProps>`
   align-items: flex-end;
-  flex: ${({variantContainer}) => (variantContainer === 'large' ? 1 : 0)};
-  ${({variantContainer}) =>
-    variantContainer === 'large' &&
-    css`
-      margin-bottom: 50px;
-    `}
+  flex: 1;
+  margin-bottom: ${({actionVariant}) =>
+    actionVariant === 'default' ? 0 : 60}px;
 `;
