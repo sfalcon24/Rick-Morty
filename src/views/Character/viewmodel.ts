@@ -1,14 +1,10 @@
-import {useQuery} from '@apollo/client';
-import {Characters} from 'common/data/apollo/generated/nodes';
-import type {Lesson} from './model';
+import useCharacters from 'features/characters/characterList/data';
 
 const useViewModel = () => {
-  const {loading, error, data} = useQuery(Characters);
-
-  const apiData = data?.characters.results as Lesson[];
+  const {characters, loading, error} = useCharacters();
 
   return {
-    apiData,
+    characters,
     loading,
     error,
   };

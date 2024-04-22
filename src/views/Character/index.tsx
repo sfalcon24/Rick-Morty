@@ -10,7 +10,7 @@ import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
 export const Character = ({useViewModel = useViewModelDefault}) => {
-  const {loading, error, apiData} = useViewModel();
+  const {characters, loading, error} = useViewModel();
 
   const renderItem = useCallback(
     ({item}: RenderItemParams) => (
@@ -43,7 +43,7 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         rightIcon={false}
       />
       <List
-        data={apiData}
+        data={characters}
         keyExtractor={item => item.id}
         renderItem={renderItem}
         numColumns={2}
