@@ -3,10 +3,6 @@ import type {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabBarBottom from 'common/ui/components/TabBarBottom';
 import {Character} from 'views/Character';
-import {OneTab} from 'views/One';
-import {ThreeTab} from 'views/Three';
-import {TwoTab} from 'views/Two';
-import {ZeroTab} from 'views/Zero';
 import {tabStackScreenOptions} from '../constants';
 import type {RootTabParamList} from './types';
 
@@ -17,12 +13,8 @@ const tabBar = (props: BottomTabBarProps) => <TabBarBottom {...props} />;
 export const Tabs: FC = () => (
   <Navigator
     tabBar={tabBar}
-    initialRouteName="Zero"
+    initialRouteName="Character"
     screenOptions={tabStackScreenOptions}>
-    <Screen name="Zero" component={ZeroTab} />
-    <Screen name="One" component={OneTab} />
-    <Screen name="Two" component={TwoTab} />
-    <Screen name="Three" component={ThreeTab} />
     <Screen name="Character" component={Character} />
   </Navigator>
 );
