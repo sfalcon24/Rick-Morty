@@ -103,7 +103,7 @@ exports[`renders Filter_Selector story 1`] = `
                     "justifyContent": "center",
                     "width": 24,
                   },
-                  false,
+                  undefined,
                 ]
               }
             />

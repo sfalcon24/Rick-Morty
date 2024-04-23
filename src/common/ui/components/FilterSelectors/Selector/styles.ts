@@ -16,6 +16,14 @@ export const SelectorsContainer = styled.View`
   align-items: center;
 `;
 
+export const Title = styled(Text).attrs({
+  variant: 'body15-semibold',
+})`
+  color: ${({theme}) => theme.colors.gray1};
+  margin-left: 15px;
+  margin-bottom: 10px;
+`;
+
 export const Options = styled(Text).attrs({
   variant: 'body17',
 })`
@@ -24,6 +32,10 @@ export const Options = styled(Text).attrs({
 
 export const Separator = styled(Separators)`
   width: 330px;
+  align-self: flex-end;
+`;
+
+export const SeparatorInitial = styled(Separators)`
   align-self: flex-end;
 `;
 

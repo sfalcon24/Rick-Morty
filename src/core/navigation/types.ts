@@ -12,6 +12,10 @@ declare global {
 
 export type RootParamsList = {
   Filter: undefined;
+  CharacterFilter: undefined;
+  SearchFilter: {
+    title: string;
+  };
   BlankMain: undefined;
   BlankAuth: undefined;
   Tabs: undefined;

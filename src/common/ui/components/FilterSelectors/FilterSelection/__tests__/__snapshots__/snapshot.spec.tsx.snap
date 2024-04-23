@@ -5,10 +5,8 @@ exports[`renders Filter_Selections story 1`] = `
   style={
     [
       {
-        "flexBasis": 0,
-        "flexDirection": "column",
-        "flexGrow": 6,
-        "flexShrink": 1,
+        "paddingBottom": 10,
+        "paddingTop": 10,
       },
     ]
   }

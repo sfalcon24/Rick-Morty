@@ -1,5 +1,4 @@
-import type {FC} from 'react';
-import {memo, useRef, useState} from 'react';
+import {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import FilterSelection from 'common/ui/components/FilterSelectors/FilterSelection';
@@ -12,34 +11,27 @@ import {selectorsGender, selectorsStatus} from './constants';
 import {Container, SelectorsContainer} from './styles';
 import type {Props} from './types';
 
-export const CharacterFilter: FC<Props> = ({}) => {
+export const CharacterFilter: Props = () => {
   const navigation = useNavigation();
-
-  const navigateToSearchFilter = (title: string) => {
-    navigation.navigate('SearchFilter', {title});
-  };
-
-  const [anyCheckboxChecked, setAnyCheckboxChecked] = useState(false);
   const [showClearButton, setShowClearButton] = useState(false);
-  // const [selectedStatus, setSelectedStatus] = useState(null);
-  // const [selectedGender, setSelectedGender] = useState(null);
 
-  const filterSelectionRefs = useRef([]);
-
-  const clearAllCheckboxes = () => {
-    filterSelectionRefs.current.forEach(ref => {
-      ref && ref.clearCheckboxes && ref.clearCheckboxes();
-    });
-  };
+  const [isNameChecked, setIsNameChecked] = useState(false);
+  const [selectedGender, setSelectedGender] = useState<string | boolean>(false);
+  const [selectedStatus, setSelectedStatus] = useState<string | boolean>(false);
+  const [isSpeciesChecked, setIsSpeciesChecked] = useState(false);
 
   const handleClearFilter = () => {
-    // Implementar la lógica para limpiar los filtros
-    // Ejemplo:
-    setAnyCheckboxChecked(false);
-    setSelectedStatus(null);
-    setSelectedGender(null);
-    setShowClearButton(false); // Ocultar el botón "CLEAR"
-    clearAllCheckboxes();
+    setShowClearButton(false);
+    setIsNameChecked(false);
+    setIsSpeciesChecked(false);
+    setSelectedGender(false);
+    setSelectedStatus(false);
+
+    console.log('Filter cleared');
+  };
+
+  const handlePressRight = () => {
+    navigation.navigate('SearchFilter', {title: 'Search'});
   };
 
   return (
@@ -60,28 +52,46 @@ export const CharacterFilter: FC<Props> = ({}) => {
           <FilterSimple
             title="Name"
             subtitle="Give a name"
-            onPressLeft={() => setShowClearButton(true)}
-            onPressRight={() => navigateToSearchFilter('Name')}
+            onPressLeft={() => {
+              setIsNameChecked(!isNameChecked);
+              setShowClearButton(true);
+            }}
+            isChecked={isNameChecked}
+            onCheckboxChange={setIsNameChecked}
+            onPressRight={handlePressRight}
           />
           <FilterSimple
             title="Species"
             subtitle="Select one"
-            onPressRight={() => navigateToSearchFilter('Species')}
+            onPressLeft={() => {
+              setIsSpeciesChecked(!isSpeciesChecked);
+              setShowClearButton(true);
+            }}
+            isChecked={isSpeciesChecked}
+            onCheckboxChange={setIsSpeciesChecked}
           />
           <FilterSelection
             title="Status"
             selector={selectorsStatus}
-            anyCheckboxChecked={anyCheckboxChecked}
+            selectedValue={selectedStatus}
+            onValueChange={value => {
+              setSelectedStatus(value);
+              setShowClearButton(true);
+            }}
+            onPressLeft={handleClearFilter}
           />
           <FilterSelection
             title="Gender"
             selector={selectorsGender}
-            anyCheckboxChecked={anyCheckboxChecked}
+            selectedValue={selectedGender}
+            onValueChange={value => {
+              setSelectedGender(value);
+              setShowClearButton(true);
+            }}
+            onPressLeft={handleClearFilter}
           />
         </SelectorsContainer>
       </Container>
     </ScrollView>
   );
 };
-
-export default memo(CharacterFilter);

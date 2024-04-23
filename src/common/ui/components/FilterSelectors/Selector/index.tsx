@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import React, {useCallback, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {memo} from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Checkbox} from '../../Checkbox';
@@ -14,26 +14,31 @@ import type {Props} from './types';
 
 const Selector: FC<Props> = ({
   onPressLeft,
-  onCheckboxChange,
   style,
   options,
   isLast,
+  isChecked,
+  onCheckboxChange,
 }) => {
-  const [isChecked, setIsChecked] = useState(false);
-  // const [showClearButton, setShowClearButton] = useState(false);
+  const [checked, setChecked] = useState(isChecked);
 
-  const handleCheckboxPress = useCallback(() => {
-    setIsChecked(!isChecked);
-    onPressLeft && onPressLeft();
-    onCheckboxChange && onCheckboxChange(!isChecked);
-  }, [isChecked, onPressLeft, onCheckboxChange]);
+  useEffect(() => {
+    setChecked(isChecked);
+  }, [isChecked]);
+
+  const handleCheckboxPress = () => {
+    const newChecked = !checked;
+    setChecked(newChecked);
+    onCheckboxChange && onCheckboxChange(newChecked);
+    onPressLeft && onPressLeft(newChecked);
+  };
 
   return (
     <MainContainer style={style}>
       <SelectorsContainer>
         <LeftAction>
           <TouchableOpacity onPress={handleCheckboxPress}>
-            <Checkbox isChecked={isChecked} onPress={handleCheckboxPress} />
+            <Checkbox isChecked={checked} onPress={handleCheckboxPress} />
           </TouchableOpacity>
         </LeftAction>
         <Options>{options}</Options>

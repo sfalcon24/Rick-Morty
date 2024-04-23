@@ -3,9 +3,8 @@ import type {BottomTabBarProps} from '@react-navigation/bottom-tabs';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabBarBottom from 'common/ui/components/TabBarBottom';
 import {Character} from 'views/Character';
-import CharacterFilter from 'views/CharacterFilter';
-import SearchFilter from 'views/SearchFilter';
-
+import {CharacterFilter} from 'views/CharacterFilter';
+import {SearchFilter} from 'views/SearchFilter';
 import {tabStackScreenOptions} from '../constants';
 import type {RootTabParamList} from './types';
 

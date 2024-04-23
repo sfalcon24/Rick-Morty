@@ -2,9 +2,9 @@ import type {StyleProp, ViewStyle} from 'react-native';
 import type {UseFormSetValue} from 'react-hook-form';
 
 export type Props = {
-  isChecked: boolean;
+  isChecked?: boolean;
   value?: boolean;
   setValue?: UseFormSetValue<any>;
-  onPress: () => void;
+  onPress?: () => void;
   style?: StyleProp<ViewStyle>;
 };
