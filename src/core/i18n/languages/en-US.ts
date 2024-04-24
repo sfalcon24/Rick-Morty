@@ -16,6 +16,7 @@ const actions = {
 const common = {
   loading: 'Loading...',
   error: 'Error:',
+  titleCharacter: 'Character',
 };
 
 const dictionary = {

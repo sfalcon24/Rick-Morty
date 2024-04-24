@@ -1,12 +1,11 @@
 import {useCallback} from 'react';
-import {Text} from 'react-native';
 import {action} from '@storybook/addon-actions';
 import CharacterCard from 'common/ui/components/Cards/CharacterCard';
 import Header from 'common/ui/components/Header';
 import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
 import {t} from 'i18next';
-import {Container, List} from './styles';
+import {Checking, Container, List} from './styles';
 import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
@@ -19,21 +18,21 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         image={item.image}
         status={item.status}
         name={item.name}
-        id={'item.id'}
+        id={item.id}
       />
     ),
     [],
   );
 
   if (loading) {
-    return <Text>{t('common:loading')}</Text>;
+    return <Checking>{t('common.loading')}</Checking>;
   }
 
   if (error) {
     return (
-      <Text>
-        {t('common:error')} {error.message}
-      </Text>
+      <Checking>
+        {t('common.error')} {error.message}
+      </Checking>
     );
   }
   return (
@@ -42,10 +41,9 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
       <Header
         variant="large"
         backgroundColor={theme.colors.gray6}
-        title="Character"
+        title={t('common.titleCharacter') ?? ''}
         onPressRight={action('onPressRight')}
-        rightTextButton="Filter"
-        rightIcon={false}
+        rightTextButton={t('actions.action/filter') ?? ''}
       />
       <List
         data={characters}
