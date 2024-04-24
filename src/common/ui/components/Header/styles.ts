@@ -6,7 +6,7 @@ export const Container = styled.View<ContainerProps>`
   flex-direction: row;
   width: 100%;
   height: ${({variantContainer}) =>
-    variantContainer === 'default' ? 44 : 96}px;
+    variantContainer === 'default' ? 44 : 150}px;
   align-items: ${({variantContainer}) =>
     variantContainer === 'default' ? 'center' : 'flex-end'};
   justify-content: space-between;

@@ -9,6 +9,7 @@ import type {Props} from './types';
 
 const Header: FC<Props> = ({
   title,
+  backgroundColor,
   leftIcon,
   leftTextButton,
   rightIcon,
@@ -20,7 +21,10 @@ const Header: FC<Props> = ({
   style,
 }) => (
   <SafeAreaProvider>
-    <Container style={style} variantContainer={variant}>
+    <Container
+      style={style}
+      variantContainer={variant}
+      backgroundColor={backgroundColor}>
       {<StatusBar />}
       <LeftAction actionVariant={variant}>
         {leftTextButton && (

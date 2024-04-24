@@ -9,7 +9,8 @@ export const Container = styled.View`
   border-color: ${({theme}) => theme.colors.gray5};
   border-radius: 8px;
   margin-top: 9px;
-  margin-left: 9px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 `;
 
 export const Image = styled(ImageBase)`

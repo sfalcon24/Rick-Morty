@@ -1,10 +1,9 @@
 import type {RootTabParamList} from 'core/navigation/Tabs/types';
 
 const tabs: Record<keyof RootTabParamList, string> = {
-  Zero: 'Zero',
-  One: 'One',
-  Two: 'Two',
-  Three: 'Three',
+  Character: 'Character',
+  Episode: 'Episode',
+  Location: 'Location',
 };
 
 const actions = {
@@ -14,7 +13,14 @@ const actions = {
   'action/filter': 'Filter',
 };
 
+const common = {
+  loading: 'Loading...',
+  error: 'Error:',
+  titleCharacter: 'Character',
+};
+
 const dictionary = {
+  common,
   tabs,
   actions,
 };

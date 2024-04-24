@@ -1,6 +1,5 @@
 export type RootTabParamList = {
-  Zero: undefined;
-  One: undefined;
-  Two: undefined;
-  Three: undefined;
+  Character: undefined;
+  Location: undefined;
+  Episode: undefined;
 };
