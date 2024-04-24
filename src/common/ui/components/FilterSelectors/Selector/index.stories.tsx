@@ -2,14 +2,15 @@ import {action} from '@storybook/addon-actions';
 import Selector from '.';
 
 export default {
-  title: 'Filer Selectors',
+  title: 'Filter Selectors',
   component: Selector,
 };
 
 export const Filter_Selector = () => (
   <Selector
-    options="Give a name"
-    onPressLeft={action('onPressLeft')}
-    onPressRight={action('onPressRight')}
+    name="Alive"
+    value="alive"
+    isSelected={true}
+    onPress={action('onPress')}
   />
 );

@@ -1,11 +1,9 @@
 import type {StyleProp, ViewStyle} from 'react-native';
 
 export type Props = {
-  options?: string;
-  value?: boolean;
-  isLast?: boolean;
-  onPressLeft?: () => void;
-  onPressRight?: () => void;
-  setValue?: (value: boolean) => void;
+  name: string;
+  value: string;
+  isSelected: boolean;
+  onPress: (value: string) => void;
   style?: StyleProp<ViewStyle>;
 };

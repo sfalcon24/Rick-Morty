@@ -2,7 +2,7 @@ import {action} from '@storybook/addon-actions';
 import FilterSimple from '.';
 
 export default {
-  title: 'Filer Selectors',
+  title: 'Filter Selectors',
   component: FilterSimple,
 };
 

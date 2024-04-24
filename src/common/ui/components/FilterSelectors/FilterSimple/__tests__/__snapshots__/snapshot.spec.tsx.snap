@@ -76,57 +76,66 @@ exports[`renders Filter_Simple story 1`] = `
             }
           }
         >
-          <View
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": undefined,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight="22"
+            bbWidth="22"
+            fill="none"
+            focusable={false}
+            height={22}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
             style={
-              {
-                "opacity": 1,
-              }
+              [
+                {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                {
+                  "flex": 0,
+                  "height": 22,
+                  "width": 22,
+                },
+              ]
             }
+            vbHeight={22}
+            vbWidth={22}
+            width={22}
           >
-            <View
-              style={
+            <RNSVGGroup
+              fill={null}
+              propList={
                 [
-                  {
-                    "alignItems": "center",
-                    "borderColor": "#C7C7CC",
-                    "borderRadius": 12,
-                    "borderWidth": 1,
-                    "height": 24,
-                    "justifyContent": "center",
-                    "width": 24,
-                  },
-                  false,
+                  "fill",
                 ]
               }
-            />
-          </View>
+            >
+              <RNSVGPath
+                d="M21.25 11c0 5.66-4.59 10.25-10.25 10.25S.75 16.66.75 11 5.34.75 11 .75 21.25 5.34 21.25 11Z"
+                fill={
+                  {
+                    "payload": 4294967295,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                    "stroke",
+                    "strokeWidth",
+                  ]
+                }
+                stroke={
+                  {
+                    "payload": 4293256682,
+                    "type": 0,
+                  }
+                }
+                strokeWidth="1.5"
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
         </View>
       </RNGestureHandlerButton>
     </View>

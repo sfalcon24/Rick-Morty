@@ -2,9 +2,8 @@ import type {FC} from 'react';
 import React, {useState} from 'react';
 import {memo} from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {Checkbox} from '../../Checkbox';
 import Icons from '../../Icons';
-import Separator from '../../Separators';
+import Separator from '../../Separator';
 import {
   MainContainer,
   Container,
@@ -35,7 +34,7 @@ const FilterSimple: FC<Props> = ({
       <SelectorsContainer>
         <LeftAction>
           <TouchableOpacity onPress={handleCheckboxPress}>
-            <Checkbox isChecked={isChecked} onPress={handleCheckboxPress} />
+            <Icons name={isChecked ? 'radioButtonFill' : 'radioButton'} />
           </TouchableOpacity>
         </LeftAction>
         <Container>
