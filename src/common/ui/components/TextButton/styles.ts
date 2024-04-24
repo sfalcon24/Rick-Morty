@@ -25,4 +25,5 @@ export const Title = styled(Text).attrs({
   variant: 'body17-semibold',
 })`
   color: ${({theme}) => theme.colors.indigo};
+  margin-left: 5px;
 `;
