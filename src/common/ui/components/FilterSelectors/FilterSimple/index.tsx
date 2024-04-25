@@ -2,7 +2,7 @@ import type {FC} from 'react';
 import React from 'react';
 import {memo} from 'react';
 import useIdCallback from 'common/ui/utils/useIdCallback';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
 import Icons from '../../Icons';
 import Separator from '../../Separator';
 import {
@@ -11,21 +11,12 @@ import {
   LeftAction,
   RightAction,
   Title,
-  Subtitle,
   SelectorsContainer,
   Icon,
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({
-  value,
-  onPress,
-  onPressRight,
-  style,
-  title,
-  subtitle,
-  isChecked,
-}) => {
+const FilterSimple: FC<Props> = ({value, onPress, style, title, isChecked}) => {
   // const handleCheckboxPress = useCallback(() => {
   //   const newCheckedState = !internalChecked;
   //   setInternalChecked(newCheckedState);
@@ -41,18 +32,14 @@ const FilterSimple: FC<Props> = ({
       <TouchableOpacity onPress={handleCheckboxPress}>
         <SelectorsContainer>
           <LeftAction>
-            <TouchableOpacity onPress={handleCheckboxPress}>
-              <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
-            </TouchableOpacity>
+            <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
           </LeftAction>
           <Container>
             <Title>{title}</Title>
-            <Subtitle>{subtitle}</Subtitle>
+            <TextInput placeholder="Enter text" value={value} />
           </Container>
           <RightAction>
-            <TouchableOpacity onPress={onPressRight}>
-              <Icons name="arrowRight" />
-            </TouchableOpacity>
+            <Icons name="arrowRight" />
           </RightAction>
         </SelectorsContainer>
       </TouchableOpacity>

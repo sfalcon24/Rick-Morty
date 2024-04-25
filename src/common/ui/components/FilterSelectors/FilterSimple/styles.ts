@@ -26,13 +26,6 @@ export const Title = styled(Text).attrs({
   variant: 'body17-semibold',
 })``;
 
-export const Subtitle = styled(Text).attrs({
-  variant: 'body15-semibold',
-  numberOfLines: 2,
-})`
-  color: ${({theme}) => theme.colors.gray1};
-`;
-
 export const LeftAction = styled.View`
   align-items: flex-start;
   flex: 1;
