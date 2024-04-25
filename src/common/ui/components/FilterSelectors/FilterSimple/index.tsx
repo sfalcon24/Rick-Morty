@@ -17,19 +17,12 @@ import {
 import type {Props} from './types';
 
 const FilterSimple: FC<Props> = ({value, onPress, style, title, isChecked}) => {
-  // const handleCheckboxPress = useCallback(() => {
-  //   const newCheckedState = !internalChecked;
-  //   setInternalChecked(newCheckedState);
-  //   onCheckboxChange && onCheckboxChange(newCheckedState);
-  //   onPressLeft && onPressLeft();
-  // }, [internalChecked, onPressLeft, onCheckboxChange]);
-
-  const handleCheckboxPress = useIdCallback(onPress, value);
+  const handlePress = useIdCallback(onPress, value);
 
   return (
     <MainContainer style={style}>
       <Separator />
-      <TouchableOpacity onPress={handleCheckboxPress}>
+      <TouchableOpacity onPress={handlePress}>
         <SelectorsContainer>
           <LeftAction>
             <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
