@@ -2,42 +2,48 @@ import type {FC} from 'react';
 import React from 'react';
 import {memo} from 'react';
 import useIdCallback from 'common/ui/utils/useIdCallback';
-import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
+import {t} from 'i18next';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icons from '../../Icons';
-import Separator from '../../Separator';
 import {
-  MainContainer,
   Container,
+  Main,
   LeftAction,
+  Center,
   RightAction,
   Title,
-  SelectorsContainer,
+  Subtitle,
   Icon,
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({value, onPress, style, title, isChecked}) => {
-  const handlePress = useIdCallback(onPress, value);
+const FilterSimple: FC<Props> = ({
+  id,
+  title,
+  value,
+  isChecked,
+  onPress,
+  style,
+}) => {
+  const handlePress = useIdCallback(onPress, id);
 
   return (
-    <MainContainer style={style}>
-      <Separator />
+    <Container style={style}>
       <TouchableOpacity onPress={handlePress}>
-        <SelectorsContainer>
+        <Main>
           <LeftAction>
             <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
           </LeftAction>
-          <Container>
+          <Center>
             <Title>{title}</Title>
-            <TextInput placeholder="Enter text" value={value} />
-          </Container>
+            <Subtitle>{value ?? t(`filters.${id}`)}</Subtitle>
+          </Center>
           <RightAction>
             <Icons name="arrowRight" />
           </RightAction>
-        </SelectorsContainer>
+        </Main>
       </TouchableOpacity>
-      <Separator />
-    </MainContainer>
+    </Container>
   );
 };
 
