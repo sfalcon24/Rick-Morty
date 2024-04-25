@@ -10,7 +10,9 @@ export const Filter_Simple = () => (
   <FilterSimple
     title="Name"
     subtitle="Give a name"
-    onPressLeft={action('onPressLeft')}
+    value="give a name"
+    isChecked={true}
+    onPress={action('onPress')}
     onPressRight={action('onPressRight')}
   />
 );

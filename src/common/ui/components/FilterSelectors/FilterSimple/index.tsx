@@ -1,6 +1,7 @@
 import type {FC} from 'react';
-import React, {useState} from 'react';
+import React from 'react';
 import {memo} from 'react';
+import useIdCallback from 'common/ui/utils/useIdCallback';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Icons from '../../Icons';
 import Separator from '../../Separator';
@@ -12,41 +13,49 @@ import {
   Title,
   Subtitle,
   SelectorsContainer,
+  Icon,
 } from './styles';
 import type {Props} from './types';
 
 const FilterSimple: FC<Props> = ({
-  onPressLeft,
+  value,
+  onPress,
   onPressRight,
   style,
   title,
   subtitle,
+  isChecked,
 }) => {
-  const [isChecked, setIsChecked] = useState(false);
+  // const handleCheckboxPress = useCallback(() => {
+  //   const newCheckedState = !internalChecked;
+  //   setInternalChecked(newCheckedState);
+  //   onCheckboxChange && onCheckboxChange(newCheckedState);
+  //   onPressLeft && onPressLeft();
+  // }, [internalChecked, onPressLeft, onCheckboxChange]);
 
-  const handleCheckboxPress = () => {
-    setIsChecked(!isChecked);
-    onPressLeft && onPressLeft();
-  };
+  const handleCheckboxPress = useIdCallback(onPress, value);
+
   return (
     <MainContainer style={style}>
       <Separator />
-      <SelectorsContainer>
-        <LeftAction>
-          <TouchableOpacity onPress={handleCheckboxPress}>
-            <Icons name={isChecked ? 'radioButtonFill' : 'radioButton'} />
-          </TouchableOpacity>
-        </LeftAction>
-        <Container>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-        </Container>
-        <RightAction>
-          <TouchableOpacity onPress={onPressRight}>
-            <Icons name="arrowRight" />
-          </TouchableOpacity>
-        </RightAction>
-      </SelectorsContainer>
+      <TouchableOpacity onPress={handleCheckboxPress}>
+        <SelectorsContainer>
+          <LeftAction>
+            <TouchableOpacity onPress={handleCheckboxPress}>
+              <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
+            </TouchableOpacity>
+          </LeftAction>
+          <Container>
+            <Title>{title}</Title>
+            <Subtitle>{subtitle}</Subtitle>
+          </Container>
+          <RightAction>
+            <TouchableOpacity onPress={onPressRight}>
+              <Icons name="arrowRight" />
+            </TouchableOpacity>
+          </RightAction>
+        </SelectorsContainer>
+      </TouchableOpacity>
       <Separator />
     </MainContainer>
   );
