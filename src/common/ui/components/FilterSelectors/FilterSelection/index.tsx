@@ -1,41 +1,27 @@
 import type {FC} from 'react';
 import React from 'react';
 import {memo} from 'react';
-import Separator from '../../Separators';
-import Selector from '../Selector';
-import {MainContainer, Title, SelectorsContainer} from './styles';
-import type {Props, Selectors} from './types';
+import {Container, Title, Selector, Separator} from './styles';
+import type {Props} from './types';
 
-const FilterSelection: FC<Props> = ({
-  style,
-  title,
-  selector,
-  selectedValue,
-  onValueChange,
-}) => (
-  <MainContainer style={style}>
+const FilterSelection: FC<Props> = ({title, options, onPress, style}) => (
+  <Container style={style}>
     <Title>{title}</Title>
     <Separator />
-    <SelectorsContainer>
-      {selector?.map((item: Selectors, index: number) => (
+    {options?.map((opt, index) => (
+      <>
         <Selector
-          key={item.id}
-          options={item.options}
-          onPressLeft={item.onPressLeft}
-          isChecked={selectedValue === item.options}
-          onCheckboxChange={checked => {
-            if (checked) {
-              onValueChange && onValueChange(item.options);
-            } else {
-              onValueChange && onValueChange(false);
-            }
-          }}
-          isLast={selector.length - 1 === index}
+          key={opt.value}
+          name={opt.name}
+          value={opt.value}
+          isSelected={opt.isSelected}
+          onPress={onPress}
         />
-      ))}
-    </SelectorsContainer>
+        {index !== options.length - 1 && <Separator isItem />}
+      </>
+    ))}
     <Separator />
-  </MainContainer>
+  </Container>
 );
 
 export default memo(FilterSelection);

@@ -8,13 +8,9 @@ export type Selectors = {
 };
 
 export type Props = {
-  title?: string;
-  selectors?: Selectors[];
-  options?: string;
-  isLast?: boolean;
-  isChecked?: boolean;
-  onPressLeft?: (isChecked?: any) => void;
-  onCheckboxChange?: (isChecked: boolean) => void;
-  onPress?: () => void;
+  name: string;
+  value: string;
+  isSelected: boolean;
+  onPress: (value: string) => void;
   style?: StyleProp<ViewStyle>;
 };

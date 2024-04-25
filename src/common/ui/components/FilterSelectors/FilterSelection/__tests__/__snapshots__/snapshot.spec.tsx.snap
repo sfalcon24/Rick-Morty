@@ -4,10 +4,7 @@ exports[`renders Filter_Selections story 1`] = `
 <View
   style={
     [
-      {
-        "paddingBottom": 10,
-        "paddingTop": 10,
-      },
+      {},
     ]
   }
 >
@@ -27,6 +24,7 @@ exports[`renders Filter_Selections story 1`] = `
             "color": "#8E8E93",
             "marginBottom": 10,
             "marginLeft": 15,
+            "marginTop": 10,
           },
         ],
       ]
@@ -42,23 +40,33 @@ exports[`renders Filter_Selections story 1`] = `
           "backgroundColor": "#D1D1D6",
           "height": 1,
         },
+        {
+          "marginLeft": "0%",
+        },
       ]
     }
   />
-  <View
-    style={
-      [
-        {},
-      ]
-    }
+  <RNGestureHandlerButton
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    exclusive={true}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    rippleColor={0}
+    touchSoundDisabled={false}
   >
     <View
+      accessible={true}
+      collapsable={false}
       style={
-        [
-          {
-            "flexDirection": "column",
-          },
-        ]
+        {
+          "opacity": 1,
+        }
       }
     >
       <View
@@ -68,100 +76,86 @@ exports[`renders Filter_Selections story 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
               "height": 44,
-              "paddingLeft": 18,
-              "paddingRight": 18,
-              "width": "100%",
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
             },
+            {},
           ]
         }
       >
-        <View
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="24"
+          bbWidth="24"
+          fill="none"
+          focusable={false}
+          height={24}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
           style={
             [
               {
-                "alignItems": "flex-start",
-                "marginLeft": 5,
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
+          vbHeight={24}
+          vbWidth={24}
+          width={24}
         >
-          <RNGestureHandlerButton
-            collapsable={false}
-            delayLongPress={600}
-            enabled={true}
-            exclusive={true}
-            handlerTag={1}
-            handlerType="NativeViewGestureHandler"
-            onGestureEvent={[Function]}
-            onGestureHandlerEvent={[Function]}
-            onGestureHandlerStateChange={[Function]}
-            onHandlerStateChange={[Function]}
-            rippleColor={0}
-            touchSoundDisabled={false}
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
           >
-            <View
-              accessible={true}
-              collapsable={false}
-              style={
+            <RNSVGPath
+              clipRule={0}
+              d="M1 12c0 6.075 4.925 11 11 11s11-4.925 11-11S18.075 1 12 1 1 5.925 1 12Zm-1 0C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12Z"
+              fill={
                 {
-                  "opacity": 1,
+                  "payload": 4283979478,
+                  "type": 0,
                 }
               }
-            >
-              <View
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": undefined,
-                    "expanded": undefined,
-                    "selected": undefined,
-                  }
+              fillRule={0}
+              propList={
+                [
+                  "fill",
+                  "fillRule",
+                ]
+              }
+            />
+            <RNSVGPath
+              clipRule={0}
+              d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"
+              fill={
+                {
+                  "payload": 4283979478,
+                  "type": 0,
                 }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onClick={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "alignItems": "center",
-                        "borderColor": "#C7C7CC",
-                        "borderRadius": 12,
-                        "borderWidth": 1,
-                        "height": 24,
-                        "justifyContent": "center",
-                        "width": 24,
-                      },
-                      false,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </RNGestureHandlerButton>
-        </View>
+              }
+              fillRule={0}
+              propList={
+                [
+                  "fill",
+                  "fillRule",
+                ]
+              }
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
         <Text
           style={
             [
@@ -175,7 +169,7 @@ exports[`renders Filter_Selections story 1`] = `
               {},
               [
                 {
-                  "marginLeft": 15,
+                  "marginLeft": 16,
                 },
               ],
             ]
@@ -185,28 +179,42 @@ exports[`renders Filter_Selections story 1`] = `
           Alive
         </Text>
       </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#D1D1D6",
-              "height": 1,
-            },
-            {
-              "alignSelf": "flex-end",
-              "width": 330,
-            },
-          ]
-        }
-      />
     </View>
+  </RNGestureHandlerButton>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#D1D1D6",
+          "height": 1,
+        },
+        {
+          "marginLeft": "12%",
+        },
+      ]
+    }
+  />
+  <RNGestureHandlerButton
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    exclusive={true}
+    handlerTag={2}
+    handlerType="NativeViewGestureHandler"
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    rippleColor={0}
+    touchSoundDisabled={false}
+  >
     <View
+      accessible={true}
+      collapsable={false}
       style={
-        [
-          {
-            "flexDirection": "column",
-          },
-        ]
+        {
+          "opacity": 1,
+        }
       }
     >
       <View
@@ -216,100 +224,75 @@ exports[`renders Filter_Selections story 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
               "height": 44,
-              "paddingLeft": 18,
-              "paddingRight": 18,
-              "width": "100%",
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
             },
+            {},
           ]
         }
       >
-        <View
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="22"
+          bbWidth="22"
+          fill="none"
+          focusable={false}
+          height={22}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
           style={
             [
               {
-                "alignItems": "flex-start",
-                "marginLeft": 5,
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 22,
+                "width": 22,
               },
             ]
           }
+          vbHeight={22}
+          vbWidth={22}
+          width={22}
         >
-          <RNGestureHandlerButton
-            collapsable={false}
-            delayLongPress={600}
-            enabled={true}
-            exclusive={true}
-            handlerTag={2}
-            handlerType="NativeViewGestureHandler"
-            onGestureEvent={[Function]}
-            onGestureHandlerEvent={[Function]}
-            onGestureHandlerStateChange={[Function]}
-            onHandlerStateChange={[Function]}
-            rippleColor={0}
-            touchSoundDisabled={false}
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
           >
-            <View
-              accessible={true}
-              collapsable={false}
-              style={
+            <RNSVGPath
+              d="M21.25 11c0 5.66-4.59 10.25-10.25 10.25S.75 16.66.75 11 5.34.75 11 .75 21.25 5.34 21.25 11Z"
+              fill={
                 {
-                  "opacity": 1,
+                  "payload": 4294967295,
+                  "type": 0,
                 }
               }
-            >
-              <View
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": undefined,
-                    "expanded": undefined,
-                    "selected": undefined,
-                  }
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 4293256682,
+                  "type": 0,
                 }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onClick={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "alignItems": "center",
-                        "borderColor": "#C7C7CC",
-                        "borderRadius": 12,
-                        "borderWidth": 1,
-                        "height": 24,
-                        "justifyContent": "center",
-                        "width": 24,
-                      },
-                      false,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </RNGestureHandlerButton>
-        </View>
+              }
+              strokeWidth="1.5"
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
         <Text
           style={
             [
@@ -323,7 +306,7 @@ exports[`renders Filter_Selections story 1`] = `
               {},
               [
                 {
-                  "marginLeft": 15,
+                  "marginLeft": 16,
                 },
               ],
             ]
@@ -333,28 +316,42 @@ exports[`renders Filter_Selections story 1`] = `
           Dead
         </Text>
       </View>
-      <View
-        style={
-          [
-            {
-              "backgroundColor": "#D1D1D6",
-              "height": 1,
-            },
-            {
-              "alignSelf": "flex-end",
-              "width": 330,
-            },
-          ]
-        }
-      />
     </View>
+  </RNGestureHandlerButton>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#D1D1D6",
+          "height": 1,
+        },
+        {
+          "marginLeft": "12%",
+        },
+      ]
+    }
+  />
+  <RNGestureHandlerButton
+    collapsable={false}
+    delayLongPress={600}
+    enabled={true}
+    exclusive={true}
+    handlerTag={3}
+    handlerType="NativeViewGestureHandler"
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    rippleColor={0}
+    touchSoundDisabled={false}
+  >
     <View
+      accessible={true}
+      collapsable={false}
       style={
-        [
-          {
-            "flexDirection": "column",
-          },
-        ]
+        {
+          "opacity": 1,
+        }
       }
     >
       <View
@@ -364,100 +361,75 @@ exports[`renders Filter_Selections story 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
               "height": 44,
-              "paddingLeft": 18,
-              "paddingRight": 18,
-              "width": "100%",
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
             },
+            {},
           ]
         }
       >
-        <View
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="22"
+          bbWidth="22"
+          fill="none"
+          focusable={false}
+          height={22}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
           style={
             [
               {
-                "alignItems": "flex-start",
-                "marginLeft": 5,
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              {
+                "flex": 0,
+                "height": 22,
+                "width": 22,
               },
             ]
           }
+          vbHeight={22}
+          vbWidth={22}
+          width={22}
         >
-          <RNGestureHandlerButton
-            collapsable={false}
-            delayLongPress={600}
-            enabled={true}
-            exclusive={true}
-            handlerTag={3}
-            handlerType="NativeViewGestureHandler"
-            onGestureEvent={[Function]}
-            onGestureHandlerEvent={[Function]}
-            onGestureHandlerStateChange={[Function]}
-            onHandlerStateChange={[Function]}
-            rippleColor={0}
-            touchSoundDisabled={false}
+          <RNSVGGroup
+            fill={null}
+            propList={
+              [
+                "fill",
+              ]
+            }
           >
-            <View
-              accessible={true}
-              collapsable={false}
-              style={
+            <RNSVGPath
+              d="M21.25 11c0 5.66-4.59 10.25-10.25 10.25S.75 16.66.75 11 5.34.75 11 .75 21.25 5.34 21.25 11Z"
+              fill={
                 {
-                  "opacity": 1,
+                  "payload": 4294967295,
+                  "type": 0,
                 }
               }
-            >
-              <View
-                accessibilityState={
-                  {
-                    "busy": undefined,
-                    "checked": undefined,
-                    "disabled": undefined,
-                    "expanded": undefined,
-                    "selected": undefined,
-                  }
+              propList={
+                [
+                  "fill",
+                  "stroke",
+                  "strokeWidth",
+                ]
+              }
+              stroke={
+                {
+                  "payload": 4293256682,
+                  "type": 0,
                 }
-                accessibilityValue={
-                  {
-                    "max": undefined,
-                    "min": undefined,
-                    "now": undefined,
-                    "text": undefined,
-                  }
-                }
-                accessible={true}
-                collapsable={false}
-                focusable={true}
-                onClick={[Function]}
-                onResponderGrant={[Function]}
-                onResponderMove={[Function]}
-                onResponderRelease={[Function]}
-                onResponderTerminate={[Function]}
-                onResponderTerminationRequest={[Function]}
-                onStartShouldSetResponder={[Function]}
-                style={
-                  {
-                    "opacity": 1,
-                  }
-                }
-              >
-                <View
-                  style={
-                    [
-                      {
-                        "alignItems": "center",
-                        "borderColor": "#C7C7CC",
-                        "borderRadius": 12,
-                        "borderWidth": 1,
-                        "height": 24,
-                        "justifyContent": "center",
-                        "width": 24,
-                      },
-                      false,
-                    ]
-                  }
-                />
-              </View>
-            </View>
-          </RNGestureHandlerButton>
-        </View>
+              }
+              strokeWidth="1.5"
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
         <Text
           style={
             [
@@ -471,7 +443,7 @@ exports[`renders Filter_Selections story 1`] = `
               {},
               [
                 {
-                  "marginLeft": 15,
+                  "marginLeft": 16,
                 },
               ],
             ]
@@ -482,13 +454,16 @@ exports[`renders Filter_Selections story 1`] = `
         </Text>
       </View>
     </View>
-  </View>
+  </RNGestureHandlerButton>
   <View
     style={
       [
         {
           "backgroundColor": "#D1D1D6",
           "height": 1,
+        },
+        {
+          "marginLeft": "0%",
         },
       ]
     }

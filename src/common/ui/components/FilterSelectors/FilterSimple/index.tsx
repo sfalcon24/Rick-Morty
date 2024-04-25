@@ -1,61 +1,47 @@
 import type {FC} from 'react';
-import React, {useState, useCallback, useEffect} from 'react';
+import React, {useState} from 'react';
 import {memo} from 'react';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {Checkbox} from '../../Checkbox';
-import Icons from '../../Icons';
-import Separator from '../../Separators';
+import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
+import Separator from '../../Separator';
 import {
   MainContainer,
   Container,
   LeftAction,
   RightAction,
   Title,
-  Subtitle,
   SelectorsContainer,
+  Icon,
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({
-  onPressLeft,
-  onPressRight,
-  onCheckboxChange,
-  style,
-  title,
-  subtitle,
-  isChecked,
-}) => {
-  const [internalChecked, setInternalChecked] = useState(isChecked);
+const FilterSimple: FC<Props> = ({title, onPress, style, isChecked}) => {
+  const [value, setValue] = useState('');
 
-  useEffect(() => {
-    setInternalChecked(isChecked);
-  }, [isChecked]);
-
-  const handleCheckboxPress = useCallback(() => {
-    setInternalChecked(!internalChecked);
-    onCheckboxChange && onCheckboxChange(!internalChecked);
-    onPressLeft && onPressLeft();
-  }, [internalChecked, onPressLeft, onCheckboxChange]);
+  const handlePress = () => {
+    onPress(value);
+  };
 
   return (
     <MainContainer style={style}>
       <Separator />
-      <SelectorsContainer>
-        <LeftAction>
-          <TouchableOpacity onPress={handleCheckboxPress}>
-            <Checkbox isChecked={isChecked} onPress={handleCheckboxPress} />
-          </TouchableOpacity>
-        </LeftAction>
-        <Container>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-        </Container>
-        <RightAction>
-          <TouchableOpacity onPress={onPressRight}>
-            <Icons name="arrowRight" />
-          </TouchableOpacity>
-        </RightAction>
-      </SelectorsContainer>
+      <TouchableOpacity onPress={handlePress}>
+        <SelectorsContainer>
+          <LeftAction>
+            <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
+          </LeftAction>
+          <Container>
+            <Title>{title}</Title>
+            <TextInput
+              placeholder="Enter text"
+              value={value}
+              onChangeText={setValue}
+            />
+          </Container>
+          <RightAction>
+            <Icon name="arrowRight" />
+          </RightAction>
+        </SelectorsContainer>
+      </TouchableOpacity>
       <Separator />
     </MainContainer>
   );

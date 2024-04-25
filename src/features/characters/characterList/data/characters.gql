@@ -8,3 +8,10 @@ query Characters($page: Int, $filter: FilterCharacter) {
     }
   }
 }
+
+fragment CharacterSummary on Character {
+  id
+  name
+  status
+  image
+}
