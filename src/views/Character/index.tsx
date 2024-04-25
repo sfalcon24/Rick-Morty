@@ -41,7 +41,7 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
       <Header
         variant="large"
         backgroundColor={theme.colors.gray6}
-        title={t('common.titleCharacter') ?? ''}
+        title={t('screens.character') ?? ''}
         onPressRight={action('onPressRight')}
         rightTextButton={t('actions.action/filter') ?? ''}
       />

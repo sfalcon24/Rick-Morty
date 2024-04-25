@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Filter_Selector story 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  delayLongPress={600}
+  enabled={true}
+  exclusive={true}
+  handlerTag={1}
+  handlerType="NativeViewGestureHandler"
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+  touchSoundDisabled={false}
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 44,
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 0,
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="24"
+        bbWidth="24"
+        fill="none"
+        focusable={false}
+        height={24}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 24,
+              "width": 24,
+            },
+          ]
+        }
+        vbHeight={24}
+        vbWidth={24}
+        width={24}
+      >
+        <RNSVGGroup
+          fill={null}
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M1 12c0 6.075 4.925 11 11 11s11-4.925 11-11S18.075 1 12 1 1 5.925 1 12Zm-1 0C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12Z"
+            fill={
+              {
+                "payload": 4283979478,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fill",
+                "fillRule",
+              ]
+            }
+          />
+          <RNSVGPath
+            clipRule={0}
+            d="M12 19a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"
+            fill={
+              {
+                "payload": 4283979478,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fill",
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+      <Text
+        style={
+          [
+            {
+              "color": "#081F32",
+              "fontFamily": "Roboto-Regular",
+              "fontSize": 17,
+              "letterSpacing": -0.41,
+              "lineHeight": 22,
+            },
+            {},
+            [
+              {
+                "marginLeft": 16,
+              },
+            ],
+          ]
+        }
+        variant="body17"
+      >
+        Alive
+      </Text>
+    </View>
+  </View>
+</RNGestureHandlerButton>
+`;

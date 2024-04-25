@@ -26,8 +26,6 @@ const useCharacters = () => {
     [charactersData],
   );
 
-  console.log('characters', characters.length);
-
   return {
     characters,
     error,
