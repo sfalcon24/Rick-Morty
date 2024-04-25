@@ -1,9 +1,12 @@
 import type {FC} from 'react';
 import ArrowLeftIcon from './ArrowLeftIcon';
+import ArrowRightIcon from './ArrowRightIcon';
 import GhostIcon from './GhostIcon';
 import PlanetIcon from './PlanetIcon';
 import PlusIcon from './PlusIcon';
 import PointIcon from './PointIcon';
+import RadioButtonFillIcon from './RadioButtonFillIcon';
+import RadioButtonIcon from './RadioButtonIcon';
 import RocketIcon from './RocketIcon';
 import TvIcon from './TvIcon';
 import type {IconProps} from './types';
@@ -14,10 +17,13 @@ const createSvgIcons = <T extends {[name: string]: FC<IconProps>}>(
 
 export const icons = createSvgIcons({
   arrowLeft: ArrowLeftIcon,
+  arrowRight: ArrowRightIcon,
   ghost: GhostIcon,
   planet: PlanetIcon,
   plus: PlusIcon,
   point: PointIcon,
+  radioButton: RadioButtonIcon,
+  radioButtonFill: RadioButtonFillIcon,
   rocket: RocketIcon,
   tv: TvIcon,
 });
