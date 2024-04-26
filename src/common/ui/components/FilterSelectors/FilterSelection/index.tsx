@@ -9,16 +9,15 @@ const FilterSelection: FC<Props> = ({title, options, onPress, style}) => (
     <Title>{title}</Title>
     <Separator />
     {options?.map((opt, index) => (
-      <>
+      <React.Fragment key={opt.value}>
         <Selector
-          key={opt.value}
           name={opt.name}
           value={opt.value}
           isSelected={opt.isSelected}
           onPress={onPress}
         />
         {index !== options.length - 1 && <Separator isItem />}
-      </>
+      </React.Fragment>
     ))}
     <Separator />
   </Container>
