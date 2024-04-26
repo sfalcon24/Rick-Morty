@@ -5,6 +5,8 @@ import GhostIcon from './GhostIcon';
 import PlanetIcon from './PlanetIcon';
 import PlusIcon from './PlusIcon';
 import PointIcon from './PointIcon';
+import RadioButtonFillIcon from './RadioButtonFillIcon';
+import RadioButtonIcon from './RadioButtonIcon';
 import RocketIcon from './RocketIcon';
 import TvIcon from './TvIcon';
 import type {IconProps} from './types';
@@ -20,6 +22,8 @@ export const icons = createSvgIcons({
   planet: PlanetIcon,
   plus: PlusIcon,
   point: PointIcon,
+  radioButton: RadioButtonIcon,
+  radioButtonFill: RadioButtonFillIcon,
   rocket: RocketIcon,
   tv: TvIcon,
 });

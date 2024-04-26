@@ -13,6 +13,9 @@ exports[`renders Default story 1`] = `
         "paddingRight": 15,
         "width": "100%",
       },
+      {
+        "backgroundColor": "#F2F2F7",
+      },
     ]
   }
   variantContainer="default"
@@ -131,6 +134,7 @@ exports[`renders Default story 1`] = `
               [
                 {
                   "color": "#5856D6",
+                  "marginLeft": 5,
                 },
               ],
             ]
@@ -233,6 +237,7 @@ exports[`renders Default story 1`] = `
               [
                 {
                   "color": "#5856D6",
+                  "marginLeft": 5,
                 },
               ],
             ]
@@ -420,6 +425,7 @@ exports[`renders Large story 1`] = `
               [
                 {
                   "color": "#5856D6",
+                  "marginLeft": 5,
                 },
               ],
             ]

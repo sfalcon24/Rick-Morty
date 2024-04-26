@@ -1,63 +1,49 @@
 import type {FC} from 'react';
-import React, {useState, useCallback, useEffect} from 'react';
+import React, {useState} from 'react';
 import {memo} from 'react';
+import {t} from 'i18next';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {Checkbox} from '../../Checkbox';
-import Icons from '../../Icons';
-import Separator from '../../Separators';
 import {
-  MainContainer,
   Container,
+  Main,
   LeftAction,
+  Center,
   RightAction,
   Title,
   Subtitle,
-  SelectorsContainer,
+  Icon,
 } from './styles';
 import type {Props} from './types';
 
 const FilterSimple: FC<Props> = ({
-  onPressLeft,
-  onPressRight,
-  onCheckboxChange,
-  style,
+  id,
   title,
-  subtitle,
+  onPress = () => {},
+  style,
   isChecked,
 }) => {
-  const [internalChecked, setInternalChecked] = useState(isChecked);
+  const [value] = useState('');
 
-  useEffect(() => {
-    setInternalChecked(isChecked);
-  }, [isChecked]);
-
-  const handleCheckboxPress = useCallback(() => {
-    setInternalChecked(!internalChecked);
-    onCheckboxChange && onCheckboxChange(!internalChecked);
-    onPressLeft && onPressLeft();
-  }, [internalChecked, onPressLeft, onCheckboxChange]);
-
+  const handlePress = () => {
+    onPress(value);
+  };
   return (
-    <MainContainer style={style}>
-      <Separator />
-      <SelectorsContainer>
-        <LeftAction>
-          <TouchableOpacity onPress={handleCheckboxPress}>
-            <Checkbox isChecked={isChecked} onPress={handleCheckboxPress} />
-          </TouchableOpacity>
-        </LeftAction>
-        <Container>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-        </Container>
-        <RightAction>
-          <TouchableOpacity onPress={onPressRight}>
-            <Icons name="arrowRight" />
-          </TouchableOpacity>
-        </RightAction>
-      </SelectorsContainer>
-      <Separator />
-    </MainContainer>
+    <Container style={style}>
+      <TouchableOpacity onPress={handlePress}>
+        <Main>
+          <LeftAction>
+            <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
+          </LeftAction>
+          <Center>
+            <Title>{title}</Title>
+            <Subtitle>{value ?? t(`filters.${id}`)}</Subtitle>
+          </Center>
+          <RightAction>
+            <Icon name="arrowRight" />
+          </RightAction>
+        </Main>
+      </TouchableOpacity>
+    </Container>
   );
 };
 

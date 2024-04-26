@@ -4,7 +4,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import TabBarBottom from 'common/ui/components/TabBarBottom';
 import {Character} from 'views/Character';
 import {CharacterFilter} from 'views/CharacterFilter';
-import {SearchFilter} from 'views/SearchFilter';
 import {tabStackScreenOptions} from '../constants';
 import type {RootTabParamList} from './types';
 
@@ -19,6 +18,5 @@ export const Tabs: FC = () => (
     screenOptions={tabStackScreenOptions}>
     <Screen name="Character" component={Character} />
     <Screen name="CharacterFilter" component={CharacterFilter} />
-    <Screen name="SearchFilter" component={SearchFilter} />
   </Navigator>
 );

@@ -1,38 +1,27 @@
-import {useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import FilterSelection from 'common/ui/components/FilterSelectors/FilterSelection';
 import FilterSimple from 'common/ui/components/FilterSelectors/FilterSimple';
 import Header from 'common/ui/components/Header';
 import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
+import {t} from 'i18next';
 import {ScrollView} from 'react-native-gesture-handler';
-import {selectorsGender, selectorsStatus} from './constants';
 import {Container, SelectorsContainer} from './styles';
-import type {Props} from './types';
+import useCharacterFilterViewModel from './viewmodel';
 
-export const CharacterFilter: Props = () => {
-  const navigation = useNavigation();
-  const [showClearButton, setShowClearButton] = useState(false);
-
-  const [isNameChecked, setIsNameChecked] = useState(false);
-  const [selectedGender, setSelectedGender] = useState<string | boolean>(false);
-  const [selectedStatus, setSelectedStatus] = useState<string | boolean>(false);
-  const [isSpeciesChecked, setIsSpeciesChecked] = useState(false);
-
-  const handleClearFilter = () => {
-    setShowClearButton(false);
-    setIsNameChecked(false);
-    setIsSpeciesChecked(false);
-    setSelectedGender(false);
-    setSelectedStatus(false);
-
-    console.log('Filter cleared');
-  };
-
-  const handlePressRight = () => {
-    navigation.navigate('SearchFilter', {title: 'Search'});
-  };
+export const CharacterFilter = () => {
+  const {
+    showClearButton,
+    isNameActive,
+    isSpeciesActive,
+    statusOptions,
+    genderOptions,
+    handleNamePress,
+    handleSpeciesPress,
+    handleStatusOptionPress,
+    handleGenderOptionPress,
+    handleClearFilter,
+  } = useCharacterFilterViewModel();
 
   return (
     <ScrollView>
@@ -41,54 +30,35 @@ export const CharacterFilter: Props = () => {
         <Header
           variant="default"
           backgroundColor={theme.colors.white}
-          title="Filter"
+          title={t('actions.action/filter') ?? ''}
           onPressRight={action('onPressRight')}
-          rightButton="APPLY"
+          rightButton={t('actions.action/apply') ?? ''}
           rightIcon={false}
           leftTextButton={showClearButton ? 'Clear' : undefined}
           onPressLeft={handleClearFilter}
         />
         <SelectorsContainer>
           <FilterSimple
-            title="Name"
-            subtitle="Give a name"
-            onPressLeft={() => {
-              setIsNameChecked(!isNameChecked);
-              setShowClearButton(true);
-            }}
-            isChecked={isNameChecked}
-            onCheckboxChange={setIsNameChecked}
-            onPressRight={handlePressRight}
+            title={t('common.name')}
+            onPress={handleNamePress}
+            isChecked={isNameActive}
+            id={'name'}
           />
           <FilterSimple
-            title="Species"
-            subtitle="Select one"
-            onPressLeft={() => {
-              setIsSpeciesChecked(!isSpeciesChecked);
-              setShowClearButton(true);
-            }}
-            isChecked={isSpeciesChecked}
-            onCheckboxChange={setIsSpeciesChecked}
+            title={t('common.species')}
+            onPress={handleSpeciesPress}
+            isChecked={isSpeciesActive}
+            id={'species'}
           />
           <FilterSelection
-            title="Status"
-            selector={selectorsStatus}
-            selectedValue={selectedStatus}
-            onValueChange={value => {
-              setSelectedStatus(value);
-              setShowClearButton(true);
-            }}
-            onPressLeft={handleClearFilter}
+            title={t('common.status')}
+            options={statusOptions}
+            onPress={handleStatusOptionPress}
           />
           <FilterSelection
-            title="Gender"
-            selector={selectorsGender}
-            selectedValue={selectedGender}
-            onValueChange={value => {
-              setSelectedGender(value);
-              setShowClearButton(true);
-            }}
-            onPressLeft={handleClearFilter}
+            title={t('common.gender')}
+            options={genderOptions}
+            onPress={handleGenderOptionPress}
           />
         </SelectorsContainer>
       </Container>

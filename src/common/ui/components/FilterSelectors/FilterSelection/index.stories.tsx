@@ -2,16 +2,32 @@ import {action} from '@storybook/addon-actions';
 import FilterSelection from '.';
 
 export default {
-  title: 'Filer Selectors',
+  title: 'Filter Selectors',
   component: FilterSelection,
 };
 
-const selectors = [
-  {id: 1, options: 'Alive', onPressLeft: action('Option 1 pressed')},
-  {id: 2, options: 'Dead', onPressLeft: action('Option 2 pressed')},
-  {id: 3, options: 'Unknown', onPressLeft: action('Option 3 pressed')},
+const STATUS_OPTIONS = [
+  {
+    name: 'Alive',
+    value: 'Alive',
+    isSelected: true,
+  },
+  {
+    name: 'Dead',
+    value: 'Dead',
+    isSelected: false,
+  },
+  {
+    name: 'Unknown',
+    value: 'Unknown',
+    isSelected: false,
+  },
 ];
 
 export const Filter_Selections = () => (
-  <FilterSelection title="Status" selector={selectors} />
+  <FilterSelection
+    title="Status"
+    options={STATUS_OPTIONS}
+    onPress={action('onPress')}
+  />
 );

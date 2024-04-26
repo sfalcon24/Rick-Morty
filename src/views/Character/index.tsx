@@ -1,18 +1,18 @@
 import {useCallback} from 'react';
-import {Text} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import CharacterCard from 'common/ui/components/Cards/CharacterCard';
 import Header from 'common/ui/components/Header';
 import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
-import {Container, List} from './styles';
+import {t} from 'i18next';
+import {Checking, Container, List} from './styles';
 import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
 export const Character = ({useViewModel = useViewModelDefault}) => {
   const navigation = useNavigation();
 
-  const {loading, error, apiData} = useViewModel();
+  const {characters, loading, error} = useViewModel();
 
   const renderItem = useCallback(
     ({item}: RenderItemParams) => (
@@ -20,32 +20,35 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         image={item.image}
         status={item.status}
         name={item.name}
-        id={''}
+        id={item.id}
       />
     ),
     [],
   );
 
   if (loading) {
-    return <Text>Loading...</Text>;
+    return <Checking>{t('common.loading')}</Checking>;
   }
 
   if (error) {
-    return <Text>Error: {error.message}</Text>;
+    return (
+      <Checking>
+        {t('common.error')} {error.message}
+      </Checking>
+    );
   }
   return (
     <Container>
       <StatusBar />
       <Header
         variant="large"
-        backgroundColor={theme.colors.gray5}
-        title="Character"
+        backgroundColor={theme.colors.gray6}
+        title={t('screens.character') ?? ''}
         onPressRight={() => navigation.navigate('CharacterFilter')}
-        rightTextButton="Filter"
-        rightIcon={false}
+        rightTextButton={t('actions.action/filter') ?? ''}
       />
       <List
-        data={apiData}
+        data={characters}
         keyExtractor={item => item.id}
         renderItem={renderItem}
         numColumns={2}

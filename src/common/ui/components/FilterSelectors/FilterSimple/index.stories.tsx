@@ -2,15 +2,16 @@ import {action} from '@storybook/addon-actions';
 import FilterSimple from '.';
 
 export default {
-  title: 'Filer Selectors',
+  title: 'Filter Selectors',
   component: FilterSimple,
 };
 
 export const Filter_Simple = () => (
   <FilterSimple
+    id="name"
     title="Name"
-    subtitle="Give a name"
-    onPressLeft={action('onPressLeft')}
-    onPressRight={action('onPressRight')}
+    value={undefined}
+    isChecked={true}
+    onPress={action('onPress')}
   />
 );

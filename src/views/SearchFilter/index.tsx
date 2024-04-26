@@ -1,19 +1,18 @@
 import type {FC} from 'react';
 import {memo} from 'react';
-import {useNavigation, useRoute} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {action} from '@storybook/addon-actions';
 import Header from 'common/ui/components/Header';
 import SearchBar from 'common/ui/components/SearchBar';
 import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
+import type {SearchFilterProps} from 'core/navigation/types';
+import {t} from 'i18next';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Container} from './styles';
-import type {Props} from './types';
 
-export const SearchFilter: FC<Props> = ({}) => {
+export const SearchFilter: FC<SearchFilterProps> = ({}) => {
   const navigation = useNavigation();
-  const route = useRoute();
-  const {title} = route.params || {};
 
   return (
     <ScrollView>
@@ -22,9 +21,9 @@ export const SearchFilter: FC<Props> = ({}) => {
         <Header
           variant="default"
           backgroundColor={theme.colors.white}
-          title={title}
+          title={t('actions.action/search') ?? ''}
           onPressRight={action('onPressRight')}
-          leftTextButton="Back"
+          leftTextButton={t('actions.action/back') ?? ''}
           leftIcon={true}
           onPressLeft={() => navigation.navigate('CharacterFilter')}
         />

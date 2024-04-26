@@ -1,11 +1,11 @@
 import type {StyleProp, ViewStyle} from 'react-native';
+import type {CharacterFiltersId} from 'features/characters/filters';
 
 export type Props = {
-  title?: string;
-  subtitle?: string;
+  id: CharacterFiltersId;
+  title: string;
+  value?: string;
   isChecked?: boolean;
-  onPressLeft?: (isChecked?: any) => void;
-  onPressRight?: () => void;
-  onCheckboxChange?: (isChecked: boolean) => void;
+  onPress: (value: string) => void;
   style?: StyleProp<ViewStyle>;
 };

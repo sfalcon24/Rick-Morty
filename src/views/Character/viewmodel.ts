@@ -1,20 +1,16 @@
-import {useQuery} from '@apollo/client';
 import {useNavigation} from '@react-navigation/native';
-import {Characters} from 'common/data/apollo/generated/nodes';
-import type {Lesson} from './model';
+import useCharacters from 'features/characters/characterList/data';
 
 const useViewModel = () => {
   const navigation = useNavigation();
-  const {loading, error, data} = useQuery(Characters);
-
-  const apiData = data?.characters.results as Lesson[];
+  const {characters, loading, error} = useCharacters();
 
   const navigateToCharacterFilter = () => {
     navigation.navigate('CharacterFilter');
   };
 
   return {
-    apiData,
+    characters,
     loading,
     error,
     navigateToCharacterFilter,

@@ -21,6 +21,11 @@ export type RootParamsList = {
   Tabs: undefined;
 };
 
+export type SearchFilterProps = NativeStackScreenProps<
+  RootParamsList,
+  'SearchFilter'
+>;
+
 export type ScreensParamsList = RootParamsList & RootTabParamList;
 
 export type ScreenName = keyof ScreensParamsList;

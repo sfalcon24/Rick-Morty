@@ -9,6 +9,7 @@ export default {
 
 export const Default = () => (
   <Header
+    style={{backgroundColor: theme.colors.gray6}}
     variant="default"
     title="Title"
     backgroundColor={theme.colors.gray6}
