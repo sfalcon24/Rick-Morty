@@ -21,9 +21,6 @@ exports[`renders ScreenTabBase story 1`] = `
         [
           {
             "backgroundColor": "#FFFFFF",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
             "paddingTop": 50,
           },
         ]
