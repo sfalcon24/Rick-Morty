@@ -8,8 +8,9 @@ export default {
 
 export const Filter_Simple = () => (
   <FilterSimple
+    id="name"
     title="Name"
-    value="Give a name"
+    value={undefined}
     isChecked={true}
     onPress={action('onPress')}
   />

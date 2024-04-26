@@ -42,11 +42,13 @@ export const CharacterFilter = () => {
             title={t('common.name')}
             onPress={handleNamePress}
             isChecked={isNameActive}
+            id={'name'}
           />
           <FilterSimple
             title={t('common.species')}
             onPress={handleSpeciesPress}
             isChecked={isSpeciesActive}
+            id={'species'}
           />
           <FilterSelection
             title={t('common.status')}

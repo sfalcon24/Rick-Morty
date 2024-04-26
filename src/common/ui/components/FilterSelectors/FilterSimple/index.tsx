@@ -1,49 +1,49 @@
 import type {FC} from 'react';
 import React, {useState} from 'react';
 import {memo} from 'react';
-import {TextInput, TouchableOpacity} from 'react-native-gesture-handler';
-import Separator from '../../Separator';
+import {t} from 'i18next';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import {
-  MainContainer,
   Container,
+  Main,
   LeftAction,
+  Center,
   RightAction,
   Title,
-  SelectorsContainer,
+  Subtitle,
   Icon,
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({title, onPress, style, isChecked}) => {
-  const [value, setValue] = useState('');
+const FilterSimple: FC<Props> = ({
+  id,
+  title,
+  onPress = () => {},
+  style,
+  isChecked,
+}) => {
+  const [value] = useState('');
 
   const handlePress = () => {
     onPress(value);
   };
-
   return (
-    <MainContainer style={style}>
-      <Separator />
+    <Container style={style}>
       <TouchableOpacity onPress={handlePress}>
-        <SelectorsContainer>
+        <Main>
           <LeftAction>
             <Icon name={isChecked ? 'radioButtonFill' : 'radioButton'} />
           </LeftAction>
-          <Container>
+          <Center>
             <Title>{title}</Title>
-            <TextInput
-              placeholder="Enter text"
-              value={value}
-              onChangeText={setValue}
-            />
-          </Container>
+            <Subtitle>{value ?? t(`filters.${id}`)}</Subtitle>
+          </Center>
           <RightAction>
             <Icon name="arrowRight" />
           </RightAction>
-        </SelectorsContainer>
+        </Main>
       </TouchableOpacity>
-      <Separator />
-    </MainContainer>
+    </Container>
   );
 };
 

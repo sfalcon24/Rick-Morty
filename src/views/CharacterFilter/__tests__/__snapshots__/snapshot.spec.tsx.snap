@@ -200,22 +200,15 @@ exports[`renders ScreenTabBase story 1`] = `
           style={
             [
               {
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "borderBottomWidth": 1,
+                "borderColor": "#D1D1D6",
+                "borderTopWidth": 1,
+                "marginBottom": 10,
+                "marginTop": 10,
               },
             ]
           }
         >
-          <View
-            style={
-              [
-                {
-                  "backgroundColor": "#D1D1D6",
-                  "height": 1,
-                },
-              ]
-            }
-          />
           <RNGestureHandlerButton
             collapsable={false}
             delayLongPress={600}
@@ -245,13 +238,11 @@ exports[`renders ScreenTabBase story 1`] = `
                     {
                       "alignItems": "center",
                       "flexDirection": "row",
-                      "height": 60,
                       "justifyContent": "space-between",
-                      "paddingBottom": 18,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 18,
-                      "width": "100%",
+                      "paddingBottom": 10,
+                      "paddingLeft": 10,
+                      "paddingRight": 10,
+                      "paddingTop": 10,
                     },
                   ]
                 }
@@ -361,15 +352,24 @@ exports[`renders ScreenTabBase story 1`] = `
                   >
                     Name
                   </Text>
-                  <TextInput
-                    collapsable={false}
-                    handlerTag={4}
-                    handlerType="NativeViewGestureHandler"
-                    onChangeText={[Function]}
-                    onGestureHandlerEvent={[Function]}
-                    onGestureHandlerStateChange={[Function]}
-                    placeholder="Enter text"
-                    value=""
+                  <Text
+                    color="#D1D1D6"
+                    style={
+                      [
+                        {
+                          "color": "#081F32",
+                          "fontFamily": "Roboto-Medium",
+                          "fontSize": 15,
+                          "letterSpacing": -0.24,
+                          "lineHeight": 20,
+                        },
+                        {},
+                        [
+                          {},
+                        ],
+                      ]
+                    }
+                    variant="body15-semibold"
                   />
                 </View>
                 <View
@@ -459,43 +459,26 @@ exports[`renders ScreenTabBase story 1`] = `
               </View>
             </View>
           </RNGestureHandlerButton>
-          <View
-            style={
-              [
-                {
-                  "backgroundColor": "#D1D1D6",
-                  "height": 1,
-                },
-              ]
-            }
-          />
         </View>
         <View
           style={
             [
               {
-                "paddingBottom": 10,
-                "paddingTop": 10,
+                "borderBottomWidth": 1,
+                "borderColor": "#D1D1D6",
+                "borderTopWidth": 1,
+                "marginBottom": 10,
+                "marginTop": 10,
               },
             ]
           }
         >
-          <View
-            style={
-              [
-                {
-                  "backgroundColor": "#D1D1D6",
-                  "height": 1,
-                },
-              ]
-            }
-          />
           <RNGestureHandlerButton
             collapsable={false}
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={5}
+            handlerTag={4}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -519,13 +502,11 @@ exports[`renders ScreenTabBase story 1`] = `
                     {
                       "alignItems": "center",
                       "flexDirection": "row",
-                      "height": 60,
                       "justifyContent": "space-between",
-                      "paddingBottom": 18,
-                      "paddingLeft": 18,
-                      "paddingRight": 18,
-                      "paddingTop": 18,
-                      "width": "100%",
+                      "paddingBottom": 10,
+                      "paddingLeft": 10,
+                      "paddingRight": 10,
+                      "paddingTop": 10,
                     },
                   ]
                 }
@@ -635,15 +616,24 @@ exports[`renders ScreenTabBase story 1`] = `
                   >
                     Species
                   </Text>
-                  <TextInput
-                    collapsable={false}
-                    handlerTag={6}
-                    handlerType="NativeViewGestureHandler"
-                    onChangeText={[Function]}
-                    onGestureHandlerEvent={[Function]}
-                    onGestureHandlerStateChange={[Function]}
-                    placeholder="Enter text"
-                    value=""
+                  <Text
+                    color="#D1D1D6"
+                    style={
+                      [
+                        {
+                          "color": "#081F32",
+                          "fontFamily": "Roboto-Medium",
+                          "fontSize": 15,
+                          "letterSpacing": -0.24,
+                          "lineHeight": 20,
+                        },
+                        {},
+                        [
+                          {},
+                        ],
+                      ]
+                    }
+                    variant="body15-semibold"
                   />
                 </View>
                 <View
@@ -733,16 +723,6 @@ exports[`renders ScreenTabBase story 1`] = `
               </View>
             </View>
           </RNGestureHandlerButton>
-          <View
-            style={
-              [
-                {
-                  "backgroundColor": "#D1D1D6",
-                  "height": 1,
-                },
-              ]
-            }
-          />
         </View>
         <View
           style={
@@ -794,7 +774,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={7}
+            handlerTag={5}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -931,7 +911,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={8}
+            handlerTag={6}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -1068,7 +1048,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={9}
+            handlerTag={7}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -1251,7 +1231,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={10}
+            handlerTag={8}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -1388,7 +1368,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={11}
+            handlerTag={9}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -1525,7 +1505,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={12}
+            handlerTag={10}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}
@@ -1662,7 +1642,7 @@ exports[`renders ScreenTabBase story 1`] = `
             delayLongPress={600}
             enabled={true}
             exclusive={true}
-            handlerTag={13}
+            handlerTag={11}
             handlerType="NativeViewGestureHandler"
             onGestureEvent={[Function]}
             onGestureHandlerEvent={[Function]}

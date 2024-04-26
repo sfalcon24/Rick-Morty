@@ -5,22 +5,15 @@ exports[`renders Filter_Simple story 1`] = `
   style={
     [
       {
-        "paddingBottom": 10,
-        "paddingTop": 10,
+        "borderBottomWidth": 1,
+        "borderColor": "#D1D1D6",
+        "borderTopWidth": 1,
+        "marginBottom": 10,
+        "marginTop": 10,
       },
     ]
   }
 >
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#D1D1D6",
-          "height": 1,
-        },
-      ]
-    }
-  />
   <RNGestureHandlerButton
     collapsable={false}
     delayLongPress={600}
@@ -50,13 +43,11 @@ exports[`renders Filter_Simple story 1`] = `
             {
               "alignItems": "center",
               "flexDirection": "row",
-              "height": 60,
               "justifyContent": "space-between",
-              "paddingBottom": 18,
-              "paddingLeft": 18,
-              "paddingRight": 18,
-              "paddingTop": 18,
-              "width": "100%",
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
             },
           ]
         }
@@ -177,15 +168,24 @@ exports[`renders Filter_Simple story 1`] = `
           >
             Name
           </Text>
-          <TextInput
-            collapsable={false}
-            handlerTag={2}
-            handlerType="NativeViewGestureHandler"
-            onChangeText={[Function]}
-            onGestureHandlerEvent={[Function]}
-            onGestureHandlerStateChange={[Function]}
-            placeholder="Enter text"
-            value=""
+          <Text
+            color="#D1D1D6"
+            style={
+              [
+                {
+                  "color": "#081F32",
+                  "fontFamily": "Roboto-Medium",
+                  "fontSize": 15,
+                  "letterSpacing": -0.24,
+                  "lineHeight": 20,
+                },
+                {},
+                [
+                  {},
+                ],
+              ]
+            }
+            variant="body15-semibold"
           />
         </View>
         <View
@@ -275,15 +275,5 @@ exports[`renders Filter_Simple story 1`] = `
       </View>
     </View>
   </RNGestureHandlerButton>
-  <View
-    style={
-      [
-        {
-          "backgroundColor": "#D1D1D6",
-          "height": 1,
-        },
-      ]
-    }
-  />
 </View>
 `;
