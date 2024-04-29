@@ -10,5 +10,6 @@ export type Props = IconProps & {
 export type IconProps = {
   size?: number;
   color?: string;
+  onPress?: () => void;
   style?: StyleProp<ViewStyle>;
 };

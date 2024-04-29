@@ -3,4 +3,5 @@ export type RootTabParamList = {
   CharacterFilter: undefined;
   Location: undefined;
   Episode: undefined;
+  SearchFilter: undefined;
 };

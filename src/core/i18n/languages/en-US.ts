@@ -6,6 +6,7 @@ const tabs: Record<keyof RootTabParamList, string> = {
   CharacterFilter: 'CharacterFilter',
   Episode: 'Episode',
   Location: 'Location',
+  SearchFilter: 'SearchFilter',
 };
 
 const actions = {
@@ -13,6 +14,7 @@ const actions = {
   'action/back': 'Back',
   'action/clear': 'Clear',
   'action/filter': 'Filter',
+  'action/search': 'Search',
 };
 
 const common = {

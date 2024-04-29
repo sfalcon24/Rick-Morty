@@ -1,5 +1,5 @@
 import {useCallback} from 'react';
-import {action} from '@storybook/addon-actions';
+import {useNavigation} from '@react-navigation/native';
 import CharacterCard from 'common/ui/components/Cards/CharacterCard';
 import Header from 'common/ui/components/Header';
 import StatusBar from 'common/ui/components/StatusBar';
@@ -10,6 +10,8 @@ import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
 export const Character = ({useViewModel = useViewModelDefault}) => {
+  const navigation = useNavigation();
+
   const {characters, loading, error} = useViewModel();
 
   const renderItem = useCallback(
@@ -42,7 +44,7 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         variant="large"
         backgroundColor={theme.colors.gray6}
         title={t('screens.character') ?? ''}
-        onPressRight={action('onPressRight')}
+        onPressRight={() => navigation.navigate('CharacterFilter')}
         rightTextButton={t('actions.action/filter') ?? ''}
       />
       <List

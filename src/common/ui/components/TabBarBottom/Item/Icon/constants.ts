@@ -5,4 +5,5 @@ export const iconName: Record<string, IconName> = {
   CharacterFilter: 'rocket',
   Location: 'planet',
   Episode: 'tv',
+  SearchFilter: 'plus',
 };

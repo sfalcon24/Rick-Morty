@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {useNavigation} from '@react-navigation/native';
 import type {Option} from 'common/ui/components/FilterSelectors/FilterSelection/types';
 import {STATUS_OPTIONS, GENDER_OPTIONS} from './constants';
 
@@ -8,15 +9,18 @@ const useCharacterFilterViewModel = () => {
   const [isSpeciesActive, setIsSpeciesActive] = useState(false);
   const [statusOptions, setStatusOptions] = useState<Option[]>(STATUS_OPTIONS);
   const [genderOptions, setGenderOptions] = useState<Option[]>(GENDER_OPTIONS);
+  const navigation = useNavigation();
 
   const handleNamePress = () => {
     setIsNameActive(!isNameActive);
     setShowClearButton(true);
+    navigation.navigate('SearchFilter', {title: 'Search'});
   };
 
   const handleSpeciesPress = () => {
     setIsSpeciesActive(!isSpeciesActive);
     setShowClearButton(true);
+    navigation.navigate('SearchFilter', {title: 'Search'});
   };
 
   const handleStatusOptionPress = (value: string) => {
