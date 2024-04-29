@@ -61,6 +61,7 @@ const getStories = () => {
     "./src/common/ui/components/TextButton/index.stories.tsx": require("../src/common/ui/components/TextButton/index.stories.tsx"),
     "./src/views/Auth/Blank/index.stories.tsx": require("../src/views/Auth/Blank/index.stories.tsx"),
     "./src/views/Blank/index.stories.tsx": require("../src/views/Blank/index.stories.tsx"),
+    "./src/views/CharacterFilter/index.stories.tsx": require("../src/views/CharacterFilter/index.stories.tsx"),
   };
 };
 

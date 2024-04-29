@@ -5,6 +5,8 @@ import Text from 'common/ui/components/Text';
 export const Container = styled.View`
   border-top-width: 1px;
   border-bottom-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-color: ${({theme}) => theme.colors.gray4};
 `;
 
@@ -12,7 +14,7 @@ export const Main = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 18px;
+  padding: 10px;
 `;
 
 export const LeftAction = styled.View`

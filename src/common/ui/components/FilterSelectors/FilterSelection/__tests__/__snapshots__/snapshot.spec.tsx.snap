@@ -24,6 +24,7 @@ exports[`renders Filter_Selections story 1`] = `
             "color": "#8E8E93",
             "marginBottom": 10,
             "marginLeft": 15,
+            "marginTop": 10,
           },
         ],
       ]

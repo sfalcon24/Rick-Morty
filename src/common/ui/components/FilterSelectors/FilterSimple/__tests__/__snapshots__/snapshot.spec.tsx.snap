@@ -8,6 +8,8 @@ exports[`renders Filter_Simple story 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#D1D1D6",
         "borderTopWidth": 1,
+        "marginBottom": 10,
+        "marginTop": 10,
       },
     ]
   }
@@ -42,10 +44,10 @@ exports[`renders Filter_Simple story 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
               "justifyContent": "space-between",
-              "paddingBottom": 18,
-              "paddingLeft": 18,
-              "paddingRight": 18,
-              "paddingTop": 18,
+              "paddingBottom": 10,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
             },
           ]
         }
@@ -184,9 +186,7 @@ exports[`renders Filter_Simple story 1`] = `
               ]
             }
             variant="body15-semibold"
-          >
-            Give a name
-          </Text>
+          />
         </View>
         <View
           style={

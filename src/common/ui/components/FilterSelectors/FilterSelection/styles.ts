@@ -12,6 +12,7 @@ export const Title = styled(Text).attrs({
   color: ${({theme}) => theme.colors.gray1};
   margin-left: 15px;
   margin-bottom: 10px;
+  margin-top: 10px;
 `;
 
 export const Selector = styled(SelectorBase)``;

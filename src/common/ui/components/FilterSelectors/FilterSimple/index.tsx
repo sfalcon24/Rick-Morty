@@ -1,10 +1,8 @@
 import type {FC} from 'react';
-import React from 'react';
+import React, {useState} from 'react';
 import {memo} from 'react';
-import useIdCallback from 'common/ui/utils/useIdCallback';
 import {t} from 'i18next';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import Icons from '../../Icons';
 import {
   Container,
   Main,
@@ -17,16 +15,12 @@ import {
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({
-  id,
-  title,
-  value,
-  isChecked,
-  onPress,
-  style,
-}) => {
-  const handlePress = useIdCallback(onPress, id);
+const FilterSimple: FC<Props> = ({id, title, onPress, style, isChecked}) => {
+  const [value] = useState('');
 
+  const handlePress = () => {
+    onPress(id);
+  };
   return (
     <Container style={style}>
       <TouchableOpacity onPress={handlePress}>
@@ -39,7 +33,7 @@ const FilterSimple: FC<Props> = ({
             <Subtitle>{value ?? t(`filters.${id}`)}</Subtitle>
           </Center>
           <RightAction>
-            <Icons name="arrowRight" />
+            <Icon name="arrowRight" />
           </RightAction>
         </Main>
       </TouchableOpacity>

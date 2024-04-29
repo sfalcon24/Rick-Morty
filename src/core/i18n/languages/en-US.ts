@@ -3,18 +3,23 @@ import type {CharacterFiltersId} from 'features/characters/filters';
 
 const tabs: Record<keyof RootTabParamList, string> = {
   Character: 'Character',
+  CharacterFilter: 'CharacterFilter',
   Episode: 'Episode',
   Location: 'Location',
 };
 
 const actions = {
-  'action/apply': 'Apply',
+  'action/apply': 'APPLY',
   'action/back': 'Back',
   'action/clear': 'Clear',
   'action/filter': 'Filter',
 };
 
 const common = {
+  name: 'Name',
+  species: 'Species',
+  status: 'Status',
+  gender: 'Gender',
   loading: 'Loading...',
   error: 'Error:',
 };
