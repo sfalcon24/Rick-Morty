@@ -1,5 +1,5 @@
 import type {FC} from 'react';
-import React from 'react';
+import React, {Fragment} from 'react';
 import {memo} from 'react';
 import {Container, Title, Selector, Separator} from './styles';
 import type {Props} from './types';
@@ -8,8 +8,8 @@ const FilterSelection: FC<Props> = ({title, options, onPress, style}) => (
   <Container style={style}>
     <Title>{title}</Title>
     <Separator />
-    {options?.map((opt, index) => (
-      <React.Fragment key={opt.value}>
+    {options.map((opt, index) => (
+      <Fragment key={opt.value}>
         <Selector
           name={opt.name}
           value={opt.value}
@@ -17,7 +17,7 @@ const FilterSelection: FC<Props> = ({title, options, onPress, style}) => (
           onPress={onPress}
         />
         {index !== options.length - 1 && <Separator isItem />}
-      </React.Fragment>
+      </Fragment>
     ))}
     <Separator />
   </Container>

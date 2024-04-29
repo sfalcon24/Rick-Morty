@@ -15,17 +15,11 @@ import {
 } from './styles';
 import type {Props} from './types';
 
-const FilterSimple: FC<Props> = ({
-  id,
-  title,
-  onPress = () => {},
-  style,
-  isChecked,
-}) => {
+const FilterSimple: FC<Props> = ({id, title, onPress, style, isChecked}) => {
   const [value] = useState('');
 
   const handlePress = () => {
-    onPress(value);
+    onPress(id);
   };
   return (
     <Container style={style}>

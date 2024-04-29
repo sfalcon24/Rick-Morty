@@ -4,7 +4,6 @@ export type Selectors = {
   id: string;
   options: string[];
   onPressLeft: () => void;
-  clearSelection?: () => void;
 };
 
 export type Props = {

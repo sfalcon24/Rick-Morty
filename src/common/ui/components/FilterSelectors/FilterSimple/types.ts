@@ -6,6 +6,6 @@ export type Props = {
   title: string;
   value?: string;
   isChecked?: boolean;
-  onPress: (value: string) => void;
+  onPress: (id: string) => void;
   style?: StyleProp<ViewStyle>;
 };
