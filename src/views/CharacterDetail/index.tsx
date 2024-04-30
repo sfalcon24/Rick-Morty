@@ -1,7 +1,6 @@
 import {SafeAreaView} from 'react-native';
 import SectionDetail from 'common/ui/components/Detail/SectionDetail';
 import Header from 'common/ui/components/Header';
-import StatusBar from 'common/ui/components/StatusBar';
 import theme from 'common/ui/theme';
 import {t} from 'i18next';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -68,19 +67,17 @@ export const CharacterDetail = ({}) => {
   ];
 
   return (
-    <ScrollView>
-      <SafeAreaView />
-      <Container>
-        <StatusBar />
-        <Header
-          variant="default"
-          backgroundColor={theme.colors.gray6}
-          title={t('screens.character') ?? ''}
-          leftTextButton="Back"
-          leftIcon={true}
-        />
-        <PerfilContainer>
-          <Container>
+    <SafeAreaView>
+      <ScrollView>
+        <Container>
+          <Header
+            variant="default"
+            backgroundColor={theme.colors.gray6}
+            title={t('screens.character') ?? ''}
+            leftTextButton="Back"
+            leftIcon={true}
+          />
+          <PerfilContainer>
             <ImagesProfile>
               <BackgroundImage
                 source={require('../../assets/imgs/backgroundImage.png')}
@@ -92,19 +89,19 @@ export const CharacterDetail = ({}) => {
               <Name>Rick Sanchez</Name>
               <Species>HUMAN</Species>
             </TextProfile>
-          </Container>
-        </PerfilContainer>
-        <SectionDetail
-          title="Information"
-          options={informationOptions}
-          onPress={() => {}}
-        />
-        <SectionDetail
-          title="Episodes"
-          options={episodesOptions}
-          onPress={() => {}}
-        />
-      </Container>
-    </ScrollView>
+          </PerfilContainer>
+          <SectionDetail
+            title="Information"
+            options={informationOptions}
+            onPress={() => {}}
+          />
+          <SectionDetail
+            title="Episodes"
+            options={episodesOptions}
+            onPress={() => {}}
+          />
+        </Container>
+      </ScrollView>
+    </SafeAreaView>
   );
 };

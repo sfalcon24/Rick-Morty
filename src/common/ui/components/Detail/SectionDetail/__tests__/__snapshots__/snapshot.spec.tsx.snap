@@ -107,6 +107,7 @@ exports[`renders Section_Detail story 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "space-between",
+                    "marginRight": 15,
                   },
                 ]
               }
@@ -283,6 +284,7 @@ exports[`renders Section_Detail story 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "space-between",
+                    "marginRight": 15,
                   },
                 ]
               }
@@ -482,6 +484,7 @@ exports[`renders Section_Detail story 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "space-between",
+                    "marginRight": 15,
                   },
                 ]
               }
@@ -658,6 +661,7 @@ exports[`renders Section_Detail story 1`] = `
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "space-between",
+                    "marginRight": 15,
                   },
                 ]
               }

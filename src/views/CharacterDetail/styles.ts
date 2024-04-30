@@ -5,12 +5,11 @@ import Text from 'common/ui/components/Text';
 import type {ListType} from './types';
 
 export const Container = styled.View`
-  background-color: ${({theme}) => theme.colors.white};
-  height: auto;
+  padding-bottom: 70px;
 `;
 
 export const PerfilContainer = styled.View`
-  background-color: ${({theme}) => theme.colors.gray6};
+  background-color: ${({theme}) => theme.colors.white};
 `;
 
 export const ImagesProfile = styled.View`
@@ -37,7 +36,7 @@ export const TextProfile = styled.View`
   padding-bottom: 25px;
   align-items: center;
   z-index: -1;
-  background-color: ${({theme}) => theme.colors.gray6};
+  background-color: ${({theme}) => theme.colors.gray5};
 `;
 
 export const Status = styled(Text).attrs({
