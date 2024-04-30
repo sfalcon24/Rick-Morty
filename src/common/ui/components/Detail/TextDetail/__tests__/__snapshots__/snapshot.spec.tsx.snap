@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Text_Detail story 1`] = `
+<RNGestureHandlerButton
+  collapsable={false}
+  delayLongPress={600}
+  enabled={true}
+  exclusive={true}
+  handlerTag={1}
+  handlerType="NativeViewGestureHandler"
+  onGestureEvent={[Function]}
+  onGestureHandlerEvent={[Function]}
+  onGestureHandlerStateChange={[Function]}
+  onHandlerStateChange={[Function]}
+  rippleColor={0}
+  touchSoundDisabled={false}
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginLeft": 18,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 17,
+                "letterSpacing": -0.41,
+                "lineHeight": 22,
+              },
+              {},
+              [
+                {
+                  "marginTop": 5,
+                },
+              ],
+            ]
+          }
+          variant="body17-semibold"
+        >
+          Gender
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 15,
+                "letterSpacing": -0.24,
+                "lineHeight": 20,
+              },
+              {},
+              [
+                {
+                  "color": "#8E8E93",
+                },
+              ],
+            ]
+          }
+          variant="body15-semibold"
+        >
+          Male
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "color": "#081F32",
+                "fontFamily": "Roboto-Medium",
+                "fontSize": 11,
+                "letterSpacing": 0.07,
+                "lineHeight": 13,
+              },
+              {},
+              [
+                {
+                  "color": "#8E8E93",
+                  "marginTop": 10,
+                },
+              ],
+            ]
+          }
+          variant="tagline11-tag"
+        >
+          DECEMBER
+        </Text>
+      </View>
+      <RNSVGSvgView
+        align="xMidYMid"
+        bbHeight="22"
+        bbWidth="22"
+        fill="none"
+        focusable={false}
+        height={22}
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "transform": [
+                {
+                  "rotateY": "180deg",
+                },
+              ],
+            },
+            {
+              "flex": 0,
+              "height": 22,
+              "width": 22,
+            },
+          ]
+        }
+        vbHeight={21}
+        vbWidth={13}
+        width={22}
+      >
+        <RNSVGGroup
+          fill={null}
+          matrix={
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          propList={
+            [
+              "fill",
+            ]
+          }
+        >
+          <RNSVGPath
+            clipRule={0}
+            d="M10.0371 20.5827L0.792152 11.4458C0.402616 11.0612 0.402616 10.4398 0.792152 10.0542L10.0371 0.917333C10.5995 0.360889 11.5144 0.360889 12.0777 0.917333C12.64 1.47378 12.64 2.37687 12.0777 2.93332L4.16913 10.7505L12.0777 18.5657C12.64 19.1231 12.64 20.0262 12.0777 20.5827C11.5144 21.1391 10.5995 21.1391 10.0371 20.5827Z"
+            fill={
+              {
+                "payload": 4291940822,
+                "type": 0,
+              }
+            }
+            fillRule={0}
+            propList={
+              [
+                "fill",
+                "fillRule",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#D1D1D6",
+            "height": 1,
+          },
+          {
+            "marginLeft": 18,
+            "marginTop": 10,
+          },
+        ]
+      }
+    />
+  </View>
+</RNGestureHandlerButton>
+`;
