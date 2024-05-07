@@ -10,7 +10,7 @@ import type {RenderItemParams} from './types';
 import useViewModelDefault from './viewmodel';
 
 export const Character = ({useViewModel = useViewModelDefault}) => {
-  const {characters, loading, error} = useViewModel();
+  const {characters, navigation, loading, error} = useViewModel();
 
   const renderItem = useCallback(
     ({item}: RenderItemParams) => (
@@ -19,9 +19,12 @@ export const Character = ({useViewModel = useViewModelDefault}) => {
         status={item.status}
         name={item.name}
         id={item.id}
+        onPress={() =>
+          navigation.navigate('CharacterDetail', {character: item})
+        }
       />
     ),
-    [],
+    [navigation],
   );
 
   if (loading) {

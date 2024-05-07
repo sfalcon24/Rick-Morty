@@ -3,6 +3,7 @@ import type {CharacterFiltersId} from 'features/characters/filters';
 
 const tabs: Record<keyof RootTabParamList, string> = {
   Character: 'Character',
+  CharacterDetail: 'CharacterDetail',
   Episode: 'Episode',
   Location: 'Location',
 };
