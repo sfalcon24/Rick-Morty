@@ -2,6 +2,7 @@ import type {FC} from 'react';
 import type {BottomTabScreenProps} from '@react-navigation/bottom-tabs';
 import type {CompositeScreenProps} from '@react-navigation/native';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+import type {Character} from 'features/characters/common/domain/CharacterSummary';
 import type {RootTabParamList} from './Tabs/types';
 
 declare global {
@@ -11,6 +12,10 @@ declare global {
 }
 
 export type RootParamsList = {
+  Character: undefined;
+  CharacterDetail: {
+    character: Character;
+  };
   Filter: undefined;
   BlankMain: undefined;
   BlankAuth: undefined;

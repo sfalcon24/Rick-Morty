@@ -1,9 +1,11 @@
 import {SafeAreaView} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 import SectionDetail from 'common/ui/components/Detail/SectionDetail';
 import Header from 'common/ui/components/Header';
 import theme from 'common/ui/theme';
 import {t} from 'i18next';
 import {ScrollView} from 'react-native-gesture-handler';
+import {informationOptions, episodesOptions} from './mock';
 import {
   BackgroundImage,
   Container,
@@ -17,54 +19,7 @@ import {
 } from './styles';
 
 export const CharacterDetail = ({}) => {
-  const informationOptions = [
-    {
-      title: 'Gender',
-      subtitle: 'Male',
-    },
-    {
-      title: 'Origin',
-      subtitle: 'Earth',
-    },
-    {
-      title: 'Type',
-      subtitle: 'Unknown',
-    },
-    {
-      title: 'Location',
-      subtitle: 'Earth',
-    },
-  ];
-
-  const episodesOptions = [
-    {
-      title: 'S01E01',
-      subtitle: 'Pilot',
-      date: 'DECEMBER 2, 2013',
-    },
-    {
-      title: 'Origin',
-      subtitle: 'Earth',
-    },
-    {
-      title: 'Type',
-      subtitle: 'Unknown',
-    },
-    {
-      title: 'Location',
-      subtitle: 'Earth',
-    },
-    {
-      title: 'S01E02',
-      subtitle: 'Pilot',
-      date: 'DECEMBER 2, 2013',
-    },
-    {
-      title: 'S01E03',
-      subtitle: 'Pilot',
-      date: 'DECEMBER 2, 2013',
-    },
-  ];
+  const navigation = useNavigation();
 
   return (
     <SafeAreaView>
@@ -76,6 +31,7 @@ export const CharacterDetail = ({}) => {
             title={t('screens.character') ?? ''}
             leftTextButton="Back"
             leftIcon={true}
+            onPressLeft={() => navigation.navigate('Character')}
           />
           <PerfilContainer>
             <ImagesProfile>
